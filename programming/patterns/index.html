@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../languages/">
+        <link rel="prev" href="../algorithms/">
       
       
-        <link rel="next" href="../patterns/">
+        <link rel="next" href="../../os/linux/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Алгоритмы и структуры данных - ИТ вики</title>
+        <title>Паттерны программирования - ИТ вики</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#design-patterns" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Алгоритмы и структуры данных
+              Паттерны программирования
             
           </span>
         </div>
@@ -276,6 +276,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../algorithms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Алгоритмы и структуры данных
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -285,13 +308,15 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   
   <span class="md-ellipsis">
-    Алгоритмы и структуры данных
+    Паттерны программирования
     
   </span>
   
@@ -304,7 +329,7 @@
   
   
   <span class="md-ellipsis">
-    Алгоритмы и структуры данных
+    Паттерны программирования
     
   </span>
   
@@ -317,6 +342,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -327,171 +354,261 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      🧠 Алгоритмы и структуры данных
+      🧩 Типы паттернов
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧠 Алгоритмы и структуры данных">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 🚀 Порождающие паттерны
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 🚀 Порождающие паттерны">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#factory-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Фабричный метод (Factory Method)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abstract-factory" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Абстрактная фабрика (Abstract Factory)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Строитель (Builder)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prototype" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Прототип (Prototype)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#singleton" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Одиночка (Singleton)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 🧱 Структурные паттерны
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 🧱 Структурные паттерны">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adapter" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Адаптер (Adapter)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bridge" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Мост (Bridge)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#composite" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Компоновщик (Composite)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decorator" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Декоратор (Decorator)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#facade" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Фасад (Facade)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Заместитель (Proxy)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flyweight" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Легковес (Flyweight)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 💬 Поведенческие паттерны
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 💬 Поведенческие паттерны">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chain-of-responsibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Цепочка обязанностей (Chain of Responsibility)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Команда (Command)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreter" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Интерпретатор (Interpreter)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iterator" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Итератор (Iterator)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mediator" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Посредник (Mediator)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memento" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Хранитель (Memento)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observer" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Наблюдатель (Observer)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Состояние (State)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Стратегия (Strategy)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Посетитель (Visitor)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 Что такое алгоритмы?
+      📚 Полезные ресурсы
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="📚 Что такое алгоритмы?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Примеры:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      🗂️ Основные характеристики алгоритмов:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#big-o" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⏱️ Временная сложность (Big O)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧩 Структуры данных
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🧩 Структуры данных">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-array" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Массив (Array)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-list-linkedlist" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Список (List / LinkedList)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-stack" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Стек (Stack)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-queue" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Очередь (Queue)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-dictionary-hashmap" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Хэш-таблица (Dictionary / HashMap)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-tree" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Дерево (Tree)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-graph" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Граф (Graph)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔍 Распространённые алгоритмы
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      💡 Пример: Бинарный поиск
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      📘 Полезные книги
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      🌐 Полезные ресурсы
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -499,29 +616,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../patterns/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Паттерны программирования
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -779,6 +873,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -789,171 +885,261 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      🧠 Алгоритмы и структуры данных
+      🧩 Типы паттернов
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧠 Алгоритмы и структуры данных">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 🚀 Порождающие паттерны
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 🚀 Порождающие паттерны">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#factory-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Фабричный метод (Factory Method)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abstract-factory" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Абстрактная фабрика (Abstract Factory)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Строитель (Builder)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prototype" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Прототип (Prototype)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#singleton" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Одиночка (Singleton)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 🧱 Структурные паттерны
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 🧱 Структурные паттерны">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adapter" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Адаптер (Adapter)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bridge" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Мост (Bridge)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#composite" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Компоновщик (Composite)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decorator" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Декоратор (Decorator)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#facade" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Фасад (Facade)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Заместитель (Proxy)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flyweight" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Легковес (Flyweight)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 💬 Поведенческие паттерны
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 💬 Поведенческие паттерны">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chain-of-responsibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Цепочка обязанностей (Chain of Responsibility)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#command" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Команда (Command)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreter" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Интерпретатор (Interpreter)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iterator" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Итератор (Iterator)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mediator" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Посредник (Mediator)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memento" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Хранитель (Memento)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observer" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Наблюдатель (Observer)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Состояние (State)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Стратегия (Strategy)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Посетитель (Visitor)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 Что такое алгоритмы?
+      📚 Полезные ресурсы
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="📚 Что такое алгоритмы?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Примеры:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      🗂️ Основные характеристики алгоритмов:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#big-o" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⏱️ Временная сложность (Big O)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧩 Структуры данных
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🧩 Структуры данных">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-array" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Массив (Array)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-list-linkedlist" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Список (List / LinkedList)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-stack" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Стек (Stack)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-queue" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Очередь (Queue)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-dictionary-hashmap" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Хэш-таблица (Dictionary / HashMap)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-tree" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Дерево (Tree)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-graph" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Граф (Graph)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔍 Распространённые алгоритмы
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      💡 Пример: Бинарный поиск
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      📘 Полезные книги
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      🌐 Полезные ресурсы
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -973,208 +1159,157 @@
 
 
 
-  <h1>Алгоритмы и структуры данных</h1>
+<h1 id="design-patterns">📘 Паттерны проектирования (Design Patterns)</h1>
+<p>Паттерны проектирования — это типовые решения часто встречающихся проблем в разработке программного обеспечения. Они не являются готовыми к использованию классами или библиотеками, а скорее шаблонами мышления и организации кода.</p>
+<h2 id="_1">🧩 Типы паттернов</h2>
+<p>Все паттерны можно разделить на три основные категории:</p>
+<ol>
+<li><strong>Порождающие (Creational)</strong></li>
+<li><strong>Структурные (Structural)</strong></li>
+<li><strong>Поведенческие (Behavioral)</strong></li>
+</ol>
+<hr />
+<h2 id="1">1. 🚀 Порождающие паттерны</h2>
+<p>Отвечают за создание объектов, абстрагируя логику их создания.</p>
+<h3 id="factory-method">🔹 Фабричный метод (Factory Method)</h3>
+<blockquote>
+<p>Определяет интерфейс для создания объекта, но позволяет подклассам решать, какой класс инстанцировать.</p>
+</blockquote>
+<pre><code class="language-python">class CarFactory:
+    def create_car(self):
+        pass
 
-<h2 id="_1">🧠 Алгоритмы и структуры данных</h2>
-<p>Этот раздел поможет разобраться с основами алгоритмов и структур данных — ключевыми элементами программирования, необходимыми каждому разработчику.</p>
-<hr />
-<h3 id="_2">📚 Что такое алгоритмы?</h3>
-<p><strong>Алгоритм</strong> — это последовательность шагов, предназначенная для решения определённой задачи. Хороший алгоритм эффективно использует память и время выполнения.</p>
-<h4 id="_3">Примеры:</h4>
-<ul>
-<li>Сортировка массива</li>
-<li>Поиск элемента в списке</li>
-<li>Обход графа</li>
-<li>Шифрование данных</li>
-</ul>
-<hr />
-<h3 id="_4">🗂️ Основные характеристики алгоритмов:</h3>
-<table>
-<thead>
-<tr>
-<th>Характеристика</th>
-<th>Описание</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Корректность</strong></td>
-<td>Работает ли алгоритм правильно на всех входных данных</td>
-</tr>
-<tr>
-<td><strong>Эффективность</strong></td>
-<td>Как быстро работает и сколько памяти использует</td>
-</tr>
-<tr>
-<td><strong>Читаемость</strong></td>
-<td>Насколько понятен код алгоритма</td>
-</tr>
-<tr>
-<td><strong>Масштабируемость</strong></td>
-<td>Как алгоритм ведёт себя при увеличении объёма данных</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="big-o">⏱️ Временная сложность (Big O)</h3>
-<p>Описывает зависимость времени работы программы от размера входных данных.</p>
-<table>
-<thead>
-<tr>
-<th>Сложность</th>
-<th>Пример</th>
-<th>Пояснение</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>O(1)</td>
-<td>Доступ к элементу массива</td>
-<td>Константное время</td>
-</tr>
-<tr>
-<td>O(log n)</td>
-<td>Бинарный поиск</td>
-<td>Логарифмическое время</td>
-</tr>
-<tr>
-<td>O(n)</td>
-<td>Линейный поиск</td>
-<td>Линейное время</td>
-</tr>
-<tr>
-<td>O(n log n)</td>
-<td>Сортировка слиянием</td>
-<td>Чуть больше линейного</td>
-</tr>
-<tr>
-<td>O(n²)</td>
-<td>Вложенные циклы</td>
-<td>Квадратичное время</td>
-</tr>
-<tr>
-<td>O(2ⁿ)</td>
-<td>Рекурсивный факториал</td>
-<td>Экспоненциальное время</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="_5">🧩 Структуры данных</h3>
-<p><strong>Структура данных</strong> — это способ хранения и организации информации так, чтобы её можно было эффективно использовать.</p>
-<h4 id="1-array">1. Массив (Array)</h4>
-<ul>
-<li>Фиксированная длина</li>
-<li>Доступ за O(1)</li>
-<li>Пример: <code>int[] numbers = {1, 2, 3};</code></li>
-</ul>
-<h4 id="2-list-linkedlist">2. Список (List / LinkedList)</h4>
-<ul>
-<li>Может динамически расти</li>
-<li>Вставка/удаление быстрее, чем в массивах</li>
-<li>Пример: <code>List&lt;string&gt; names = new List&lt;string&gt;();</code></li>
-</ul>
-<h4 id="3-stack">3. Стек (Stack)</h4>
-<ul>
-<li>LIFO — Last In First Out</li>
-<li>Используется в рекурсии, браузерном истории</li>
-<li>Пример: <code>Stack&lt;int&gt; stack = new Stack&lt;int&gt;();</code></li>
-</ul>
-<h4 id="4-queue">4. Очередь (Queue)</h4>
-<ul>
-<li>FIFO — First In First Out</li>
-<li>Используется в потоках, обработке задач</li>
-<li>Пример: <code>Queue&lt;int&gt; queue = new Queue&lt;int&gt;();</code></li>
-</ul>
-<h4 id="5-dictionary-hashmap">5. Хэш-таблица (Dictionary / HashMap)</h4>
-<ul>
-<li>Пары ключ-значение</li>
-<li>Доступ за O(1)</li>
-<li>Пример: <code>Dictionary&lt;string, int&gt; ages = new Dictionary&lt;string, int&gt;();</code></li>
-</ul>
-<h4 id="6-tree">6. Дерево (Tree)</h4>
-<ul>
-<li>Иерархическая структура</li>
-<li>Применяется в файловых системах, базах данных</li>
-<li>Частный случай: двоичное дерево поиска</li>
-</ul>
-<h4 id="7-graph">7. Граф (Graph)</h4>
-<ul>
-<li>Узлы и связи между ними</li>
-<li>Применяется в соцсетях, картах, маршрутизации</li>
-</ul>
-<hr />
-<h3 id="_6">🔍 Распространённые алгоритмы</h3>
-<table>
-<thead>
-<tr>
-<th>Тип алгоритма</th>
-<th>Примеры</th>
-<th>Описание</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Сортировка</strong></td>
-<td>Bubble Sort, Quick Sort, Merge Sort</td>
-<td>Упорядочивание данных</td>
-</tr>
-<tr>
-<td><strong>Поиск</strong></td>
-<td>Линейный, бинарный</td>
-<td>Нахождение элемента</td>
-</tr>
-<tr>
-<td><strong>Графовые</strong></td>
-<td>BFS, DFS, Dijkstra</td>
-<td>Обход и анализ графов</td>
-</tr>
-<tr>
-<td><strong>Динамическое программирование</strong></td>
-<td>Fibonacci, Knapsack</td>
-<td>Разбиение задачи на подзадачи</td>
-</tr>
-<tr>
-<td><strong>Жадные алгоритмы</strong></td>
-<td>Huffman coding, задача о рюкзаке</td>
-<td>Выбор локально оптимального решения</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="_7">💡 Пример: Бинарный поиск</h3>
-<pre><code class="language-python">def binary_search(arr, target):
-    low = 0
-    high = len(arr) - 1
-    while low &lt;= high:
-        mid = (low + high) // 2
-        if arr[mid] == target:
-            return mid
-        elif arr[mid] &lt; target:
-            low = mid + 1
-        else:
-            high = mid - 1
-    return -1
+class TeslaFactory(CarFactory):
+    def create_car(self):
+        return Tesla()
+
+tesla = TeslaFactory().create_car()
+</code></pre>
+<h3 id="abstract-factory">🔹 Абстрактная фабрика (Abstract Factory)</h3>
+<blockquote>
+<p>Создает семейства связанных или зависимых объектов без указания их конкретных классов.</p>
+</blockquote>
+<h3 id="builder">🔹 Строитель (Builder)</h3>
+<blockquote>
+<p>Позволяет пошагово конструировать сложные объекты.</p>
+</blockquote>
+<h3 id="prototype">🔹 Прототип (Prototype)</h3>
+<blockquote>
+<p>Клонирование объектов вместо создания новых экземпляров через наследование.</p>
+</blockquote>
+<h3 id="singleton">🔹 Одиночка (Singleton)</h3>
+<blockquote>
+<p>Гарантирует существование только одного экземпляра класса.</p>
+</blockquote>
+<pre><code class="language-python">class Singleton:
+    _instance = None
+
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)
+        return cls._instance
 </code></pre>
 <hr />
-<h3 id="_8">📘 Полезные книги</h3>
-<ul>
-<li>«Грокаем алгоритмы» — Адитья Бхаргава (для новичков)</li>
-<li>«Алгоритмы: построение и анализ» — Кормен, Лейзерсон, Ривест, Штайн</li>
-<li>«Программируем коллективно» — Джон Сиджу</li>
-</ul>
-<hr />
-<h3 id="_9">🌐 Полезные ресурсы</h3>
-<ul>
-<li><a href="https://visualgo.net/en">Visualgo.net</a> — визуализация алгоритмов</li>
-<li><a href="https://leetcode.com/">LeetCode</a> — практика алгоритмов</li>
-<li><a href="https://www.hackerrank.com/domains/tutorials/10-days-of-javascript">HackerRank</a> — задачи и упражнения</li>
-<li><a href="https://www.geeksforgeeks.org/fundamentals-of-data-structures-in-c/">GeeksforGeeks</a></li>
-</ul>
-<hr />
+<h2 id="2">2. 🧱 Структурные паттерны</h2>
+<p>Определяют, как объекты и классы объединяются в составные структуры.</p>
+<h3 id="adapter">🔹 Адаптер (Adapter)</h3>
 <blockquote>
-<p>🎯 <strong>Совет:</strong> Не учите всё сразу. Начните с простых алгоритмов и структур данных, а затем постепенно углубляйтесь.</p>
+<p>Преобразует интерфейс одного класса в другой, совместимый с клиентом.</p>
 </blockquote>
+<h3 id="bridge">🔹 Мост (Bridge)</h3>
+<blockquote>
+<p>Разделяет абстракцию и её реализацию так, чтобы их можно было изменять независимо.</p>
+</blockquote>
+<h3 id="composite">🔹 Компоновщик (Composite)</h3>
+<blockquote>
+<p>Объединяет объекты в древовидную структуру для представления иерархии части-целое.</p>
+</blockquote>
+<h3 id="decorator">🔹 Декоратор (Decorator)</h3>
+<blockquote>
+<p>Добавляет поведение к объекту динамически, без изменения его класса.</p>
+</blockquote>
+<h3 id="facade">🔹 Фасад (Facade)</h3>
+<blockquote>
+<p>Предоставляет простой интерфейс к сложной системе.</p>
+</blockquote>
+<pre><code class="language-python">class Computer:
+    def start(self): ...
+
+class User:
+    def press_button(self):
+        comp = Computer()
+        comp.start()
+</code></pre>
+<h3 id="proxy">🔹 Заместитель (Proxy)</h3>
+<blockquote>
+<p>Контролирует доступ к другому объекту, добавляя дополнительное поведение.</p>
+</blockquote>
+<h3 id="flyweight">🔹 Легковес (Flyweight)</h3>
+<blockquote>
+<p>Минимизирует использование памяти при помощи разделения общего состояния между многими мелкими объектами.</p>
+</blockquote>
+<hr />
+<h2 id="3">3. 💬 Поведенческие паттерны</h2>
+<p>Определяют способы взаимодействия между объектами.</p>
+<h3 id="chain-of-responsibility">🔹 Цепочка обязанностей (Chain of Responsibility)</h3>
+<blockquote>
+<p>Передает запрос по цепочке обработчиков до тех пор, пока один из них не обработает его.</p>
+</blockquote>
+<h3 id="command">🔹 Команда (Command)</h3>
+<blockquote>
+<p>Инкапсулирует запрос как объект, позволяя параметризовать другие объекты различными запросами.</p>
+</blockquote>
+<h3 id="interpreter">🔹 Интерпретатор (Interpreter)</h3>
+<blockquote>
+<p>Определяет представление грамматики языка и интерпретатор предложений этого языка.</p>
+</blockquote>
+<h3 id="iterator">🔹 Итератор (Iterator)</h3>
+<blockquote>
+<p>Предоставляет способ последовательного доступа ко всем элементам коллекции без раскрытия ее внутренней структуры.</p>
+</blockquote>
+<h3 id="mediator">🔹 Посредник (Mediator)</h3>
+<blockquote>
+<p>Централизует взаимодействие между компонентами системы.</p>
+</blockquote>
+<h3 id="memento">🔹 Хранитель (Memento)</h3>
+<blockquote>
+<p>Фиксирует и восстанавливает состояние объекта, не нарушая инкапсуляции.</p>
+</blockquote>
+<h3 id="observer">🔹 Наблюдатель (Observer)</h3>
+<blockquote>
+<p>Один объект оповещает других об изменении своего состояния.</p>
+</blockquote>
+<pre><code class="language-python">class Subject:
+    def __init__(self):
+        self._observers = []
+
+    def attach(self, observer):
+        self._observers.append(observer)
+
+    def notify(self):
+        for observer in self._observers:
+            observer.update(self)
+</code></pre>
+<h3 id="state">🔹 Состояние (State)</h3>
+<blockquote>
+<p>Изменяет поведение объекта в зависимости от его внутреннего состояния.</p>
+</blockquote>
+<h3 id="strategy">🔹 Стратегия (Strategy)</h3>
+<blockquote>
+<p>Определяет семейство алгоритмов, инкапсулирует каждый из них и делает их взаимозаменяемыми.</p>
+</blockquote>
+<h3 id="visitor">🔹 Посетитель (Visitor)</h3>
+<blockquote>
+<p>Добавляет операции над объектами, не изменяя их классы.</p>
+</blockquote>
+<hr />
+<h2 id="_2">📚 Полезные ресурсы</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Design_Patterns">Design Patterns: Elements of Reusable Object-Oriented Software</a> — "Банда четырех" (GoF)</li>
+<li><a href="https://refactoring.guru/design-patterns">Refactoring.Guru - Design Patterns</a></li>
+<li><a href="https://www.oreilly.com/library/view/head-first-design/0596007124/">Head First Design Patterns</a></li>
+<li>Онлайн-курсы: Udemy, Coursera, Stepik (по ООП и паттернам)</li>
+</ul>
 
 
 
