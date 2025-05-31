@@ -1,0 +1,20 @@
+site_name: ИТ вики
+theme: material
+theme_options:
+  features:
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+
+nav:
+  - Главная: index.md
+  - Языки программирования: programming/languages.md
+  - Алгоритмы и структуры данных: programming/algorithms.md
+  - Операционные системы:
+    - Linux: os/linux.md
+    - FreeBSD: os/freebsd.md
+  - Linux:
+    - Установка и настройка графической оболочки: os/linux/gui.md
+    - Настройка сети в Linux: os/linux/networking.md
+    - Скрипты на Bash: os/linux/bash-scripts.md
+    - Права и chmod: os/linux/permissions.md
