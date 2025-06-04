@@ -11,22 +11,22 @@
       
       
       
-        <link rel="prev" href="../gui/">
+        <link rel="prev" href="../../all/osi/">
       
       
-        <link rel="next" href="../bash-scripts/">
+        <link rel="next" href="../apache-tomcat/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Настройка сети в Linux - ИТ вики</title>
+        <title>Apache2 - ИТ вики</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -45,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#linux" class="md-skip">
+        <a href="#apache2" class="md-skip">
           Skip to content
         </a>
       
@@ -80,7 +80,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="ИТ вики" class="md-header__button md-logo" aria-label="ИТ вики" data-md-component="logo">
+    <a href="../.." title="ИТ вики" class="md-header__button md-logo" aria-label="ИТ вики" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Настройка сети в Linux
+              Apache2
             
           </span>
         </div>
@@ -178,7 +178,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="ИТ вики" class="md-nav__button md-logo" aria-label="ИТ вики" data-md-component="logo">
+    <a href="../.." title="ИТ вики" class="md-nav__button md-logo" aria-label="ИТ вики" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -196,7 +196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -218,7 +218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../all/osi/" class="md-nav__link">
+      <a href="../../all/osi/" class="md-nav__link">
         
   
   
@@ -237,18 +237,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -264,7 +266,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Веб-серверы
@@ -275,10 +277,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../web/apache2/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Apache2
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -289,6 +313,287 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Описание
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-apache2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Установка Apache2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Установка Apache2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Обновление системы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-apache2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Установка Apache2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Проверка статуса
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Базовая настройка
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Базовая настройка">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-apache2" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Структура директорий Apache2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Перезагрузка и перезапуск
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Настройка виртуального хоста
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Настройка виртуального хоста">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Создание директории сайта
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Создание конфигурации
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Активация сайта
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Работа с модулями
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Работа с модулями">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Включение/отключение модулей
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-ufw" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Настройка брандмауэра (UFW)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-ssltls-lets-encrypt" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Настройка SSL/TLS с Let’s Encrypt
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Настройка SSL/TLS с Let’s Encrypt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-certbot" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Установка Certbot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Получение сертификата
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Автоматическое обновление сертификатов
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Логирование и диагностика
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Логирование и диагностика">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 Логи
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2 Анализ ошибок
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Полезные команды
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Безопасность
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      📎 Приложения
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -301,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../web/apache-tomcat/" class="md-nav__link">
+      <a href="../apache-tomcat/" class="md-nav__link">
         
   
   
@@ -324,7 +629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../web/caddy/" class="md-nav__link">
+      <a href="../caddy/" class="md-nav__link">
         
   
   
@@ -347,7 +652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../web/gubinnet/" class="md-nav__link">
+      <a href="../gubinnet/" class="md-nav__link">
         
   
   
@@ -370,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../web/nginx/" class="md-nav__link">
+      <a href="../nginx/" class="md-nav__link">
         
   
   
@@ -438,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../programming/languages/" class="md-nav__link">
+      <a href="../../programming/languages/" class="md-nav__link">
         
   
   
@@ -461,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../programming/algorithms/" class="md-nav__link">
+      <a href="../../programming/algorithms/" class="md-nav__link">
         
   
   
@@ -484,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../programming/patterns/" class="md-nav__link">
+      <a href="../../programming/patterns/" class="md-nav__link">
         
   
   
@@ -507,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../programming/git/" class="md-nav__link">
+      <a href="../../programming/git/" class="md-nav__link">
         
   
   
@@ -575,7 +880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../os/linux/" class="md-nav__link">
         
   
   
@@ -598,7 +903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../freebsd.md" class="md-nav__link">
+      <a href="../../os/freebsd.md" class="md-nav__link">
         
   
   
@@ -666,7 +971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../net/tcp-ip/" class="md-nav__link">
+      <a href="../../net/tcp-ip/" class="md-nav__link">
         
   
   
@@ -689,7 +994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../net/dns/" class="md-nav__link">
+      <a href="../../net/dns/" class="md-nav__link">
         
   
   
@@ -712,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../net/http-https/" class="md-nav__link">
+      <a href="../../net/http-https/" class="md-nav__link">
         
   
   
@@ -735,7 +1040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../net/http-2/" class="md-nav__link">
+      <a href="../../net/http-2/" class="md-nav__link">
         
   
   
@@ -758,7 +1063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../net/firewall/" class="md-nav__link">
+      <a href="../../net/firewall/" class="md-nav__link">
         
   
   
@@ -781,7 +1086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../net/routing/" class="md-nav__link">
+      <a href="../../net/routing/" class="md-nav__link">
         
   
   
@@ -804,7 +1109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../net/bgp/" class="md-nav__link">
+      <a href="../../net/bgp/" class="md-nav__link">
         
   
   
@@ -827,7 +1132,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../net/vlan/" class="md-nav__link">
+      <a href="../../net/vlan/" class="md-nav__link">
         
   
   
@@ -850,7 +1155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../net/cybersecurity/" class="md-nav__link">
+      <a href="../../net/cybersecurity/" class="md-nav__link">
         
   
   
@@ -873,7 +1178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../net/encryption/" class="md-nav__link">
+      <a href="../../net/encryption/" class="md-nav__link">
         
   
   
@@ -900,20 +1205,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -929,7 +1232,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Linux
@@ -943,7 +1246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gui/" class="md-nav__link">
+      <a href="../../os/linux/gui/" class="md-nav__link">
         
   
   
@@ -963,30 +1266,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Настройка сети в Linux
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../os/linux/networking/" class="md-nav__link">
         
   
   
@@ -997,156 +1280,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
-    <span class="md-ellipsis">
-      🌐 Настройка сети в Linux
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🌐 Настройка сети в Linux">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      📡 Проверка подключения
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ip-" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ Настройка IP-адреса
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🛠️ Настройка IP-адреса">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ip" class="md-nav__link">
-    <span class="md-ellipsis">
-      Временная настройка (через ip):
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Постоянная настройка зависит от дистрибутива:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Постоянная настройка зависит от дистрибутива:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ubuntu-netplan" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ubuntu (netplan):
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#debianred-hat" class="md-nav__link">
-    <span class="md-ellipsis">
-      Debian/Red Hat:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔌 Управление сервисами сети
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔍 Брандмауэр
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔍 Брандмауэр">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ufw" class="md-nav__link">
-    <span class="md-ellipsis">
-      UFW (упрощённый брандмауэр):
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#firewalld-fedoracentos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Firewalld (в Fedora/CentOS):
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      📎 Полезные ссылки
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1159,7 +1292,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bash-scripts/" class="md-nav__link">
+      <a href="../../os/linux/bash-scripts/" class="md-nav__link">
         
   
   
@@ -1182,7 +1315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../permissions/" class="md-nav__link">
+      <a href="../../os/linux/permissions/" class="md-nav__link">
         
   
   
@@ -1250,7 +1383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../process/confluence/" class="md-nav__link">
+      <a href="../../process/confluence/" class="md-nav__link">
         
   
   
@@ -1273,7 +1406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../process/jira/" class="md-nav__link">
+      <a href="../../process/jira/" class="md-nav__link">
         
   
   
@@ -1341,7 +1474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ci-cd/kafka/" class="md-nav__link">
+      <a href="../../ci-cd/kafka/" class="md-nav__link">
         
   
   
@@ -1364,7 +1497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ci-cd/skuf/" class="md-nav__link">
+      <a href="../../ci-cd/skuf/" class="md-nav__link">
         
   
   
@@ -1387,7 +1520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ci-cd/swagger/" class="md-nav__link">
+      <a href="../../ci-cd/swagger/" class="md-nav__link">
         
   
   
@@ -1410,7 +1543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ci-cd/postman/" class="md-nav__link">
+      <a href="../../ci-cd/postman/" class="md-nav__link">
         
   
   
@@ -1433,7 +1566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ci-cd/docker/" class="md-nav__link">
+      <a href="../../ci-cd/docker/" class="md-nav__link">
         
   
   
@@ -1456,7 +1589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ci-cd/kubernetes/" class="md-nav__link">
+      <a href="../../ci-cd/kubernetes/" class="md-nav__link">
         
   
   
@@ -1479,7 +1612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ci-cd/jenkins/" class="md-nav__link">
+      <a href="../../ci-cd/jenkins/" class="md-nav__link">
         
   
   
@@ -1502,7 +1635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ci-cd/github-actions/" class="md-nav__link">
+      <a href="../../ci-cd/github-actions/" class="md-nav__link">
         
   
   
@@ -1525,7 +1658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ci-cd/gitlab-ci/" class="md-nav__link">
+      <a href="../../ci-cd/gitlab-ci/" class="md-nav__link">
         
   
   
@@ -1548,7 +1681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ci-cd/ansible/" class="md-nav__link">
+      <a href="../../ci-cd/ansible/" class="md-nav__link">
         
   
   
@@ -1571,7 +1704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ci-cd/terraform/" class="md-nav__link">
+      <a href="../../ci-cd/terraform/" class="md-nav__link">
         
   
   
@@ -1594,7 +1727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ci-cd/puppet/" class="md-nav__link">
+      <a href="../../ci-cd/puppet/" class="md-nav__link">
         
   
   
@@ -1662,7 +1795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../itil-itsm/hpsm/" class="md-nav__link">
+      <a href="../../itil-itsm/hpsm/" class="md-nav__link">
         
   
   
@@ -1730,7 +1863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sql/queries/" class="md-nav__link">
+      <a href="../../sql/queries/" class="md-nav__link">
         
   
   
@@ -1770,6 +1903,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1778,134 +1913,263 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      🌐 Настройка сети в Linux
+      1. Описание
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🌐 Настройка сети в Linux">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-apache2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Установка Apache2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Установка Apache2">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Обновление системы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-apache2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Установка Apache2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Проверка статуса
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Базовая настройка
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Базовая настройка">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-apache2" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Структура директорий Apache2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Перезагрузка и перезапуск
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Настройка виртуального хоста
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Настройка виртуального хоста">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Создание директории сайта
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Создание конфигурации
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Активация сайта
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Работа с модулями
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Работа с модулями">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Включение/отключение модулей
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-ufw" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Настройка брандмауэра (UFW)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-ssltls-lets-encrypt" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Настройка SSL/TLS с Let’s Encrypt
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Настройка SSL/TLS с Let’s Encrypt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-certbot" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Установка Certbot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Получение сертификата
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Автоматическое обновление сертификатов
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Логирование и диагностика
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Логирование и диагностика">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 Логи
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2 Анализ ошибок
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Полезные команды
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Безопасность
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      📡 Проверка подключения
+      📎 Приложения
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ip-" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ Настройка IP-адреса
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🛠️ Настройка IP-адреса">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ip" class="md-nav__link">
-    <span class="md-ellipsis">
-      Временная настройка (через ip):
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Постоянная настройка зависит от дистрибутива:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Постоянная настройка зависит от дистрибутива:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ubuntu-netplan" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ubuntu (netplan):
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#debianred-hat" class="md-nav__link">
-    <span class="md-ellipsis">
-      Debian/Red Hat:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔌 Управление сервисами сети
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔍 Брандмауэр
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔍 Брандмауэр">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ufw" class="md-nav__link">
-    <span class="md-ellipsis">
-      UFW (упрощённый брандмауэр):
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#firewalld-fedoracentos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Firewalld (в Fedora/CentOS):
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      📎 Полезные ссылки
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1925,68 +2189,162 @@
 
 
 
-  <h1>Настройка сети в Linux</h1>
-
-<h2 id="linux">🌐 Настройка сети в Linux</h2>
-<p>Linux предоставляет мощные инструменты для управления сетью как через GUI, так и через терминал.</p>
+<h1 id="apache2">📄 Apache2</h1>
+<h2 id="1">1. Описание</h2>
+<p>Apache HTTP Server (или просто Apache) — это мощный, гибкий и широко используемый веб-сервер с открытым исходным кодом. В данном документе описаны основные шаги по установке, настройке и управлению Apache2 на операционной системе Ubuntu/Debian.</p>
 <hr />
-<h3 id="_1">📡 Проверка подключения</h3>
-<pre><code class="language-bash">ping google.com       # Проверить соединение
-ip a                  # Посмотреть IP-адреса
-hostname              # Посмотреть имя хоста
-nslookup example.com  # Проверить DNS
-dig example.com       # Расширенная информация о домене
+<h2 id="2-apache2">2. Установка Apache2</h2>
+<h3 id="21">2.1 Обновление системы</h3>
+<pre><code class="language-bash">sudo apt update &amp;&amp; sudo apt upgrade -y
 </code></pre>
+<h3 id="22-apache2">2.2 Установка Apache2</h3>
+<pre><code class="language-bash">sudo apt install apache2 -y
+</code></pre>
+<h3 id="23">2.3 Проверка статуса</h3>
+<pre><code class="language-bash">sudo systemctl status apache2
+</code></pre>
+<p>Если сервис работает, вы увидите статус <code>active (running)</code>.</p>
 <hr />
-<h3 id="ip-">🛠️ Настройка IP-адреса</h3>
-<h4 id="ip">Временная настройка (через <code>ip</code>):</h4>
-<pre><code class="language-bash">sudo ip addr add 192.168.1.100/24 dev eth0
-sudo ip link set eth0 up
-</code></pre>
-<h4 id="_2">Постоянная настройка зависит от дистрибутива:</h4>
-<h5 id="ubuntu-netplan">Ubuntu (netplan):</h5>
-<p>Файл: <code>/etc/netplan/*.yaml</code></p>
-<pre><code class="language-yaml">network:
-  version: 2
-  renderer: networkd
-  ethernets:
-    enp0s3:
-      addresses:
-        - 192.168.1.100/24
-      gateway4: 192.168.1.1
-      nameservers:
-        addresses:
-          - 8.8.8.8
-          - 8.8.4.4
-</code></pre>
-<p>Применить:</p>
-<pre><code class="language-bash">sudo netplan apply
-</code></pre>
-<h5 id="debianred-hat">Debian/Red Hat:</h5>
-<p>Файл: <code>/etc/network/interfaces</code> или <code>/etc/sysconfig/network-scripts/ifcfg-&lt;интерфейс&gt;</code></p>
-<hr />
-<h3 id="_3">🔌 Управление сервисами сети</h3>
-<pre><code class="language-bash">systemctl status networking   # Debian/Ubuntu
-systemctl status NetworkManager  # Если используется
-</code></pre>
-<hr />
-<h3 id="_4">🔍 Брандмауэр</h3>
-<h4 id="ufw">UFW (упрощённый брандмауэр):</h4>
-<pre><code class="language-bash">sudo ufw status
-sudo ufw allow 80/tcp         # Разрешить HTTP
-sudo ufw deny from 192.168.1.100  # Заблокировать IP
-</code></pre>
-<h4 id="firewalld-fedoracentos">Firewalld (в Fedora/CentOS):</h4>
-<pre><code class="language-bash">firewall-cmd --list-all
-firewall-cmd --add-port=22/tcp --permanent
-firewall-cmd --reload
-</code></pre>
-<hr />
-<h3 id="_5">📎 Полезные ссылки</h3>
+<h2 id="3">3. Базовая настройка</h2>
+<h3 id="31-apache2">3.1 Структура директорий Apache2</h3>
 <ul>
-<li><a href="https://linux.die.net/man/8/ip">Linux Networking Commands</a></li>
-<li><a href="https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-ubuntu-20-04">UFW Essentials</a></li>
-<li><a href="https://netplan.io/">Netplan.io documentation</a></li>
+<li><strong>/var/www/html</strong> — корневая директория сайта по умолчанию.</li>
+<li><strong>/etc/apache2/apache2.conf</strong> — главный конфигурационный файл.</li>
+<li><strong>/etc/apache2/sites-available/</strong> — конфигурации виртуальных хостов.</li>
+<li><strong>/etc/apache2/sites-enabled/</strong> — активированные сайты.</li>
+<li><strong>/etc/apache2/mods-available/</strong> — доступные модули.</li>
+<li><strong>/etc/apache2/mods-enabled/</strong> — активные модули.</li>
+<li><strong>/var/log/apache2/</strong> — логи сервера (<code>access.log</code>, <code>error.log</code>).</li>
+</ul>
+<h3 id="32">3.2 Перезагрузка и перезапуск</h3>
+<pre><code class="language-bash">sudo systemctl reload apache2
+sudo systemctl restart apache2
+</code></pre>
+<hr />
+<h2 id="4">4. Настройка виртуального хоста</h2>
+<h3 id="41">4.1 Создание директории сайта</h3>
+<pre><code class="language-bash">sudo mkdir -p /var/www/example.com/public_html
+</code></pre>
+<h3 id="42">4.2 Создание конфигурации</h3>
+<p>Создайте файл:</p>
+<pre><code class="language-bash">sudo nano /etc/apache2/sites-available/example.com.conf
+</code></pre>
+<p>Пример содержимого:</p>
+<pre><code class="language-apache">&lt;VirtualHost *:80&gt;
+    ServerAdmin admin@example.com
+    ServerName example.com
+    ServerAlias www.example.com
+    DocumentRoot /var/www/example.com/public_html
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+&lt;/VirtualHost&gt;
+</code></pre>
+<h3 id="43">4.3 Активация сайта</h3>
+<pre><code class="language-bash">sudo a2ensite example.com.conf
+sudo systemctl reload apache2
+</code></pre>
+<hr />
+<h2 id="5">5. Работа с модулями</h2>
+<p>Apache поддерживает модульную архитектуру. Некоторые популярные модули:</p>
+<ul>
+<li><code>mod_rewrite</code> — ЧПУ</li>
+<li><code>mod_ssl</code> — HTTPS</li>
+<li><code>mod_headers</code>, <code>mod_expires</code> — кэширование</li>
+<li><code>mod_deflate</code> — сжатие</li>
+</ul>
+<h3 id="51">5.1 Включение/отключение модулей</h3>
+<pre><code class="language-bash">sudo a2enmod rewrite headers deflate ssl
+sudo a2dismod ssl
+sudo systemctl restart apache2
+</code></pre>
+<hr />
+<h2 id="6-ufw">6. Настройка брандмауэра (UFW)</h2>
+<p>Разрешить доступ через порты 80 и 443:</p>
+<pre><code class="language-bash">sudo ufw allow 'Apache Full'
+</code></pre>
+<p>Проверить:</p>
+<pre><code class="language-bash">sudo ufw status
+</code></pre>
+<hr />
+<h2 id="7-ssltls-lets-encrypt">7. Настройка SSL/TLS с Let’s Encrypt</h2>
+<h3 id="71-certbot">7.1 Установка Certbot</h3>
+<pre><code class="language-bash">sudo apt install certbot python3-certbot-apache
+</code></pre>
+<h3 id="72">7.2 Получение сертификата</h3>
+<pre><code class="language-bash">sudo certbot --apache -d example.com -d www.example.com
+</code></pre>
+<p>Certbot автоматически обновит конфигурацию Apache для HTTPS.</p>
+<h3 id="73">7.3 Автоматическое обновление сертификатов</h3>
+<pre><code class="language-bash">sudo systemctl status certbot.timer
+</code></pre>
+<hr />
+<h2 id="8">8. Логирование и диагностика</h2>
+<h3 id="81">8.1 Логи</h3>
+<ul>
+<li><strong>Access log</strong>: <code>/var/log/apache2/access.log</code></li>
+<li><strong>Error log</strong>: <code>/var/log/apache2/error.log</code></li>
+</ul>
+<h3 id="82">8.2 Анализ ошибок</h3>
+<pre><code class="language-bash">tail -f /var/log/apache2/error.log
+</code></pre>
+<hr />
+<h2 id="9">9. Полезные команды</h2>
+<table>
+<thead>
+<tr>
+<th>Команда</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sudo systemctl status apache2</code></td>
+<td>Проверка статуса сервера</td>
+</tr>
+<tr>
+<td><code>sudo apachectl configtest</code></td>
+<td>Проверка конфигурации</td>
+</tr>
+<tr>
+<td><code>sudo a2ensite example.com</code></td>
+<td>Активировать сайт</td>
+</tr>
+<tr>
+<td><code>sudo a2dissite example.com</code></td>
+<td>Деактивировать сайт</td>
+</tr>
+<tr>
+<td><code>sudo a2enmod ssl</code></td>
+<td>Включить модуль</td>
+</tr>
+<tr>
+<td><code>sudo a2dismod ssl</code></td>
+<td>Выключить модуль</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="10">10. Безопасность</h2>
+<ul>
+<li>Отключите тестовую страницу Apache:<br />
+<code>bash
+  sudo rm /var/www/html/index.html</code></li>
+<li>Используйте <code>.htaccess</code> для защиты каталогов паролем:
+  <code>bash
+  sudo htpasswd -c /path/.htpasswd username</code></li>
+</ul>
+<p>Пример использования в <code>.htaccess</code>:</p>
+<pre><code class="language-apache">AuthType Basic
+AuthName &quot;Restricted Content&quot;
+AuthUserFile /path/.htpasswd
+Require valid-user
+</code></pre>
+<hr />
+<h2 id="_1">📎 Приложения</h2>
+<ul>
+<li><a href="https://httpd.apache.org/docs/">Документация Apache</a></li>
+<li><a href="https://certbot.eff.org/">Let's Encrypt + Certbot</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-20-04">Статья по виртуальным хостам</a></li>
 </ul>
 
 
@@ -2036,10 +2394,10 @@ firewall-cmd --reload
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>

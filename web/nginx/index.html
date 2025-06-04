@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../docker/">
+        <link rel="prev" href="../gubinnet/">
       
       
-        <link rel="next" href="../jenkins/">
+        <link rel="next" href="../../programming/languages/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Kubernetes - ИТ вики</title>
+        <title>Nginx - ИТ вики</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kubernetes-k8s" class="md-skip">
+        <a href="#nginx" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Kubernetes
+              Nginx
             
           </span>
         </div>
@@ -237,18 +237,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -264,7 +266,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Веб-серверы
@@ -278,7 +280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../web/apache2/" class="md-nav__link">
+      <a href="../apache2/" class="md-nav__link">
         
   
   
@@ -301,7 +303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../web/apache-tomcat/" class="md-nav__link">
+      <a href="../apache-tomcat/" class="md-nav__link">
         
   
   
@@ -324,7 +326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../web/caddy/" class="md-nav__link">
+      <a href="../caddy/" class="md-nav__link">
         
   
   
@@ -347,7 +349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../web/gubinnet/" class="md-nav__link">
+      <a href="../gubinnet/" class="md-nav__link">
         
   
   
@@ -367,10 +369,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../web/nginx/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Nginx
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -381,6 +405,347 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Описание
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Установка Nginx
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Установка Nginx">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-ubuntu-debian" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Ubuntu / Debian
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Проверка версии
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Управление сервисом
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Структура директорий Nginx
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Базовая конфигурация
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Базовая конфигурация">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Пример минимальной конфигурации сайта
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Полезные примеры конфигураций
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Полезные примеры конфигураций">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-reverse-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Reverse Proxy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-https" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Перенаправление на HTTPS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-ssltls-lets-encrypt" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 Поддержка SSL/TLS с Let's Encrypt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 Кэширование
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-lets-encrypt" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Получение сертификата Let’s Encrypt
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Получение сертификата Let’s Encrypt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-certbot" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Установка Certbot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Получение сертификата
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 Проверка автообновления
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Безопасность
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Безопасность">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Отключение баннера сервера
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Защита от сканирования
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Ограничение методов запроса
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Логирование и диагностика
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Логирование и диагностика">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 Логи
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2 Анализ логов
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Виртуальные хосты
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Команды управления
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Производительность и оптимизация
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Производительность и оптимизация">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-gzip" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.1 Gzip сжатие
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-keepalive" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.2 Использование keepalive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3 Буферизация
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      📎 Приложения
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1128,20 +1493,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -1157,7 +1520,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             DevOps & CI/CD
@@ -1171,7 +1534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kafka/" class="md-nav__link">
+      <a href="../../ci-cd/kafka/" class="md-nav__link">
         
   
   
@@ -1194,7 +1557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../skuf/" class="md-nav__link">
+      <a href="../../ci-cd/skuf/" class="md-nav__link">
         
   
   
@@ -1217,7 +1580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../swagger/" class="md-nav__link">
+      <a href="../../ci-cd/swagger/" class="md-nav__link">
         
   
   
@@ -1240,7 +1603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../postman/" class="md-nav__link">
+      <a href="../../ci-cd/postman/" class="md-nav__link">
         
   
   
@@ -1263,7 +1626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker/" class="md-nav__link">
+      <a href="../../ci-cd/docker/" class="md-nav__link">
         
   
   
@@ -1283,32 +1646,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Kubernetes
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../ci-cd/kubernetes/" class="md-nav__link">
         
   
   
@@ -1319,146 +1660,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Общие сведения
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Основные компоненты
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Основные компоненты">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Узлы кластера:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Основные понятия
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Примеры использования
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Примеры использования">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Пример Deployment:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#service" class="md-nav__link">
-    <span class="md-ellipsis">
-      Пример Service:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Основные команды:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-kubernetes" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Преимущества использования Kubernetes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Использование в проектах
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-kubernetes" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Альтернативы Kubernetes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. Интеграции
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1471,7 +1672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../jenkins/" class="md-nav__link">
+      <a href="../../ci-cd/jenkins/" class="md-nav__link">
         
   
   
@@ -1494,7 +1695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../github-actions/" class="md-nav__link">
+      <a href="../../ci-cd/github-actions/" class="md-nav__link">
         
   
   
@@ -1517,7 +1718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gitlab-ci/" class="md-nav__link">
+      <a href="../../ci-cd/gitlab-ci/" class="md-nav__link">
         
   
   
@@ -1540,7 +1741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ansible/" class="md-nav__link">
+      <a href="../../ci-cd/ansible/" class="md-nav__link">
         
   
   
@@ -1563,7 +1764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../terraform/" class="md-nav__link">
+      <a href="../../ci-cd/terraform/" class="md-nav__link">
         
   
   
@@ -1586,7 +1787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../puppet/" class="md-nav__link">
+      <a href="../../ci-cd/puppet/" class="md-nav__link">
         
   
   
@@ -1774,26 +1975,44 @@
         <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Общие сведения
+      1. Описание
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-nginx" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Основные компоненты
+      2. Установка Nginx
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Основные компоненты">
+    <nav class="md-nav" aria-label="2. Установка Nginx">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#21-ubuntu-debian" class="md-nav__link">
     <span class="md-ellipsis">
-      Узлы кластера:
+      2.1 Ubuntu / Debian
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Проверка версии
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Управление сервисом
     </span>
   </a>
   
@@ -1805,9 +2024,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-nginx" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Основные понятия
+      3. Структура директорий Nginx
     </span>
   </a>
   
@@ -1816,35 +2035,17 @@
         <li class="md-nav__item">
   <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Примеры использования
+      4. Базовая конфигурация
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4. Примеры использования">
+    <nav class="md-nav" aria-label="4. Базовая конфигурация">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#deployment" class="md-nav__link">
+  <a href="#41" class="md-nav__link">
     <span class="md-ellipsis">
-      Пример Deployment:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#service" class="md-nav__link">
-    <span class="md-ellipsis">
-      Пример Service:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Основные команды:
+      4.1 Пример минимальной конфигурации сайта
     </span>
   </a>
   
@@ -1856,36 +2057,237 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-kubernetes" class="md-nav__link">
+  <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Преимущества использования Kubernetes
+      5. Полезные примеры конфигураций
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Полезные примеры конфигураций">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-reverse-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Reverse Proxy
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#52-https" class="md-nav__link">
     <span class="md-ellipsis">
-      6. Использование в проектах
+      5.2 Перенаправление на HTTPS
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#7-kubernetes" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#53-ssltls-lets-encrypt" class="md-nav__link">
     <span class="md-ellipsis">
-      7. Альтернативы Kubernetes
+      5.3 Поддержка SSL/TLS с Let's Encrypt
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 Кэширование
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-lets-encrypt" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Получение сертификата Let’s Encrypt
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Получение сертификата Let’s Encrypt">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-certbot" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Установка Certbot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Получение сертификата
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 Проверка автообновления
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Безопасность
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Безопасность">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 Отключение баннера сервера
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 Защита от сканирования
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 Ограничение методов запроса
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#8" class="md-nav__link">
     <span class="md-ellipsis">
-      8. Интеграции
+      8. Логирование и диагностика
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Логирование и диагностика">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 Логи
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2 Анализ логов
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Виртуальные хосты
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Команды управления
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Производительность и оптимизация
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Производительность и оптимизация">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-gzip" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.1 Gzip сжатие
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-keepalive" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.2 Использование keepalive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3 Буферизация
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      📎 Приложения
     </span>
   </a>
   
@@ -1907,269 +2309,244 @@
 
 
 
-<h1 id="kubernetes-k8s">📘 <strong>Kubernetes (K8s)</strong></h1>
+<h1 id="nginx">📄 Nginx</h1>
+<h2 id="1">1. Описание</h2>
+<p>Nginx (произносится как "engine-x") — это высокопроизводительный веб-сервер и обратный прокси-сервер, разработанный с акцентом на стабильность, гибкость и низкое использование ресурсов. Он часто используется для обслуживания сайтов, раздачи статических файлов, организации reverse proxy для приложений (Node.js, Python, Java и т. д.), SSL/TLS, HTTP/2, балансировки нагрузки и других задач.</p>
 <hr />
-<h3 id="1">1. Общие сведения</h3>
-<p><strong>Наименование:</strong><br />
-Kubernetes (часто сокращают как K8s)</p>
-<p><strong>Описание:</strong><br />
-Kubernetes — это открытая платформа для автоматизации развертывания, масштабирования и управления контейнеризованными приложениями. Изначально разработан Google, сейчас поддерживается Cloud Native Computing Foundation (CNCF).</p>
-<p><strong>Тип системы:</strong><br />
-Система оркестрации контейнеров / Инструмент DevOps<br />
-<strong>Класс:</strong> Container Orchestration Platform</p>
-<p><strong>Разработчик:</strong><br />
-Google (первоначально), CNCF (с 2015 года)</p>
-<p><strong>Год выпуска:</strong><br />
-2014 год (официальный релиз)</p>
-<p><strong>Лицензия:</strong><br />
-Apache License 2.0 (open source)</p>
-<p><strong>Сайт:</strong> <a href="https://kubernetes.io">https://kubernetes.io</a></p>
+<h2 id="2-nginx">2. Установка Nginx</h2>
+<h3 id="21-ubuntu-debian">2.1 Ubuntu / Debian</h3>
+<pre><code class="language-bash">sudo apt update
+sudo apt install nginx -y
+</code></pre>
+<h3 id="22">2.2 Проверка версии</h3>
+<pre><code class="language-bash">nginx -v
+</code></pre>
+<h3 id="23">2.3 Управление сервисом</h3>
+<pre><code class="language-bash">sudo systemctl status nginx
+sudo systemctl start nginx
+sudo systemctl stop nginx
+sudo systemctl restart nginx
+sudo systemctl reload nginx   # после изменений конфига
+</code></pre>
 <hr />
-<h3 id="2">2. Основные компоненты</h3>
-<h4 id="_1">Узлы кластера:</h4>
+<h2 id="3-nginx">3. Структура директорий Nginx</h2>
 <table>
 <thead>
 <tr>
-<th>Компонент</th>
+<th>Путь</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/etc/nginx</code></td>
+<td>Основная директория конфигурации</td>
+</tr>
+<tr>
+<td><code>/etc/nginx/nginx.conf</code></td>
+<td>Главный конфигурационный файл</td>
+</tr>
+<tr>
+<td><code>/etc/nginx/sites-available</code></td>
+<td>Доступные виртуальные хосты</td>
+</tr>
+<tr>
+<td><code>/etc/nginx/sites-enabled</code></td>
+<td>Активированные виртуальные хосты</td>
+</tr>
+<tr>
+<td><code>/etc/nginx/conf.d</code></td>
+<td>Дополнительные конфиги</td>
+</tr>
+<tr>
+<td><code>/var/www/html</code></td>
+<td>Корневая папка сайта по умолчанию</td>
+</tr>
+<tr>
+<td><code>/var/log/nginx/access.log</code></td>
+<td>Лог запросов</td>
+</tr>
+<tr>
+<td><code>/var/log/nginx/error.log</code></td>
+<td>Лог ошибок</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4">4. Базовая конфигурация</h2>
+<h3 id="41">4.1 Пример минимальной конфигурации сайта</h3>
+<p>Создайте файл:</p>
+<pre><code class="language-bash">sudo nano /etc/nginx/sites-available/example.com
+</code></pre>
+<p>Пример содержимого:</p>
+<pre><code class="language-nginx">server {
+    listen 80;
+    server_name example.com www.example.com;
+
+    location / {
+        root /var/www/example.com;
+        index index.html;
+        try_files $uri $uri/ =404;
+    }
+}
+</code></pre>
+<p>Активируйте сайт:</p>
+<pre><code class="language-bash">sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
+sudo nginx -t &amp;&amp; sudo systemctl reload nginx
+</code></pre>
+<hr />
+<h2 id="5">5. Полезные примеры конфигураций</h2>
+<h3 id="51-reverse-proxy">5.1 Reverse Proxy</h3>
+<p>Для передачи запросов на backend-приложение (например, Node.js на порту 3000):</p>
+<pre><code class="language-nginx">location /api/ {
+    proxy_pass http://localhost:3000/;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+}
+</code></pre>
+<h3 id="52-https">5.2 Перенаправление на HTTPS</h3>
+<pre><code class="language-nginx">server {
+    listen 80;
+    server_name example.com;
+    return 301 https://$host$request_uri;
+}
+</code></pre>
+<h3 id="53-ssltls-lets-encrypt">5.3 Поддержка SSL/TLS с Let's Encrypt</h3>
+<pre><code class="language-nginx">server {
+    listen 443 ssl http2;
+    server_name example.com;
+
+    ssl_certificate /etc/letsencrypt/live/example.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;
+
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers HIGH:!aNULL:!MD5;
+
+    location / {
+        root /var/www/html;
+        index index.html;
+        try_files $uri $uri/ /index.html;
+    }
+}
+</code></pre>
+<h3 id="54">5.4 Кэширование</h3>
+<pre><code class="language-nginx">location ~ \.(jpg|jpeg|png|gif|ico|css|js)$ {
+    expires 30d;
+    add_header Cache-Control &quot;public, no-transform&quot;;
+}
+</code></pre>
+<hr />
+<h2 id="6-lets-encrypt">6. Получение сертификата Let’s Encrypt</h2>
+<h3 id="61-certbot">6.1 Установка Certbot</h3>
+<pre><code class="language-bash">sudo apt install certbot python3-certbot-nginx -y
+</code></pre>
+<h3 id="62">6.2 Получение сертификата</h3>
+<pre><code class="language-bash">sudo certbot --nginx -d example.com -d www.example.com
+</code></pre>
+<p>Certbot автоматически обновит ваш Nginx-конфиг и настроит автоматическое обновление сертификатов.</p>
+<h3 id="63">6.3 Проверка автообновления</h3>
+<pre><code class="language-bash">sudo systemctl status certbot.timer
+</code></pre>
+<hr />
+<h2 id="7">7. Безопасность</h2>
+<h3 id="71">7.1 Отключение баннера сервера</h3>
+<p>Добавьте в конфиг:</p>
+<pre><code class="language-nginx">server_tokens off;
+</code></pre>
+<h3 id="72">7.2 Защита от сканирования</h3>
+<pre><code class="language-nginx">if ($http_user_agent ~* (nmap|masscan|sqlmap|nessus)) {
+    return 403;
+}
+</code></pre>
+<h3 id="73">7.3 Ограничение методов запроса</h3>
+<pre><code class="language-nginx">if ($request_method !~ ^(GET|HEAD|POST)$ ) {
+    return 405;
+}
+</code></pre>
+<hr />
+<h2 id="8">8. Логирование и диагностика</h2>
+<h3 id="81">8.1 Логи</h3>
+<ul>
+<li><strong>Access log</strong>: <code>/var/log/nginx/access.log</code></li>
+<li><strong>Error log</strong>: <code>/var/log/nginx/error.log</code></li>
+</ul>
+<h3 id="82">8.2 Анализ логов</h3>
+<pre><code class="language-bash">tail -f /var/log/nginx/access.log
+</code></pre>
+<hr />
+<h2 id="9">9. Виртуальные хосты</h2>
+<p>Вы можете настроить несколько доменов на одном сервере:</p>
+<pre><code class="language-nginx">server {
+    listen 80;
+    server_name site1.com;
+    ...
+}
+
+server {
+    listen 80;
+    server_name site2.org;
+    ...
+}
+</code></pre>
+<hr />
+<h2 id="10">10. Команды управления</h2>
+<table>
+<thead>
+<tr>
+<th>Команда</th>
 <th>Описание</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Master Node (Control Plane)</strong></td>
-<td>Главный узел, управляющий всем кластером</td>
+<td><code>nginx -t</code></td>
+<td>Проверка конфигурации</td>
 </tr>
 <tr>
-<td><strong>etcd</strong></td>
-<td>Распределённое хранилище конфигураций и состояния кластера</td>
+<td><code>systemctl reload nginx</code></td>
+<td>Перезагрузка без остановки</td>
 </tr>
 <tr>
-<td><strong>API Server</strong></td>
-<td>Точка входа для всех операций с кластером</td>
+<td><code>systemctl restart nginx</code></td>
+<td>Полный перезапуск</td>
 </tr>
 <tr>
-<td><strong>Controller Manager</strong></td>
-<td>Контроллеры, следящие за текущим состоянием кластера</td>
+<td><code>journalctl -u nginx</code></td>
+<td>Посмотреть системные логи</td>
 </tr>
 <tr>
-<td><strong>Scheduler</strong></td>
-<td>Назначает Pod'ы на рабочие узлы</td>
-</tr>
-<tr>
-<td><strong>Worker Node</strong></td>
-<td>Рабочий узел, где запускаются контейнеры</td>
-</tr>
-<tr>
-<td><strong>kubelet</strong></td>
-<td>Агент на каждом Worker Node, взаимодействующий с API сервером</td>
-</tr>
-<tr>
-<td><strong>kube-proxy</strong></td>
-<td>Отвечает за сетевую связь между Pod'ами и сервисами</td>
-</tr>
-<tr>
-<td><strong>Container Runtime</strong></td>
-<td>Среда выполнения контейнеров (Docker, containerd, CRI-O и др.)</td>
+<td><code>nginx -s reload</code></td>
+<td>Ручная перезагрузка</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h3 id="3">3. Основные понятия</h3>
-<table>
-<thead>
-<tr>
-<th>Понятие</th>
-<th>Описание</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Pod</strong></td>
-<td>Наименьшая единица развёртывания; содержит один или несколько контейнеров</td>
-</tr>
-<tr>
-<td><strong>Deployment</strong></td>
-<td>Описывает желаемое состояние приложения (например, количество реплик)</td>
-</tr>
-<tr>
-<td><strong>Service</strong></td>
-<td>Предоставляет стабильный IP и DNS для доступа к Pod'ам</td>
-</tr>
-<tr>
-<td><strong>Namespace</strong></td>
-<td>Логическое разделение ресурсов внутри одного кластера</td>
-</tr>
-<tr>
-<td><strong>ConfigMap / Secret</strong></td>
-<td>Хранение конфигурационных данных и секретов соответственно</td>
-</tr>
-<tr>
-<td><strong>Persistent Volume (PV) / PVC</strong></td>
-<td>Механизм хранения данных вне контейнеров</td>
-</tr>
-<tr>
-<td><strong>Ingress</strong></td>
-<td>Входящие HTTP/HTTPS маршруты, обеспечивают внешний доступ к сервисам</td>
-</tr>
-<tr>
-<td><strong>Helm Chart</strong></td>
-<td>Упаковка приложений в виде шаблонов для удобного деплоя</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="4">4. Примеры использования</h3>
-<h4 id="deployment">Пример Deployment:</h4>
-<pre><code class="language-yaml">apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: nginx-deployment
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: nginx
-  template:
-    metadata:
-      labels:
-        app: nginx
-    spec:
-      containers:
-      - name: nginx
-        image: nginx:1.21
-        ports:
-        - containerPort: 80
+<h2 id="11">11. Производительность и оптимизация</h2>
+<h3 id="111-gzip">11.1 Gzip сжатие</h3>
+<pre><code class="language-nginx">gzip on;
+gzip_types text/plain application/xml text/css application/javascript;
+gzip_min_length 1024;
 </code></pre>
-<h4 id="service">Пример Service:</h4>
-<pre><code class="language-yaml">apiVersion: v1
-kind: Service
-metadata:
-  name: nginx-service
-spec:
-  selector:
-    app: nginx
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
+<h3 id="112-keepalive">11.2 Использование keepalive</h3>
+<pre><code class="language-nginx">upstream backend {
+    server 127.0.0.1:3000;
+    keepalive 32;
+}
 </code></pre>
-<h4 id="_2">Основные команды:</h4>
-<pre><code class="language-bash">kubectl get pods
-kubectl apply -f deployment.yaml
-kubectl describe pod &lt;pod-name&gt;
-kubectl config get-contexts
-kubectl delete pod &lt;pod-name&gt;
-helm install my-app ./my-chart
+<h3 id="113">11.3 Буферизация</h3>
+<pre><code class="language-nginx">client_body_buffer_size 10K;
+client_header_buffer_size 1k;
+client_max_body_size 20M;
+large_client_header_buffers 2 1k;
 </code></pre>
 <hr />
-<h3 id="5-kubernetes">5. Преимущества использования Kubernetes</h3>
-<p>✅ <strong>Автоматизация управления контейнерами</strong><br />
-✅ <strong>Масштабируемость</strong> – легко добавлять или уменьшать количество инстансов<br />
-✅ <strong>Высокая доступность</strong> – автоматический перезапуск неисправных контейнеров<br />
-✅ <strong>Поддержка микросервисных архитектур</strong><br />
-✅ <strong>Интеграция с CI/CD</strong> – легко внедряется в pipeline<br />
-✅ <strong>Поддержка облачных провайдеров</strong> – AWS EKS, Azure AKS, GCP GKE и др.<br />
-✅ <strong>Open Source</strong> – активное сообщество, множество плагинов и решений  </p>
-<hr />
-<h3 id="6">6. Использование в проектах</h3>
-<table>
-<thead>
-<tr>
-<th>Этап</th>
-<th>Возможности</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Разработка</strong></td>
-<td>Запуск тестовых сред локально (Minikube, Kind, Docker Desktop)</td>
-</tr>
-<tr>
-<td><strong>Тестирование</strong></td>
-<td>Быстрая проверка приложений в разных окружениях</td>
-</tr>
-<tr>
-<td><strong>Деплой</strong></td>
-<td>Автоматический запуск и обновление сервисов</td>
-</tr>
-<tr>
-<td><strong>CI/CD</strong></td>
-<td>Интеграция через ArgoCD, Flux, Jenkins X и другие инструменты</td>
-</tr>
-<tr>
-<td><strong>Продуктовые среды</strong></td>
-<td>Масштабируемый запуск приложений в продакшене</td>
-</tr>
-<tr>
-<td><strong>Обучение</strong></td>
-<td>Изучение DevOps-процессов, облачных технологий и микросервисов</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="7-kubernetes">7. Альтернативы Kubernetes</h3>
-<table>
-<thead>
-<tr>
-<th>Инструмент</th>
-<th>Особенности</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Docker Swarm</strong></td>
-<td>Встроенная оркестрация от Docker, проще, но менее функциональна</td>
-</tr>
-<tr>
-<td><strong>Nomad (HashiCorp)</strong></td>
-<td>Легковесная система оркестрации, подходит для гетерогенных нагрузок</td>
-</tr>
-<tr>
-<td><strong>Mesos / Marathon</strong></td>
-<td>Подходит для больших распределённых систем, но сложнее в освоении</td>
-</tr>
-<tr>
-<td><strong>OpenShift (Red Hat)</strong></td>
-<td>Энтерпрайз-решение на основе Kubernetes с дополнительными функциями безопасности и управления</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="8">8. Интеграции</h3>
-<table>
-<thead>
-<tr>
-<th>Интеграция</th>
-<th>Описание</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>CI/CD (Jenkins, GitLab CI, GitHub Actions)</strong></td>
-<td>Автоматизация деплоя в кластер</td>
-</tr>
-<tr>
-<td><strong>Helm</strong></td>
-<td>Управление пакетами и зависимостями</td>
-</tr>
-<tr>
-<td><strong>Prometheus / Grafana</strong></td>
-<td>Мониторинг и метрики</td>
-</tr>
-<tr>
-<td><strong>Istio / Linkerd</strong></td>
-<td>Сервис-меш для микросервисной коммуникации</td>
-</tr>
-<tr>
-<td><strong>ArgoCD / Flux</strong></td>
-<td>Инструменты GitOps для автоматического синхронизации кластера с кодом</td>
-</tr>
-<tr>
-<td><strong>Cloud Providers (AWS, Azure, GCP)</strong></td>
-<td>Полностью управляемые решения K8s</td>
-</tr>
-</tbody>
-</table>
+<h2 id="_1">📎 Приложения</h2>
+<ul>
+<li><a href="https://nginx.org/ru/docs/">Официальная документация Nginx</a></li>
+<li><a href="https://certbot.eff.org/">Let's Encrypt + Nginx</a></li>
+<li><a href="https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/">Nginx Cheat Sheet</a></li>
+</ul>
 
 
 
