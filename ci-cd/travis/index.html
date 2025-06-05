@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../teamcity/">
+        <link rel="prev" href="../jenkins/">
       
       
-        <link rel="next" href="../travis/">
+        <link rel="next" href="../circle/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Jenkins - ИТ вики</title>
+        <title>Travis CI - ИТ вики</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#jenkins" class="md-skip">
+        <a href="#travis-ci" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Jenkins
+              Travis CI
             
           </span>
         </div>
@@ -1323,6 +1323,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../jenkins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Jenkins
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1340,7 +1363,7 @@
   
   
   <span class="md-ellipsis">
-    Jenkins
+    Travis CI
     
   </span>
   
@@ -1353,7 +1376,7 @@
   
   
   <span class="md-ellipsis">
-    Jenkins
+    Travis CI
     
   </span>
   
@@ -1378,16 +1401,31 @@
         <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Общие сведения
+      1. Общее описание
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Общее описание">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Основные особенности:
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-travis-ci" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Основные компоненты
+      2. Архитектура Travis CI
     </span>
   </a>
   
@@ -1396,43 +1434,100 @@
         <li class="md-nav__item">
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Основные функции
+      3. Основные понятия
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-jenkinsfile-pipeline-as-code" class="md-nav__link">
+  <a href="#4-travis-ci" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Пример Jenkinsfile (Pipeline as Code)
+      4. Настройка Travis CI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Настройка Travis CI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Активация проекта
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#5-jenkins" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#42-travisyml" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Преимущества использования Jenkins
+      4.2 Файл .travis.yml
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Примеры конфигураций
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Примеры конфигураций">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Node.js проект
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#django" class="md-nav__link">
+    <span class="md-ellipsis">
+      Django проект
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Матричная сборка
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#6" class="md-nav__link">
     <span class="md-ellipsis">
-      6. Использование в проектах
+      6. Уведомления
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-jenkins" class="md-nav__link">
+  <a href="#7" class="md-nav__link">
     <span class="md-ellipsis">
-      7. Альтернативы Jenkins
+      7. Работа с приватными репозиториями
     </span>
   </a>
   
@@ -1441,7 +1536,25 @@
         <li class="md-nav__item">
   <a href="#8" class="md-nav__link">
     <span class="md-ellipsis">
-      8. Интеграции
+      8. Ограничения
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Полезные ссылки
     </span>
   </a>
   
@@ -1451,29 +1564,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../travis/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Travis CI
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -2211,16 +2301,31 @@
         <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Общие сведения
+      1. Общее описание
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Общее описание">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Основные особенности:
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-travis-ci" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Основные компоненты
+      2. Архитектура Travis CI
     </span>
   </a>
   
@@ -2229,43 +2334,100 @@
         <li class="md-nav__item">
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Основные функции
+      3. Основные понятия
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-jenkinsfile-pipeline-as-code" class="md-nav__link">
+  <a href="#4-travis-ci" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Пример Jenkinsfile (Pipeline as Code)
+      4. Настройка Travis CI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Настройка Travis CI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Активация проекта
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#5-jenkins" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#42-travisyml" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Преимущества использования Jenkins
+      4.2 Файл .travis.yml
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Примеры конфигураций
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Примеры конфигураций">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Node.js проект
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#django" class="md-nav__link">
+    <span class="md-ellipsis">
+      Django проект
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Матричная сборка
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#6" class="md-nav__link">
     <span class="md-ellipsis">
-      6. Использование в проектах
+      6. Уведомления
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-jenkins" class="md-nav__link">
+  <a href="#7" class="md-nav__link">
     <span class="md-ellipsis">
-      7. Альтернативы Jenkins
+      7. Работа с приватными репозиториями
     </span>
   </a>
   
@@ -2274,7 +2436,25 @@
         <li class="md-nav__item">
   <a href="#8" class="md-nav__link">
     <span class="md-ellipsis">
-      8. Интеграции
+      8. Ограничения
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Полезные ссылки
     </span>
   </a>
   
@@ -2296,25 +2476,19 @@
 
 
 
-<h1 id="jenkins">📘 <strong>Jenkins</strong></h1>
+<h1 id="travis-ci">📄 Travis CI</h1>
+<h2 id="1">1. Общее описание</h2>
+<p><strong>Travis CI</strong> — это сервис непрерывной интеграции (Continuous Integration), который автоматически запускает тесты и сборку при пуше кода в репозиторий. Поддерживает GitHub как основную платформу.</p>
+<h3 id="_1">Основные особенности:</h3>
+<ul>
+<li>Интеграция с GitHub.</li>
+<li>Автоматический запуск билдов на основе <code>.travis.yml</code>.</li>
+<li>Поддержка множества языков программирования.</li>
+<li>Бесплатный тарифный план для open-source проектов.</li>
+<li>Возможность использования собственных (custom) виртуальных машин или Docker-образов.</li>
+</ul>
 <hr />
-<h3 id="1">1. Общие сведения</h3>
-<p><strong>Наименование:</strong><br />
-Jenkins</p>
-<p><strong>Описание:</strong><br />
-Jenkins — это открытая платформа для автоматизации процессов CI/CD (непрерывной интеграции и непрерывной доставки). Позволяет автоматизировать сборку, тестирование и развертывание приложений, что делает процесс разработки более быстрым и надежным.</p>
-<p><strong>Тип системы:</strong><br />
-Система автоматизации / Сервер непрерывной интеграции<br />
-<strong>Класс:</strong> CI/CD Tool</p>
-<p><strong>Разработчик:</strong><br />
-Kohsuke Kawaguchi (в рамках проекта Hudson от Sun Microsystems)</p>
-<p><strong>Год выпуска:</strong><br />
-2004 год (как Hudson), 2011 год (как Jenkins после форка)</p>
-<p><strong>Лицензия:</strong><br />
-MIT License (open source)</p>
-<p><strong>Сайт:</strong> <a href="https://www.jenkins.io">https://www.jenkins.io</a></p>
-<hr />
-<h3 id="2">2. Основные компоненты</h3>
+<h2 id="2-travis-ci">2. Архитектура Travis CI</h2>
 <table>
 <thead>
 <tr>
@@ -2324,237 +2498,212 @@ MIT License (open source)</p>
 </thead>
 <tbody>
 <tr>
-<td><strong>Jenkins Master</strong></td>
-<td>Основной сервер, управляющий задачами, плагинами и агентами</td>
+<td><strong>GitHub Repository</strong></td>
+<td>Источник кода, из которого запускается билд.</td>
 </tr>
 <tr>
-<td><strong>Jenkins Agent (ранее Slave)</strong></td>
-<td>Удалённый или локальный рабочий узел, на котором выполняются задачи</td>
+<td><strong>.travis.yml</strong></td>
+<td>YAML-файл в корне проекта, определяющий этапы билда.</td>
 </tr>
 <tr>
-<td><strong>Pipeline</strong></td>
-<td>Описание этапов сборки, тестирования и деплоя в виде кода (Jenkinsfile)</td>
+<td><strong>Build Environment</strong></td>
+<td>Виртуальная машина или контейнер, где выполняются команды.</td>
 </tr>
 <tr>
-<td><strong>Jobs / Tasks</strong></td>
-<td>Задачи, которые Jenkins может выполнять: сборка, запуск тестов, скрипты и т.д.</td>
+<td><strong>Job</strong></td>
+<td>Отдельное выполнение одного этапа билда.</td>
 </tr>
 <tr>
-<td><strong>Plugins</strong></td>
-<td>Модули расширения функционала (более 1800 официальных и community-плагинов)</td>
+<td><strong>Build</strong></td>
+<td>Группа связанных job'ов, запущенных вместе.</td>
 </tr>
 <tr>
-<td><strong>Build History</strong></td>
-<td>Архив выполненных сборок с возможностью просмотра логов и повторного запуска</td>
+<td><strong>Matrix Build</strong></td>
+<td>Запуск нескольких конфигураций билдов одновременно (например, разные версии Python).</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h3 id="3">3. Основные функции</h3>
+<h2 id="3">3. Основные понятия</h2>
 <table>
 <thead>
 <tr>
-<th>Функция</th>
-<th>Описание</th>
+<th>Термин</th>
+<th>Определение</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Автоматизация сборки проекта</strong></td>
-<td>Поддерживает Java, Python, .NET, Node.js и другие языки</td>
+<td><strong>Build</strong></td>
+<td>Процесс выполнения всех указанных шагов в <code>.travis.yml</code>.</td>
 </tr>
 <tr>
-<td><strong>Интеграция с Git</strong></td>
-<td>Автоматический запуск билда при пуше в репозиторий</td>
+<td><strong>Job</strong></td>
+<td>Отдельная часть билда, например, одна комбинация среды в матрице.</td>
 </tr>
 <tr>
-<td><strong>Непрерывная интеграция (CI)</strong></td>
-<td>Тестирование изменений перед объединением в основную ветку</td>
+<td><strong>Stage</strong></td>
+<td>Логическая группа шагов (например: <code>install</code>, <code>test</code>, <code>deploy</code>).</td>
 </tr>
 <tr>
-<td><strong>Непрерывная доставка / развертывание (CD)</strong></td>
-<td>Автоматическое или полуавтоматическое развёртывание на тестовые и боевые среды</td>
+<td><strong>Environment Variables</strong></td>
+<td>Переменные окружения, доступные во время билда.</td>
 </tr>
 <tr>
-<td><strong>Многоплатформенность</strong></td>
-<td>Работает на Windows, Linux, macOS</td>
+<td><strong>Build Matrix</strong></td>
+<td>Множество билдов, созданных на основе разных параметров.</td>
 </tr>
 <tr>
-<td><strong>Поддержка Docker и Kubernetes</strong></td>
-<td>Возможность запуска заданий в контейнерах и кластерах</td>
+<td><strong>Cache</strong></td>
+<td>Кэширование зависимостей между билдами для ускорения.</td>
 </tr>
 <tr>
-<td><strong>Веб-интерфейс</strong></td>
-<td>Удобное управление через браузер</td>
-</tr>
-<tr>
-<td><strong>Уведомления</strong></td>
-<td>Email, Slack, MS Teams и др. о результате выполнения задач</td>
+<td><strong>Services</strong></td>
+<td>Вспомогательные сервисы, которые можно запустить (PostgreSQL, MySQL, Redis и др.).</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h3 id="4-jenkinsfile-pipeline-as-code">4. Пример Jenkinsfile (Pipeline as Code)</h3>
-<pre><code class="language-groovy">pipeline {
-    agent any
-
-    stages {
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/your-repo.git'
-            }
-        }
-
-        stage('Build') {
-            steps {
-                sh 'make build'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                sh 'make test'
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                sh 'make deploy'
-            }
-        }
-    }
-
-    post {
-        success {
-            echo 'Build succeeded!'
-        }
-        failure {
-            echo 'Build failed!'
-        }
-    }
-}
+<h2 id="4-travis-ci">4. Настройка Travis CI</h2>
+<h3 id="41">4.1 Активация проекта</h3>
+<ol>
+<li>Зайти на <a href="https://travis-ci.com">https://travis-ci.com</a> (или <a href="https://travis-ci.org">https://travis-ci.org</a> для open-source).</li>
+<li>Авторизоваться через GitHub.</li>
+<li>Включить нужный репозиторий в списке проектов.</li>
+</ol>
+<h3 id="42-travisyml">4.2 Файл <code>.travis.yml</code></h3>
+<p>Это главный файл конфигурации Travis CI. Пример:</p>
+<pre><code class="language-yaml">language: python
+python:
+  - &quot;3.8&quot;
+  - &quot;3.9&quot;
+install:
+  - pip install -r requirements.txt
+script:
+  - python -m pytest
 </code></pre>
 <hr />
-<h3 id="5-jenkins">5. Преимущества использования Jenkins</h3>
-<p>✅ Открытый исходный код и активное сообщество<br />
-✅ Гибкая система плагинов — подходит под любые потребности<br />
-✅ Полная поддержка Pipeline-as-Code подхода<br />
-✅ Интеграция с Git, Docker, Kubernetes, Ansible и другими DevOps-инструментами<br />
-✅ Поддержка масштабирования и параллельного выполнения задач<br />
-✅ Бесплатный и легко настраиваемый<br />
-✅ Подходит как для маленьких стартапов, так и для крупных корпораций  </p>
+<h2 id="5">5. Примеры конфигураций</h2>
+<h3 id="nodejs">Node.js проект</h3>
+<pre><code class="language-yaml">language: node_js
+node_js:
+  - &quot;14&quot;
+  - &quot;16&quot;
+script:
+  - npm test
+</code></pre>
+<h3 id="django">Django проект</h3>
+<pre><code class="language-yaml">language: python
+python:
+  - &quot;3.9&quot;
+env:
+  - DATABASE_URL=postgres://user:password@localhost/mydb
+install:
+  - pip install -r requirements.txt
+  - pip install pytest
+script:
+  - python manage.py test
+</code></pre>
+<h3 id="_2">Матричная сборка</h3>
+<pre><code class="language-yaml">language: ruby
+rvm:
+  - 2.7
+  - 3.0
+env:
+  matrix:
+    - DB=mysql
+    - DB=postgres
+script:
+  - bundle exec rspec
+</code></pre>
 <hr />
-<h3 id="6">6. Использование в проектах</h3>
+<h2 id="6">6. Уведомления</h2>
+<p>Travis позволяет отправлять уведомления о статусе билда:</p>
+<pre><code class="language-yaml">notifications:
+  email:
+    - your@email.com
+  slack:
+    rooms:
+      secure: &quot;your_slack_token_here&quot;
+</code></pre>
+<p>Также поддерживаются:
+- IRC
+- Campfire
+- Webhooks
+- Telegram (через сторонние интеграции)</p>
+<hr />
+<h2 id="7">7. Работа с приватными репозиториями</h2>
+<p>Для приватных репозиториев:
+- Нужно использовать <code>travis-ci.com</code> (не <code>.org</code>).
+- Для шифрования данных используется утилита <code>travis</code>.</p>
+<p>Пример установки CLI:</p>
+<pre><code class="language-bash">gem install travis
+</code></pre>
+<p>Шифрование переменных:</p>
+<pre><code class="language-bash">travis encrypt MY_SECRET=password --add env.global
+</code></pre>
+<hr />
+<h2 id="8">8. Ограничения</h2>
 <table>
 <thead>
 <tr>
-<th>Этап</th>
-<th>Возможности</th>
+<th>Платформа</th>
+<th>Бесплатный тариф (open source)</th>
+<th>Платный тариф</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Разработка</strong></td>
-<td>Автоматическая сборка и проверка кода при каждом коммите</td>
+<td>travis-ci.org (устарел)</td>
+<td>✅</td>
+<td>❌</td>
 </tr>
 <tr>
-<td><strong>Тестирование</strong></td>
-<td>Запуск unit- и интеграционных тестов</td>
+<td>travis-ci.com</td>
+<td>❌ (требуется миграция)</td>
+<td>✅</td>
 </tr>
 <tr>
-<td><strong>Деплой</strong></td>
-<td>Автоматическое обновление тестовой, staging и production сред</td>
+<td>macOS / iOS билды</td>
+<td>✅</td>
+<td>✅</td>
 </tr>
 <tr>
-<td><strong>CI/CD pipeline</strong></td>
-<td>Полностью автоматизированный жизненный цикл разработки</td>
+<td>Windows билды</td>
+<td>❌</td>
+<td>✅ (ограничено)</td>
 </tr>
 <tr>
-<td><strong>Мониторинг и отчеты</strong></td>
-<td>Логи, метрики и уведомления об успехах или сбоях</td>
+<td>Время билда</td>
+<td>до 50 минут</td>
+<td>зависит от тарифа</td>
 </tr>
 <tr>
-<td><strong>Обучение</strong></td>
-<td>Отличный инструмент для изучения DevOps-процессов</td>
+<td>Параллельные билды</td>
+<td>ограничено</td>
+<td>да</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h3 id="7-jenkins">7. Альтернативы Jenkins</h3>
-<table>
-<thead>
-<tr>
-<th>Инструмент</th>
-<th>Особенности</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>GitLab CI/CD</strong></td>
-<td>Встроенный CI/CD в GitLab, удобен при использовании GitLab как VCS</td>
-</tr>
-<tr>
-<td><strong>GitHub Actions</strong></td>
-<td>Встроенное решение GitHub для автоматизации CI/CD</td>
-</tr>
-<tr>
-<td><strong>CircleCI</strong></td>
-<td>Облачный CI/CD с мощными возможностями параллелизма</td>
-</tr>
-<tr>
-<td><strong>Travis CI</strong></td>
-<td>Простой и легковесный облачный CI</td>
-</tr>
-<tr>
-<td><strong>Azure DevOps Pipelines</strong></td>
-<td>Microsoft-решение с мощной интеграцией в Azure</td>
-</tr>
-<tr>
-<td><strong>TeamCity (JetBrains)</strong></td>
-<td>Простой в освоении, особенно популярен среди Java-разработчиков</td>
-</tr>
-</tbody>
-</table>
+<h2 id="9-best-practices">9. Best Practices</h2>
+<ul>
+<li>Храните <code>.travis.yml</code> в репозитории.</li>
+<li>Используйте кэширование (<code>cache:</code>) для ускорения установки зависимостей.</li>
+<li>Разделяйте задачи на stages.</li>
+<li>Шифруйте чувствительные данные через <code>travis encrypt</code>.</li>
+<li>Используйте <code>before_install</code>, <code>install</code>, <code>before_script</code>, <code>script</code> логично.</li>
+<li>Следите за временем выполнения билдов.</li>
+</ul>
 <hr />
-<h3 id="8">8. Интеграции</h3>
-<table>
-<thead>
-<tr>
-<th>Интеграция</th>
-<th>Описание</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Git / GitHub / GitLab</strong></td>
-<td>Автоматический запуск пайплайнов по коммитам</td>
-</tr>
-<tr>
-<td><strong>Docker</strong></td>
-<td>Сборка и запуск контейнеров внутри пайплайна</td>
-</tr>
-<tr>
-<td><strong>Kubernetes</strong></td>
-<td>Интеграция через Kubernetes plugin и Helm</td>
-</tr>
-<tr>
-<td><strong>Ansible / Puppet / Chef</strong></td>
-<td>Автоматизация конфигураций и деплоя</td>
-</tr>
-<tr>
-<td><strong>SonarQube</strong></td>
-<td>Анализ качества кода</td>
-</tr>
-<tr>
-<td><strong>Prometheus / Grafana</strong></td>
-<td>Мониторинг метрик и состояния pipeline</td>
-</tr>
-<tr>
-<td><strong>Slack / MS Teams / Email</strong></td>
-<td>Уведомления о состоянии сборок</td>
-</tr>
-</tbody>
-</table>
+<h2 id="10">10. Полезные ссылки</h2>
+<ul>
+<li><a href="https://travis-ci.com/">Официальный сайт Travis CI</a></li>
+<li><a href="https://docs.travis-ci.com/">Документация Travis CI</a></li>
+<li><a href="https://config.travis-ci.com/ref/">Travis CI YML Reference</a></li>
+<li><a href="https://github.com/travis-ci/travis.rb">Travis CLI GitHub</a></li>
+<li><a href="https://docs.travis-ci.com/user/open-source-on-travis-ci-com/">Migrating from .org to .com</a></li>
+</ul>
 
 
 

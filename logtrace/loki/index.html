@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../teamcity/">
+        <link rel="prev" href="../splunk/">
       
       
-        <link rel="next" href="../travis/">
+        <link rel="next" href="../elk/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Jenkins - ИТ вики</title>
+        <title>Loki - ИТ вики</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#jenkins" class="md-skip">
+        <a href="#grafana-loki" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Jenkins
+              Loki
             
           </span>
         </div>
@@ -1193,7 +1193,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../skuf/" class="md-nav__link">
+      <a href="../../ci-cd/skuf/" class="md-nav__link">
         
   
   
@@ -1260,20 +1260,18 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_1" >
         
           
           <label class="md-nav__link" for="__nav_9_1" id="__nav_9_1_label" tabindex="0">
@@ -1289,7 +1287,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9_1">
             <span class="md-nav__icon md-icon"></span>
             Инструменты CI/CD
@@ -1303,7 +1301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../teamcity/" class="md-nav__link">
+      <a href="../../ci-cd/teamcity/" class="md-nav__link">
         
   
   
@@ -1323,32 +1321,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Jenkins
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../ci-cd/jenkins/" class="md-nav__link">
         
   
   
@@ -1359,98 +1335,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Общие сведения
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Основные компоненты
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Основные функции
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-jenkinsfile-pipeline-as-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Пример Jenkinsfile (Pipeline as Code)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-jenkins" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Преимущества использования Jenkins
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Использование в проектах
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-jenkins" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Альтернативы Jenkins
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. Интеграции
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1463,7 +1347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../travis/" class="md-nav__link">
+      <a href="../../ci-cd/travis/" class="md-nav__link">
         
   
   
@@ -1486,7 +1370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../circle/" class="md-nav__link">
+      <a href="../../ci-cd/circle/" class="md-nav__link">
         
   
   
@@ -1509,7 +1393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kafka/" class="md-nav__link">
+      <a href="../../ci-cd/kafka/" class="md-nav__link">
         
   
   
@@ -1532,7 +1416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../swagger/" class="md-nav__link">
+      <a href="../../ci-cd/swagger/" class="md-nav__link">
         
   
   
@@ -1555,7 +1439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../postman/" class="md-nav__link">
+      <a href="../../ci-cd/postman/" class="md-nav__link">
         
   
   
@@ -1624,7 +1508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker/" class="md-nav__link">
+      <a href="../../ci-cd/docker/" class="md-nav__link">
         
   
   
@@ -1647,7 +1531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kubernetes/" class="md-nav__link">
+      <a href="../../ci-cd/kubernetes/" class="md-nav__link">
         
   
   
@@ -1678,7 +1562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../github-actions/" class="md-nav__link">
+      <a href="../../ci-cd/github-actions/" class="md-nav__link">
         
   
   
@@ -1701,7 +1585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gitlab-ci/" class="md-nav__link">
+      <a href="../../ci-cd/gitlab-ci/" class="md-nav__link">
         
   
   
@@ -1724,7 +1608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../terraform/" class="md-nav__link">
+      <a href="../../ci-cd/terraform/" class="md-nav__link">
         
   
   
@@ -1785,7 +1669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ansible/" class="md-nav__link">
+      <a href="../../ci-cd/ansible/" class="md-nav__link">
         
   
   
@@ -1808,7 +1692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../puppet/" class="md-nav__link">
+      <a href="../../ci-cd/puppet/" class="md-nav__link">
         
   
   
@@ -1831,7 +1715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../chef/" class="md-nav__link">
+      <a href="../../ci-cd/chef/" class="md-nav__link">
         
   
   
@@ -1862,7 +1746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../drone/" class="md-nav__link">
+      <a href="../../ci-cd/drone/" class="md-nav__link">
         
   
   
@@ -1882,18 +1766,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_8" checked>
         
           
           <label class="md-nav__link" for="__nav_9_8" id="__nav_9_8_label" tabindex="0">
@@ -1909,7 +1795,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9_8">
             <span class="md-nav__icon md-icon"></span>
             Управление логами
@@ -1923,7 +1809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../logtrace/papertrail/" class="md-nav__link">
+      <a href="../papertrail/" class="md-nav__link">
         
   
   
@@ -1946,7 +1832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../logtrace/splunk/" class="md-nav__link">
+      <a href="../splunk/" class="md-nav__link">
         
   
   
@@ -1966,10 +1852,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../logtrace/loki/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Loki
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1980,6 +1888,275 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Описание сервиса
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Описание сервиса">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Основные компоненты:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-loki" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Установка Loki
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Установка Loki">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Установка через Docker (простой способ)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1. Установка через Docker (простой способ)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configloki-local-configyaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Конфигурационный файл ./config/loki-local-config.yaml:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promtail-configpromtail-configyaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Конфигурация Promtail (./config/promtail-config.yaml):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-grafana" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Интеграция с Grafana
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Интеграция с Grafana">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Шаги:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-logql" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Язык запросов LogQL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Язык запросов LogQL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Примеры:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Примеры:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Фильтрация по метке:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Поиск по содержимому:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Исключение:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      С ограничением времени:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Агрегация:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Комбинирование:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Расширенная настройка
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Расширенная настройка">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1. Метки (Labels)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-json-" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2. Парсинг JSON-логов
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Работа с Kubernetes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Безопасность
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Хранение данных
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Полезные ссылки
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1992,7 +2169,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../logtrace/elk/" class="md-nav__link">
+      <a href="../elk/" class="md-nav__link">
         
   
   
@@ -2015,7 +2192,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../logtrace/graylog/" class="md-nav__link">
+      <a href="../graylog/" class="md-nav__link">
         
   
   
@@ -2211,61 +2388,229 @@
         <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Общие сведения
+      1. Описание сервиса
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Описание сервиса">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Основные компоненты:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-loki" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Установка Loki
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Установка Loki">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Установка через Docker (простой способ)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1. Установка через Docker (простой способ)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configloki-local-configyaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Конфигурационный файл ./config/loki-local-config.yaml:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#promtail-configpromtail-configyaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Конфигурация Promtail (./config/promtail-config.yaml):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-grafana" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Интеграция с Grafana
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Интеграция с Grafana">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Шаги:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-logql" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Язык запросов LogQL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Язык запросов LogQL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Примеры:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Примеры:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Фильтрация по метке:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Поиск по содержимому:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Исключение:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      С ограничением времени:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Агрегация:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Комбинирование:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Расширенная настройка
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Расширенная настройка">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1. Метки (Labels)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-json-" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2. Парсинг JSON-логов
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Работа с Kubernetes
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#7" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Основные компоненты
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Основные функции
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-jenkinsfile-pipeline-as-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Пример Jenkinsfile (Pipeline as Code)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-jenkins" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Преимущества использования Jenkins
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Использование в проектах
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-jenkins" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Альтернативы Jenkins
+      7. Безопасность
     </span>
   </a>
   
@@ -2274,7 +2619,16 @@
         <li class="md-nav__item">
   <a href="#8" class="md-nav__link">
     <span class="md-ellipsis">
-      8. Интеграции
+      8. Хранение данных
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Полезные ссылки
     </span>
   </a>
   
@@ -2296,265 +2650,187 @@
 
 
 
-<h1 id="jenkins">📘 <strong>Jenkins</strong></h1>
+<h1 id="grafana-loki">📄 Использование Grafana Loki</h1>
+<h2 id="1">1. Описание сервиса</h2>
+<p><strong>Loki</strong> — это горизонтально масштабируемая, многопользовательская система логирования с низкими требованиями к ресурсам. В отличие от других решений (например, ELK), Loki не индексирует сами логи, а только метаданные (labels), что делает его очень эффективным в использовании памяти и дискового пространства.</p>
+<h3 id="_1">Основные компоненты:</h3>
+<ul>
+<li><strong>Promtail</strong> — агент для сбора логов и отправки их в Loki</li>
+<li><strong>Loki</strong> — сервер, который хранит и обрабатывает логи</li>
+<li><strong>Grafana</strong> — интерфейс для просмотра и анализа логов</li>
+</ul>
 <hr />
-<h3 id="1">1. Общие сведения</h3>
-<p><strong>Наименование:</strong><br />
-Jenkins</p>
-<p><strong>Описание:</strong><br />
-Jenkins — это открытая платформа для автоматизации процессов CI/CD (непрерывной интеграции и непрерывной доставки). Позволяет автоматизировать сборку, тестирование и развертывание приложений, что делает процесс разработки более быстрым и надежным.</p>
-<p><strong>Тип системы:</strong><br />
-Система автоматизации / Сервер непрерывной интеграции<br />
-<strong>Класс:</strong> CI/CD Tool</p>
-<p><strong>Разработчик:</strong><br />
-Kohsuke Kawaguchi (в рамках проекта Hudson от Sun Microsystems)</p>
-<p><strong>Год выпуска:</strong><br />
-2004 год (как Hudson), 2011 год (как Jenkins после форка)</p>
-<p><strong>Лицензия:</strong><br />
-MIT License (open source)</p>
-<p><strong>Сайт:</strong> <a href="https://www.jenkins.io">https://www.jenkins.io</a></p>
+<h2 id="2-loki">2. Установка Loki</h2>
+<h3 id="21-docker">2.1. Установка через Docker (простой способ)</h3>
+<p>Создайте <code>docker-compose.yml</code>:</p>
+<pre><code class="language-yaml">version: '3'
+
+services:
+  loki:
+    image: grafana/loki:latest
+    ports:
+      - &quot;3100:3100&quot;
+    command: -config.expand-env
+    environment:
+      - LOKI_ADDR=:3100
+    volumes:
+      - ./config/loki-local-config.yaml:/etc/loki/local-config.yaml
+    networks:
+      - loki
+
+  promtail:
+    image: grafana/promtail:latest
+    volumes:
+      - ./config:/etc/promtail
+      - /var/log:/var/log
+    command: -config.expand-env
+    ports:
+      - &quot;1514:1514&quot;
+    networks:
+      - loki
+
+networks:
+  loki:
+</code></pre>
+<h4 id="configloki-local-configyaml">Конфигурационный файл <code>./config/loki-local-config.yaml</code>:</h4>
+<pre><code class="language-yaml">auth_enabled: false
+
+server:
+  http_listen_port: 3100
+
+storage_config:
+  boltdb_shipper:
+    active_index_directory: /loki/index
+    cache_location: /loki/cache
+    cache_retention_seconds: 3600
+    shared_store: filesystem
+
+schema_config:
+  configs:
+    - from: 2023-01-01
+      store: boltdb-shipper
+      object_store_id: filesystem
+      schema: v11
+      index:
+        prefix: index_
+        period: 24h
+
+ruler:
+  alertmanager_url: http://localhost:9093
+</code></pre>
+<h4 id="promtail-configpromtail-configyaml">Конфигурация Promtail (<code>./config/promtail-config.yaml</code>):</h4>
+<pre><code class="language-yaml">positions:
+  filename: /tmp/positions.yaml
+
+clients:
+  - url: http://loki:3100/loki/api/v1/push
+
+scrape_configs:
+  - job_name: system
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: varlogs
+          __path__: /var/log/*.log
+</code></pre>
+<p>Запуск:</p>
+<pre><code class="language-bash">docker-compose up -d
+</code></pre>
+<p>После этого Loki будет доступен на порту <code>3100</code>, а Grafana можно подключить отдельно.</p>
 <hr />
-<h3 id="2">2. Основные компоненты</h3>
-<table>
-<thead>
-<tr>
-<th>Компонент</th>
-<th>Описание</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Jenkins Master</strong></td>
-<td>Основной сервер, управляющий задачами, плагинами и агентами</td>
-</tr>
-<tr>
-<td><strong>Jenkins Agent (ранее Slave)</strong></td>
-<td>Удалённый или локальный рабочий узел, на котором выполняются задачи</td>
-</tr>
-<tr>
-<td><strong>Pipeline</strong></td>
-<td>Описание этапов сборки, тестирования и деплоя в виде кода (Jenkinsfile)</td>
-</tr>
-<tr>
-<td><strong>Jobs / Tasks</strong></td>
-<td>Задачи, которые Jenkins может выполнять: сборка, запуск тестов, скрипты и т.д.</td>
-</tr>
-<tr>
-<td><strong>Plugins</strong></td>
-<td>Модули расширения функционала (более 1800 официальных и community-плагинов)</td>
-</tr>
-<tr>
-<td><strong>Build History</strong></td>
-<td>Архив выполненных сборок с возможностью просмотра логов и повторного запуска</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="3">3. Основные функции</h3>
-<table>
-<thead>
-<tr>
-<th>Функция</th>
-<th>Описание</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Автоматизация сборки проекта</strong></td>
-<td>Поддерживает Java, Python, .NET, Node.js и другие языки</td>
-</tr>
-<tr>
-<td><strong>Интеграция с Git</strong></td>
-<td>Автоматический запуск билда при пуше в репозиторий</td>
-</tr>
-<tr>
-<td><strong>Непрерывная интеграция (CI)</strong></td>
-<td>Тестирование изменений перед объединением в основную ветку</td>
-</tr>
-<tr>
-<td><strong>Непрерывная доставка / развертывание (CD)</strong></td>
-<td>Автоматическое или полуавтоматическое развёртывание на тестовые и боевые среды</td>
-</tr>
-<tr>
-<td><strong>Многоплатформенность</strong></td>
-<td>Работает на Windows, Linux, macOS</td>
-</tr>
-<tr>
-<td><strong>Поддержка Docker и Kubernetes</strong></td>
-<td>Возможность запуска заданий в контейнерах и кластерах</td>
-</tr>
-<tr>
-<td><strong>Веб-интерфейс</strong></td>
-<td>Удобное управление через браузер</td>
-</tr>
-<tr>
-<td><strong>Уведомления</strong></td>
-<td>Email, Slack, MS Teams и др. о результате выполнения задач</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="4-jenkinsfile-pipeline-as-code">4. Пример Jenkinsfile (Pipeline as Code)</h3>
-<pre><code class="language-groovy">pipeline {
-    agent any
-
-    stages {
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/your-repo.git'
-            }
-        }
-
-        stage('Build') {
-            steps {
-                sh 'make build'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                sh 'make test'
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                sh 'make deploy'
-            }
-        }
-    }
-
-    post {
-        success {
-            echo 'Build succeeded!'
-        }
-        failure {
-            echo 'Build failed!'
-        }
-    }
-}
+<h2 id="3-grafana">3. Интеграция с Grafana</h2>
+<h3 id="_2">Шаги:</h3>
+<ol>
+<li>Установите и запустите <a href="https://grafana.com/">Grafana</a></li>
+<li>Перейдите в Web UI: <a href="http://localhost:3000">http://localhost:3000</a></li>
+<li>Добавьте новый datasource:</li>
+<li>Type: <strong>Loki</strong></li>
+<li>URL: <code>http://&lt;your-loki-host&gt;:3100</code></li>
+<li>Перейдите в Explore → Выберите источник Loki</li>
+<li>Пишите запросы, например:</li>
+</ol>
+<pre><code class="language-logql">{job=&quot;varlogs&quot;} |~ &quot;ERROR&quot;
 </code></pre>
 <hr />
-<h3 id="5-jenkins">5. Преимущества использования Jenkins</h3>
-<p>✅ Открытый исходный код и активное сообщество<br />
-✅ Гибкая система плагинов — подходит под любые потребности<br />
-✅ Полная поддержка Pipeline-as-Code подхода<br />
-✅ Интеграция с Git, Docker, Kubernetes, Ansible и другими DevOps-инструментами<br />
-✅ Поддержка масштабирования и параллельного выполнения задач<br />
-✅ Бесплатный и легко настраиваемый<br />
-✅ Подходит как для маленьких стартапов, так и для крупных корпораций  </p>
+<h2 id="4-logql">4. Язык запросов LogQL</h2>
+<p>LogQL — это язык запросов Loki, похожий на PromQL.</p>
+<h3 id="_3">Примеры:</h3>
+<h4 id="_4">Фильтрация по метке:</h4>
+<pre><code class="language-logql">{job=&quot;varlogs&quot;}
+</code></pre>
+<h4 id="_5">Поиск по содержимому:</h4>
+<pre><code class="language-logql">{job=&quot;varlogs&quot;} |~ &quot;ERROR&quot;
+</code></pre>
+<h4 id="_6">Исключение:</h4>
+<pre><code class="language-logql">{job=&quot;varlogs&quot;} != &quot;DEBUG&quot;
+</code></pre>
+<h4 id="_7">С ограничением времени:</h4>
+<pre><code class="language-logql">{job=&quot;varlogs&quot;} [5m]
+</code></pre>
+<h4 id="_8">Агрегация:</h4>
+<pre><code class="language-logql">count_over_time({job=&quot;varlogs&quot;} [1h])
+</code></pre>
+<h4 id="_9">Комбинирование:</h4>
+<pre><code class="language-logql">{job=&quot;varlogs&quot;} |~ &quot;error&quot; | json | status = 500
+</code></pre>
 <hr />
-<h3 id="6">6. Использование в проектах</h3>
-<table>
-<thead>
-<tr>
-<th>Этап</th>
-<th>Возможности</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Разработка</strong></td>
-<td>Автоматическая сборка и проверка кода при каждом коммите</td>
-</tr>
-<tr>
-<td><strong>Тестирование</strong></td>
-<td>Запуск unit- и интеграционных тестов</td>
-</tr>
-<tr>
-<td><strong>Деплой</strong></td>
-<td>Автоматическое обновление тестовой, staging и production сред</td>
-</tr>
-<tr>
-<td><strong>CI/CD pipeline</strong></td>
-<td>Полностью автоматизированный жизненный цикл разработки</td>
-</tr>
-<tr>
-<td><strong>Мониторинг и отчеты</strong></td>
-<td>Логи, метрики и уведомления об успехах или сбоях</td>
-</tr>
-<tr>
-<td><strong>Обучение</strong></td>
-<td>Отличный инструмент для изучения DevOps-процессов</td>
-</tr>
-</tbody>
-</table>
+<h2 id="5">5. Расширенная настройка</h2>
+<h3 id="51-labels">5.1. Метки (Labels)</h3>
+<p>Loki использует метки (key=value) для группировки логов. Пример:</p>
+<pre><code class="language-yaml">scrape_configs:
+  - job_name: app_logs
+    static_configs:
+      - targets: [localhost]
+        labels:
+          job: backend
+          env: production
+        __path__: /var/log/backend/*.log
+</code></pre>
 <hr />
-<h3 id="7-jenkins">7. Альтернативы Jenkins</h3>
-<table>
-<thead>
-<tr>
-<th>Инструмент</th>
-<th>Особенности</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>GitLab CI/CD</strong></td>
-<td>Встроенный CI/CD в GitLab, удобен при использовании GitLab как VCS</td>
-</tr>
-<tr>
-<td><strong>GitHub Actions</strong></td>
-<td>Встроенное решение GitHub для автоматизации CI/CD</td>
-</tr>
-<tr>
-<td><strong>CircleCI</strong></td>
-<td>Облачный CI/CD с мощными возможностями параллелизма</td>
-</tr>
-<tr>
-<td><strong>Travis CI</strong></td>
-<td>Простой и легковесный облачный CI</td>
-</tr>
-<tr>
-<td><strong>Azure DevOps Pipelines</strong></td>
-<td>Microsoft-решение с мощной интеграцией в Azure</td>
-</tr>
-<tr>
-<td><strong>TeamCity (JetBrains)</strong></td>
-<td>Простой в освоении, особенно популярен среди Java-разработчиков</td>
-</tr>
-</tbody>
-</table>
+<h3 id="52-json-">5.2. Парсинг JSON-логов</h3>
+<p>Если у вас JSON-логи, вы можете использовать:</p>
+<pre><code class="language-logql">{job=&quot;backend&quot;} | json | field &gt; 100
+</code></pre>
+<p>или:</p>
+<pre><code class="language-logql">{job=&quot;backend&quot;} | json | method = &quot;POST&quot; and status &gt;= 400
+</code></pre>
 <hr />
-<h3 id="8">8. Интеграции</h3>
-<table>
-<thead>
-<tr>
-<th>Интеграция</th>
-<th>Описание</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Git / GitHub / GitLab</strong></td>
-<td>Автоматический запуск пайплайнов по коммитам</td>
-</tr>
-<tr>
-<td><strong>Docker</strong></td>
-<td>Сборка и запуск контейнеров внутри пайплайна</td>
-</tr>
-<tr>
-<td><strong>Kubernetes</strong></td>
-<td>Интеграция через Kubernetes plugin и Helm</td>
-</tr>
-<tr>
-<td><strong>Ansible / Puppet / Chef</strong></td>
-<td>Автоматизация конфигураций и деплоя</td>
-</tr>
-<tr>
-<td><strong>SonarQube</strong></td>
-<td>Анализ качества кода</td>
-</tr>
-<tr>
-<td><strong>Prometheus / Grafana</strong></td>
-<td>Мониторинг метрик и состояния pipeline</td>
-</tr>
-<tr>
-<td><strong>Slack / MS Teams / Email</strong></td>
-<td>Уведомления о состоянии сборок</td>
-</tr>
-</tbody>
-</table>
+<h2 id="6-kubernetes">6. Работа с Kubernetes</h2>
+<p>Для Kubernetes рекомендуется использовать Helm чарт:</p>
+<pre><code class="language-bash">helm repo add grafana https://grafana.github.io/helm-charts
+helm install loki grafana/loki-stack --set promtail.enabled=true
+</code></pre>
+<blockquote>
+<p>Это установит Loki + Promtail как DaemonSet, собирающий логи со всех нод.</p>
+</blockquote>
+<hr />
+<h2 id="7">7. Безопасность</h2>
+<ul>
+<li>Используйте HTTPS и Basic Auth при необходимости</li>
+<li>Настройте RBAC (в enterprise версии или с внешним reverse proxy)</li>
+<li>Изолируйте Loki от публичного доступа</li>
+</ul>
+<hr />
+<h2 id="8">8. Хранение данных</h2>
+<p>Loki может хранить данные:
+- Локально
+- В S3 / GCS / Azure Blob Storage
+- Через Thanos (для долгосрочного хранения)</p>
+<p>Пример конфигурации для S3:</p>
+<pre><code class="language-yaml">storage_config:
+  aws:
+    s3: s3://access_key:secret@region/bucket-name
+</code></pre>
+<hr />
+<h2 id="9">9. Полезные ссылки</h2>
+<ul>
+<li><a href="https://grafana.com/oss/loki/">Официальный сайт Loki</a></li>
+<li><a href="https://grafana.com/docs/loki/latest/">Документация Loki</a></li>
+<li><a href="https://grafana.com/docs/loki/latest/logql/">LogQL Reference</a></li>
+<li><a href="https://github.com/grafana/loki">GitHub проекта</a></li>
+<li><a href="https://github.com/grafana/helm-charts/tree/main/charts/loki">Helm чарт</a></li>
+</ul>
 
 
 

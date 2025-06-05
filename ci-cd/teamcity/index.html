@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../teamcity/">
+        <link rel="prev" href="../skuf/">
       
       
-        <link rel="next" href="../travis/">
+        <link rel="next" href="../jenkins/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Jenkins - ИТ вики</title>
+        <title>TeamCity - ИТ вики</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#jenkins" class="md-skip">
+        <a href="#teamcity" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Jenkins
+              TeamCity
             
           </span>
         </div>
@@ -1300,29 +1300,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../teamcity/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TeamCity
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -1340,7 +1317,7 @@
   
   
   <span class="md-ellipsis">
-    Jenkins
+    TeamCity
     
   </span>
   
@@ -1353,7 +1330,7 @@
   
   
   <span class="md-ellipsis">
-    Jenkins
+    TeamCity
     
   </span>
   
@@ -1378,16 +1355,31 @@
         <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Общие сведения
+      1. Общее описание
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Общее описание">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Основные особенности:
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-teamcity" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Основные компоненты
+      2. Архитектура TeamCity
     </span>
   </a>
   
@@ -1396,54 +1388,162 @@
         <li class="md-nav__item">
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Основные функции
+      3. Основные понятия
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-jenkinsfile-pipeline-as-code" class="md-nav__link">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Пример Jenkinsfile (Pipeline as Code)
+      4. Настройка и установка
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Настройка и установка">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-teamcity-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Установка TeamCity Server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-build-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Установка Build Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-vcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Настройка подключения к VCS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Создание первого билда
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Создание первого билда">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Шаги:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-build-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Примеры Build Steps
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-jenkins" class="md-nav__link">
+  <a href="#7" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Преимущества использования Jenkins
+      7. Интеграции
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
+  <a href="#8-best-practices" class="md-nav__link">
     <span class="md-ellipsis">
-      6. Использование в проектах
+      8. Best Practices
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-jenkins" class="md-nav__link">
+  <a href="#9" class="md-nav__link">
     <span class="md-ellipsis">
-      7. Альтернативы Jenkins
+      9. Полезные ссылки
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#8" class="md-nav__link">
+  <a href="#10-faq" class="md-nav__link">
     <span class="md-ellipsis">
-      8. Интеграции
+      10. FAQ
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="10. FAQ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❓ Как перенести конфигурации между серверами?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❓ Можно ли запускать билды локально?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❓ Какие права нужны для работы с VCS?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❓ Как отслеживать ошибки в билдах?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1451,6 +1551,29 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jenkins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Jenkins
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2211,16 +2334,31 @@
         <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Общие сведения
+      1. Общее описание
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Общее описание">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Основные особенности:
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-teamcity" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Основные компоненты
+      2. Архитектура TeamCity
     </span>
   </a>
   
@@ -2229,54 +2367,162 @@
         <li class="md-nav__item">
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Основные функции
+      3. Основные понятия
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-jenkinsfile-pipeline-as-code" class="md-nav__link">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Пример Jenkinsfile (Pipeline as Code)
+      4. Настройка и установка
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Настройка и установка">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-teamcity-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Установка TeamCity Server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-build-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Установка Build Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-vcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Настройка подключения к VCS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Создание первого билда
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Создание первого билда">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Шаги:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-build-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Примеры Build Steps
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-jenkins" class="md-nav__link">
+  <a href="#7" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Преимущества использования Jenkins
+      7. Интеграции
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
+  <a href="#8-best-practices" class="md-nav__link">
     <span class="md-ellipsis">
-      6. Использование в проектах
+      8. Best Practices
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-jenkins" class="md-nav__link">
+  <a href="#9" class="md-nav__link">
     <span class="md-ellipsis">
-      7. Альтернативы Jenkins
+      9. Полезные ссылки
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#8" class="md-nav__link">
+  <a href="#10-faq" class="md-nav__link">
     <span class="md-ellipsis">
-      8. Интеграции
+      10. FAQ
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="10. FAQ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❓ Как перенести конфигурации между серверами?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❓ Можно ли запускать билды локально?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❓ Какие права нужны для работы с VCS?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❓ Как отслеживать ошибки в билдах?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2296,25 +2542,21 @@
 
 
 
-<h1 id="jenkins">📘 <strong>Jenkins</strong></h1>
+<h1 id="teamcity">📄 TeamCity</h1>
+<h2 id="1">1. Общее описание</h2>
+<p><strong>TeamCity</strong> — это серверная система непрерывной интеграции и доставки (CI/CD), разработанная компанией JetBrains. Она автоматизирует сборку, тестирование и развертывание проектов, обеспечивая высокую скорость и надежность процесса разработки ПО.</p>
+<h3 id="_1">Основные особенности:</h3>
+<ul>
+<li>Поддержка множества языков программирования и фреймворков.</li>
+<li>Гибкая система триггеров для запуска билдов.</li>
+<li>Интеграция с Git, SVN, Mercurial и другими системами контроля версий.</li>
+<li>Поддержка Docker, Kubernetes и облачных платформ.</li>
+<li>Веб-интерфейс для управления и мониторинга задач.</li>
+<li>Настраиваемые пайплайны через Kotlin DSL или визуальный интерфейс.</li>
+</ul>
 <hr />
-<h3 id="1">1. Общие сведения</h3>
-<p><strong>Наименование:</strong><br />
-Jenkins</p>
-<p><strong>Описание:</strong><br />
-Jenkins — это открытая платформа для автоматизации процессов CI/CD (непрерывной интеграции и непрерывной доставки). Позволяет автоматизировать сборку, тестирование и развертывание приложений, что делает процесс разработки более быстрым и надежным.</p>
-<p><strong>Тип системы:</strong><br />
-Система автоматизации / Сервер непрерывной интеграции<br />
-<strong>Класс:</strong> CI/CD Tool</p>
-<p><strong>Разработчик:</strong><br />
-Kohsuke Kawaguchi (в рамках проекта Hudson от Sun Microsystems)</p>
-<p><strong>Год выпуска:</strong><br />
-2004 год (как Hudson), 2011 год (как Jenkins после форка)</p>
-<p><strong>Лицензия:</strong><br />
-MIT License (open source)</p>
-<p><strong>Сайт:</strong> <a href="https://www.jenkins.io">https://www.jenkins.io</a></p>
-<hr />
-<h3 id="2">2. Основные компоненты</h3>
+<h2 id="2-teamcity">2. Архитектура TeamCity</h2>
+<p>TeamCity состоит из следующих компонентов:</p>
 <table>
 <thead>
 <tr>
@@ -2324,237 +2566,187 @@ MIT License (open source)</p>
 </thead>
 <tbody>
 <tr>
-<td><strong>Jenkins Master</strong></td>
-<td>Основной сервер, управляющий задачами, плагинами и агентами</td>
+<td><strong>Server</strong></td>
+<td>Основной сервер, который управляет конфигурацией, очередью задач, плагинами и предоставляет веб-интерфейс.</td>
 </tr>
 <tr>
-<td><strong>Jenkins Agent (ранее Slave)</strong></td>
-<td>Удалённый или локальный рабочий узел, на котором выполняются задачи</td>
+<td><strong>Agent</strong></td>
+<td>Установленный на отдельной машине клиент, который выполняет непосредственно билды.</td>
 </tr>
 <tr>
-<td><strong>Pipeline</strong></td>
-<td>Описание этапов сборки, тестирования и деплоя в виде кода (Jenkinsfile)</td>
+<td><strong>Project</strong></td>
+<td>Логическая группа конфигураций билдов, связанных с одним проектом.</td>
 </tr>
 <tr>
-<td><strong>Jobs / Tasks</strong></td>
-<td>Задачи, которые Jenkins может выполнять: сборка, запуск тестов, скрипты и т.д.</td>
+<td><strong>Build Configuration</strong></td>
+<td>Конфигурация билда, определяющая шаги, триггеры, параметры и т.п.</td>
 </tr>
 <tr>
-<td><strong>Plugins</strong></td>
-<td>Модули расширения функционала (более 1800 официальных и community-плагинов)</td>
+<td><strong>Build Step</strong></td>
+<td>Отдельный этап выполнения билда (например, сборка Maven, запуск тестов).</td>
 </tr>
 <tr>
-<td><strong>Build History</strong></td>
-<td>Архив выполненных сборок с возможностью просмотра логов и повторного запуска</td>
+<td><strong>Build Agent Pool</strong></td>
+<td>Группа агентов, доступных для выполнения билдов.</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h3 id="3">3. Основные функции</h3>
+<h2 id="3">3. Основные понятия</h2>
 <table>
 <thead>
 <tr>
-<th>Функция</th>
+<th>Термин</th>
+<th>Определение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Build</strong></td>
+<td>Выполнение билд-конфигурации с конкретными параметрами и результатом.</td>
+</tr>
+<tr>
+<td><strong>Build Queue</strong></td>
+<td>Спис задач, ожидающих выполнения.</td>
+</tr>
+<tr>
+<td><strong>Trigger</strong></td>
+<td>Механизм, запускающий билд при определенных условиях (например, при пуше в репозиторий).</td>
+</tr>
+<tr>
+<td><strong>Artifact</strong></td>
+<td>Результат выполнения билда (например, скомпилированный jar-файл, дистрибутив).</td>
+</tr>
+<tr>
+<td><strong>Snapshot Dependency</strong></td>
+<td>Зависимость одного билда от другого по состоянию кода.</td>
+</tr>
+<tr>
+<td><strong>Artifact Dependency</strong></td>
+<td>Зависимость от результатов предыдущего билда.</td>
+</tr>
+<tr>
+<td><strong>Parameter</strong></td>
+<td>Переменная, которую можно использовать в билде. Может быть статической или динамической.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4">4. Настройка и установка</h2>
+<h3 id="41-teamcity-server">4.1 Установка TeamCity Server</h3>
+<ul>
+<li>Поддерживает Windows, Linux, macOS.</li>
+<li>Установка через официальные дистрибутивы.</li>
+<li>База данных: HSQL (по умолчанию), MySQL, PostgreSQL, Oracle.</li>
+<li>После установки доступен через <code>http://&lt;host&gt;:8111</code>.</li>
+</ul>
+<h3 id="42-build-agent">4.2 Установка Build Agent</h3>
+<ul>
+<li>Качается с сервера.</li>
+<li>Распаковывается и запускается скриптом (<code>agent.sh</code> / <code>agent.bat</code>).</li>
+<li>Автоматически регистрируется на сервере.</li>
+</ul>
+<h3 id="43-vcs">4.3 Настройка подключения к VCS</h3>
+<ul>
+<li>Поддержка Git, GitHub, Bitbucket, SVN и др.</li>
+<li>Создается VCS Root, который указывает на репозиторий.</li>
+<li>Возможна авторизация через SSH, OAuth, Token и другие способы.</li>
+</ul>
+<hr />
+<h2 id="5">5. Создание первого билда</h2>
+<h3 id="_2">Шаги:</h3>
+<ol>
+<li>Создать новый проект.</li>
+<li>Добавить VCS Root (ссылка на репозиторий).</li>
+<li>Создать Build Configuration.</li>
+<li>Добавить Build Steps (например, Maven, npm install, pytest).</li>
+<li>Настроить триггеры (например, on VCS commit).</li>
+<li>Запустить билд вручную или ждать автоматического запуска.</li>
+</ol>
+<hr />
+<h2 id="6-build-steps">6. Примеры Build Steps</h2>
+<table>
+<thead>
+<tr>
+<th>Тип шага</th>
 <th>Описание</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Автоматизация сборки проекта</strong></td>
-<td>Поддерживает Java, Python, .NET, Node.js и другие языки</td>
+<td><strong>Command Line</strong></td>
+<td>Произвольная команда в командной строке.</td>
 </tr>
 <tr>
-<td><strong>Интеграция с Git</strong></td>
-<td>Автоматический запуск билда при пуше в репозиторий</td>
+<td><strong>Maven</strong></td>
+<td>Сборка Maven-проекта.</td>
 </tr>
 <tr>
-<td><strong>Непрерывная интеграция (CI)</strong></td>
-<td>Тестирование изменений перед объединением в основную ветку</td>
+<td><strong>Gradle</strong></td>
+<td>Сборка Gradle-проекта.</td>
 </tr>
 <tr>
-<td><strong>Непрерывная доставка / развертывание (CD)</strong></td>
-<td>Автоматическое или полуавтоматическое развёртывание на тестовые и боевые среды</td>
+<td><strong>npm</strong></td>
+<td>Установка зависимостей и запуск скриптов Node.js.</td>
 </tr>
 <tr>
-<td><strong>Многоплатформенность</strong></td>
-<td>Работает на Windows, Linux, macOS</td>
-</tr>
-<tr>
-<td><strong>Поддержка Docker и Kubernetes</strong></td>
-<td>Возможность запуска заданий в контейнерах и кластерах</td>
-</tr>
-<tr>
-<td><strong>Веб-интерфейс</strong></td>
-<td>Удобное управление через браузер</td>
-</tr>
-<tr>
-<td><strong>Уведомления</strong></td>
-<td>Email, Slack, MS Teams и др. о результате выполнения задач</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="4-jenkinsfile-pipeline-as-code">4. Пример Jenkinsfile (Pipeline as Code)</h3>
-<pre><code class="language-groovy">pipeline {
-    agent any
-
-    stages {
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/your-repo.git'
-            }
-        }
-
-        stage('Build') {
-            steps {
-                sh 'make build'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                sh 'make test'
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                sh 'make deploy'
-            }
-        }
-    }
-
-    post {
-        success {
-            echo 'Build succeeded!'
-        }
-        failure {
-            echo 'Build failed!'
-        }
-    }
-}
-</code></pre>
-<hr />
-<h3 id="5-jenkins">5. Преимущества использования Jenkins</h3>
-<p>✅ Открытый исходный код и активное сообщество<br />
-✅ Гибкая система плагинов — подходит под любые потребности<br />
-✅ Полная поддержка Pipeline-as-Code подхода<br />
-✅ Интеграция с Git, Docker, Kubernetes, Ansible и другими DevOps-инструментами<br />
-✅ Поддержка масштабирования и параллельного выполнения задач<br />
-✅ Бесплатный и легко настраиваемый<br />
-✅ Подходит как для маленьких стартапов, так и для крупных корпораций  </p>
-<hr />
-<h3 id="6">6. Использование в проектах</h3>
-<table>
-<thead>
-<tr>
-<th>Этап</th>
-<th>Возможности</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Разработка</strong></td>
-<td>Автоматическая сборка и проверка кода при каждом коммите</td>
-</tr>
-<tr>
-<td><strong>Тестирование</strong></td>
-<td>Запуск unit- и интеграционных тестов</td>
-</tr>
-<tr>
-<td><strong>Деплой</strong></td>
-<td>Автоматическое обновление тестовой, staging и production сред</td>
-</tr>
-<tr>
-<td><strong>CI/CD pipeline</strong></td>
-<td>Полностью автоматизированный жизненный цикл разработки</td>
-</tr>
-<tr>
-<td><strong>Мониторинг и отчеты</strong></td>
-<td>Логи, метрики и уведомления об успехах или сбоях</td>
-</tr>
-<tr>
-<td><strong>Обучение</strong></td>
-<td>Отличный инструмент для изучения DevOps-процессов</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="7-jenkins">7. Альтернативы Jenkins</h3>
-<table>
-<thead>
-<tr>
-<th>Инструмент</th>
-<th>Особенности</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>GitLab CI/CD</strong></td>
-<td>Встроенный CI/CD в GitLab, удобен при использовании GitLab как VCS</td>
-</tr>
-<tr>
-<td><strong>GitHub Actions</strong></td>
-<td>Встроенное решение GitHub для автоматизации CI/CD</td>
-</tr>
-<tr>
-<td><strong>CircleCI</strong></td>
-<td>Облачный CI/CD с мощными возможностями параллелизма</td>
-</tr>
-<tr>
-<td><strong>Travis CI</strong></td>
-<td>Простой и легковесный облачный CI</td>
-</tr>
-<tr>
-<td><strong>Azure DevOps Pipelines</strong></td>
-<td>Microsoft-решение с мощной интеграцией в Azure</td>
-</tr>
-<tr>
-<td><strong>TeamCity (JetBrains)</strong></td>
-<td>Простой в освоении, особенно популярен среди Java-разработчиков</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="8">8. Интеграции</h3>
-<table>
-<thead>
-<tr>
-<th>Интеграция</th>
-<th>Описание</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Git / GitHub / GitLab</strong></td>
-<td>Автоматический запуск пайплайнов по коммитам</td>
+<td><strong>Python</strong></td>
+<td>Исполнение Python-скриптов.</td>
 </tr>
 <tr>
 <td><strong>Docker</strong></td>
-<td>Сборка и запуск контейнеров внутри пайплайна</td>
+<td>Сборка образов, запуск контейнеров.</td>
 </tr>
 <tr>
-<td><strong>Kubernetes</strong></td>
-<td>Интеграция через Kubernetes plugin и Helm</td>
-</tr>
-<tr>
-<td><strong>Ansible / Puppet / Chef</strong></td>
-<td>Автоматизация конфигураций и деплоя</td>
-</tr>
-<tr>
-<td><strong>SonarQube</strong></td>
-<td>Анализ качества кода</td>
-</tr>
-<tr>
-<td><strong>Prometheus / Grafana</strong></td>
-<td>Мониторинг метрик и состояния pipeline</td>
-</tr>
-<tr>
-<td><strong>Slack / MS Teams / Email</strong></td>
-<td>Уведомления о состоянии сборок</td>
+<td><strong>SSH Exec</strong></td>
+<td>Удалённое выполнение команд по SSH.</td>
 </tr>
 </tbody>
 </table>
+<hr />
+<h2 id="7">7. Интеграции</h2>
+<p>TeamCity может интегрироваться с:
+- <strong>GitHub, GitLab, Bitbucket</strong> — для автоматического запуска билдов.
+- <strong>Slack, Microsoft Teams, Email</strong> — для уведомлений.
+- <strong>Jira</strong> — связь билдов с задачами.
+- <strong>SonarQube</strong> — анализ качества кода.
+- <strong>Kubernetes</strong> — деплой через Helm или kubectl.</p>
+<hr />
+<h2 id="8-best-practices">8. Best Practices</h2>
+<ul>
+<li>Используйте Kotlin DSL для хранения конфигураций в репозитории.</li>
+<li>Разделяйте билды на stages (build → test → deploy).</li>
+<li>Используйте параметры для гибкой настройки билдов.</li>
+<li>Пишите читабельные названия билдов и шагов.</li>
+<li>Настройте уведомления об успешных/неуспешных билдах.</li>
+<li>Регулярно очищайте историю билдов и артефакты.</li>
+</ul>
+<hr />
+<h2 id="9">9. Полезные ссылки</h2>
+<ul>
+<li><a href="https://www.jetbrains.com/teamcity/">Официальный сайт TeamCity</a></li>
+<li><a href="https://www.jetbrains.com/help/teamcity/">Документация JetBrains</a></li>
+<li><a href="https://github.com/JetBrains/teamcity-samples">GitHub TeamCity Examples</a></li>
+<li><a href="https://www.jetbrains.com/help/teamcity/rest-api.html">TeamCity REST API Documentation</a></li>
+</ul>
+<hr />
+<h2 id="10-faq">10. FAQ</h2>
+<h3 id="_3">❓ Как перенести конфигурации между серверами?</h3>
+<blockquote>
+<p>Используйте Kotlin DSL или импорт/экспорт проектов через UI.</p>
+</blockquote>
+<h3 id="_4">❓ Можно ли запускать билды локально?</h3>
+<blockquote>
+<p>Да, если вы запустите локальный агент и зарегистрируете его на сервере.</p>
+</blockquote>
+<h3 id="vcs">❓ Какие права нужны для работы с VCS?</h3>
+<blockquote>
+<p>Минимально — только чтение нужного репозитория.</p>
+</blockquote>
+<h3 id="_5">❓ Как отслеживать ошибки в билдах?</h3>
+<blockquote>
+<p>Через логи, уведомления, интеграции с Jira/Sentry и т.д.</p>
+</blockquote>
 
 
 
