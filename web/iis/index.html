@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../../os/selectos/">
+        <link rel="prev" href="../nginx/">
       
       
-        <link rel="next" href="../4-tcp-ip/">
+        <link rel="next" href="../../programming/languages/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>TCP/IP - ИТ вики</title>
+        <title>IIS - ИТ вики</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tcpip" class="md-skip">
+        <a href="#internet-information-services-iis" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TCP/IP
+              IIS
             
           </span>
         </div>
@@ -1040,18 +1040,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -1067,7 +1069,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Веб-серверы
@@ -1081,7 +1083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../web/apache2/" class="md-nav__link">
+      <a href="../apache2/" class="md-nav__link">
         
   
   
@@ -1104,7 +1106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../web/apache-tomcat/" class="md-nav__link">
+      <a href="../apache-tomcat/" class="md-nav__link">
         
   
   
@@ -1127,7 +1129,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../web/caddy/" class="md-nav__link">
+      <a href="../caddy/" class="md-nav__link">
         
   
   
@@ -1150,7 +1152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../web/gubinnet/" class="md-nav__link">
+      <a href="../gubinnet/" class="md-nav__link">
         
   
   
@@ -1173,7 +1175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../web/nginx/" class="md-nav__link">
+      <a href="../nginx/" class="md-nav__link">
         
   
   
@@ -1193,10 +1195,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../web/iis/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    IIS
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1207,6 +1231,350 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Общее описание
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-iis" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Основные компоненты IIS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Основные компоненты IIS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-http" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Веб-сервер (HTTP)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-iis-iis-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Менеджер служб IIS (IIS Manager)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-application-pools" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3. Пулы приложений (Application Pools)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4. Сайты и приложения
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-appinit" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5. Диспетчер перезапуска приложений (AppInit)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-iis" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Архитектура IIS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Архитектура IIS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-iis-httpsys" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1. Ядро IIS (HTTP.SYS)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-w3wpexe" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2. Рабочий процесс (W3WP.exe)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-iis" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3. Модули IIS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Поддерживаемые технологии
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-iis" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Безопасность в IIS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Безопасность в IIS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1. Аутентификация
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2. Шифрование
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3. Ограничение доступа
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Управление и мониторинг
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Управление и мониторинг">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1. Инструменты управления
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2. Логирование
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3. Производительность
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Развертывание и интеграция
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Развертывание и интеграция">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-web-deploy-msdeploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1. Web Deploy (MSDeploy)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-azure-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2. Azure Integration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3. Docker
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-iis" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Версии IIS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Конфигурационные файлы
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Конфигурационные файлы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-applicationhostconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1. applicationHost.config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-webconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2. web.config
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Полезные ссылки
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Примеры команд PowerShell
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Рекомендации по производительности
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Рекомендации по безопасности
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1497,20 +1865,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
@@ -1526,7 +1892,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Сети и безопасность
@@ -1537,32 +1903,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    TCP/IP
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../net/tcp-ip/" class="md-nav__link">
         
   
   
@@ -1573,263 +1917,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-tcpip" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Что такое TCP/IP?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-tcpip" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Уровни модели TCP/IP
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-tcpip" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Как работает TCP/IP?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Как работает TCP/IP?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#examplecom" class="md-nav__link">
-    <span class="md-ellipsis">
-      Пример: Вы заходите на сайт example.com
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-tcpip" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Основные протоколы TCP/IP
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Основные протоколы TCP/IP">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tcp-transmission-control-protocol" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔹 TCP (Transmission Control Protocol)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#udp-user-datagram-protocol" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔹 UDP (User Datagram Protocol)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ip-internet-protocol" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔹 IP (Internet Protocol)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#icmp-internet-control-message-protocol" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔹 ICMP (Internet Control Message Protocol)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#arp-address-resolution-protocol" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔹 ARP (Address Resolution Protocol)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-ip-" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. IP-адреса и подсети
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. IP-адреса и подсети">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ipv4" class="md-nav__link">
-    <span class="md-ellipsis">
-      IPv4
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ipv6" class="md-nav__link">
-    <span class="md-ellipsis">
-      IPv6
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cidr-classless-inter-domain-routing" class="md-nav__link">
-    <span class="md-ellipsis">
-      CIDR (Classless Inter-Domain Routing)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Порты и их использование
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="6. Порты и их использование">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Примеры портов:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-tcpip" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Полезные команды для работы с TCP/IP
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-faq" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. FAQ
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="8. FAQ">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tcp-udp" class="md-nav__link">
-    <span class="md-ellipsis">
-      ❓ Чем отличается TCP от UDP?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ip-" class="md-nav__link">
-    <span class="md-ellipsis">
-      ❓ Что такое IP-адрес?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      ❓ Что такое порт?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      ❓ Как проверить, открыт ли порт?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#9" class="md-nav__link">
-    <span class="md-ellipsis">
-      9. Полезные ссылки
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1842,7 +1929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../4-tcp-ip/" class="md-nav__link">
+      <a href="../../net/4-tcp-ip/" class="md-nav__link">
         
   
   
@@ -1865,7 +1952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dns/" class="md-nav__link">
+      <a href="../../net/dns/" class="md-nav__link">
         
   
   
@@ -1888,7 +1975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../http-https/" class="md-nav__link">
+      <a href="../../net/http-https/" class="md-nav__link">
         
   
   
@@ -1911,7 +1998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../http-2/" class="md-nav__link">
+      <a href="../../net/http-2/" class="md-nav__link">
         
   
   
@@ -1934,7 +2021,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../firewall/" class="md-nav__link">
+      <a href="../../net/firewall/" class="md-nav__link">
         
   
   
@@ -1957,7 +2044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../routing/" class="md-nav__link">
+      <a href="../../net/routing/" class="md-nav__link">
         
   
   
@@ -1980,7 +2067,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bgp/" class="md-nav__link">
+      <a href="../../net/bgp/" class="md-nav__link">
         
   
   
@@ -2003,7 +2090,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vlan/" class="md-nav__link">
+      <a href="../../net/vlan/" class="md-nav__link">
         
   
   
@@ -2026,7 +2113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cybersecurity/" class="md-nav__link">
+      <a href="../../net/cybersecurity/" class="md-nav__link">
         
   
   
@@ -2049,7 +2136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../encryption/" class="md-nav__link">
+      <a href="../../net/encryption/" class="md-nav__link">
         
   
   
@@ -3612,37 +3699,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-tcpip" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Что такое TCP/IP?
+      1. Общее описание
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-tcpip" class="md-nav__link">
+  <a href="#2-iis" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Уровни модели TCP/IP
+      2. Основные компоненты IIS
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-tcpip" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Как работает TCP/IP?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Как работает TCP/IP?">
+    <nav class="md-nav" aria-label="2. Основные компоненты IIS">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#examplecom" class="md-nav__link">
+  <a href="#21-http" class="md-nav__link">
     <span class="md-ellipsis">
-      Пример: Вы заходите на сайт example.com
+      2.1. Веб-сервер (HTTP)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-iis-iis-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Менеджер служб IIS (IIS Manager)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-application-pools" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3. Пулы приложений (Application Pools)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4. Сайты и приложения
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-appinit" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5. Диспетчер перезапуска приложений (AppInit)
     </span>
   </a>
   
@@ -3654,55 +3768,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-tcpip" class="md-nav__link">
+  <a href="#3-iis" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Основные протоколы TCP/IP
+      3. Архитектура IIS
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4. Основные протоколы TCP/IP">
+    <nav class="md-nav" aria-label="3. Архитектура IIS">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#tcp-transmission-control-protocol" class="md-nav__link">
+  <a href="#31-iis-httpsys" class="md-nav__link">
     <span class="md-ellipsis">
-      🔹 TCP (Transmission Control Protocol)
+      3.1. Ядро IIS (HTTP.SYS)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#udp-user-datagram-protocol" class="md-nav__link">
+  <a href="#32-w3wpexe" class="md-nav__link">
     <span class="md-ellipsis">
-      🔹 UDP (User Datagram Protocol)
+      3.2. Рабочий процесс (W3WP.exe)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#ip-internet-protocol" class="md-nav__link">
+  <a href="#33-iis" class="md-nav__link">
     <span class="md-ellipsis">
-      🔹 IP (Internet Protocol)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#icmp-internet-control-message-protocol" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔹 ICMP (Internet Control Message Protocol)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#arp-address-resolution-protocol" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔹 ARP (Address Resolution Protocol)
+      3.3. Модули IIS
     </span>
   </a>
   
@@ -3714,37 +3810,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-ip-" class="md-nav__link">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
-      5. IP-адреса и подсети
+      4. Поддерживаемые технологии
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="5. IP-адреса и подсети">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-iis" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Безопасность в IIS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Безопасность в IIS">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ipv4" class="md-nav__link">
+  <a href="#51" class="md-nav__link">
     <span class="md-ellipsis">
-      IPv4
+      5.1. Аутентификация
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#ipv6" class="md-nav__link">
+  <a href="#52" class="md-nav__link">
     <span class="md-ellipsis">
-      IPv6
+      5.2. Шифрование
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#cidr-classless-inter-domain-routing" class="md-nav__link">
+  <a href="#53" class="md-nav__link">
     <span class="md-ellipsis">
-      CIDR (Classless Inter-Domain Routing)
+      5.3. Ограничение доступа
     </span>
   </a>
   
@@ -3758,17 +3863,35 @@
         <li class="md-nav__item">
   <a href="#6" class="md-nav__link">
     <span class="md-ellipsis">
-      6. Порты и их использование
+      6. Управление и мониторинг
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="6. Порты и их использование">
+    <nav class="md-nav" aria-label="6. Управление и мониторинг">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#61" class="md-nav__link">
     <span class="md-ellipsis">
-      Примеры портов:
+      6.1. Инструменты управления
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2. Логирование
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3. Производительность
     </span>
   </a>
   
@@ -3780,55 +3903,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-tcpip" class="md-nav__link">
+  <a href="#7" class="md-nav__link">
     <span class="md-ellipsis">
-      7. Полезные команды для работы с TCP/IP
+      7. Развертывание и интеграция
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-faq" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. FAQ
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="8. FAQ">
+    <nav class="md-nav" aria-label="7. Развертывание и интеграция">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#tcp-udp" class="md-nav__link">
+  <a href="#71-web-deploy-msdeploy" class="md-nav__link">
     <span class="md-ellipsis">
-      ❓ Чем отличается TCP от UDP?
+      7.1. Web Deploy (MSDeploy)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#ip-" class="md-nav__link">
+  <a href="#72-azure-integration" class="md-nav__link">
     <span class="md-ellipsis">
-      ❓ Что такое IP-адрес?
+      7.2. Azure Integration
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#73-docker" class="md-nav__link">
     <span class="md-ellipsis">
-      ❓ Что такое порт?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      ❓ Как проверить, открыт ли порт?
+      7.3. Docker
     </span>
   </a>
   
@@ -3836,13 +3941,82 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-iis" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Версии IIS
+    </span>
+  </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#9" class="md-nav__link">
     <span class="md-ellipsis">
-      9. Полезные ссылки
+      9. Конфигурационные файлы
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Конфигурационные файлы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-applicationhostconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1. applicationHost.config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-webconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2. web.config
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Полезные ссылки
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Примеры команд PowerShell
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Рекомендации по производительности
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Рекомендации по безопасности
     </span>
   </a>
   
@@ -3864,206 +4038,258 @@
 
 
 
-<h1 id="tcpip">📡 TCP/IP</h1>
-<h2 id="1-tcpip">1. Что такое TCP/IP?</h2>
-<p><strong>TCP/IP (Transmission Control Protocol/Internet Protocol)</strong> — это набор протоколов, используемых для связи между устройствами в сети. Это основная технология, которая делает возможным работу интернета.</p>
-<p>TCP/IP не является одним протоколом, а представляет собой <strong>стек протоколов</strong>, которые работают вместе, чтобы передавать данные между компьютерами.</p>
+<h1 id="internet-information-services-iis">📄 Internet Information Services (IIS)</h1>
+<h2 id="1">1. Общее описание</h2>
+<p><strong>Internet Information Services (IIS)</strong> — это гибкий и мощный веб-сервер, предоставляемый Microsoft, предназначенный для разработки, тестирования и развертывания веб-приложений на платформе Windows. IIS поддерживает различные протоколы, такие как HTTP, HTTPS, FTP, SMTP, NNTP и другие, что делает его универсальным решением для хостинга веб-контента.</p>
 <hr />
-<h2 id="2-tcpip">2. Уровни модели TCP/IP</h2>
-<p>Модель TCP/IP состоит из <strong>4 уровней</strong>:</p>
+<h2 id="2-iis">2. Основные компоненты IIS</h2>
+<h3 id="21-http">2.1. Веб-сервер (HTTP)</h3>
+<ul>
+<li>Предоставляет возможность обслуживания статического и динамического контента.</li>
+<li>Поддерживает ASP.NET, PHP, CGI, ISAPI и другие технологии.</li>
+</ul>
+<h3 id="22-iis-iis-manager">2.2. Менеджер служб IIS (IIS Manager)</h3>
+<ul>
+<li>Графический интерфейс управления сервером.</li>
+<li>Позволяет управлять сайтами, приложениями, пулами приложений, модулями, сертификатами и т.д.</li>
+</ul>
+<h3 id="23-application-pools">2.3. Пулы приложений (Application Pools)</h3>
+<ul>
+<li>Контейнеры для одного или нескольких веб-приложений.</li>
+<li>Используются для изоляции приложений друг от друга с точки зрения ресурсов и безопасности.</li>
+<li>Можно настраивать параметры времени жизни, перезапуска, ограничений памяти и CPU.</li>
+</ul>
+<h3 id="24">2.4. Сайты и приложения</h3>
+<ul>
+<li><strong>Сайт</strong> — логическая единица, связанная с определенным доменом или IP-адресом/портом.</li>
+<li><strong>Приложение</strong> — часть сайта, имеющая собственную конфигурацию и пулы приложений.</li>
+</ul>
+<h3 id="25-appinit">2.5. Диспетчер перезапуска приложений (AppInit)</h3>
+<ul>
+<li>Позволяет выполнять предварительную загрузку приложений перед их первым запросом.</li>
+<li>Уменьшает время ответа на первый запрос.</li>
+</ul>
+<hr />
+<h2 id="3-iis">3. Архитектура IIS</h2>
+<h3 id="31-iis-httpsys">3.1. Ядро IIS (HTTP.SYS)</h3>
+<ul>
+<li>Является драйвером ядра Windows.</li>
+<li>Принимает входящие HTTP-запросы, кэширует статический контент, фильтрует трафик.</li>
+</ul>
+<h3 id="32-w3wpexe">3.2. Рабочий процесс (W3WP.exe)</h3>
+<ul>
+<li>Выполняет обработку динамических запросов.</li>
+<li>Запускается для каждого пула приложений.</li>
+</ul>
+<h3 id="33-iis">3.3. Модули IIS</h3>
+<ul>
+<li>Расширяемая архитектура позволяет добавлять функциональность через встроенные и пользовательские модули.</li>
+<li>Примеры: URL Rewrite, Dynamic Content Compression, Authentication Modules, ARR (Application Request Routing).</li>
+</ul>
+<hr />
+<h2 id="4">4. Поддерживаемые технологии</h2>
 <table>
 <thead>
 <tr>
-<th>Уровень</th>
-<th>Описание</th>
+<th>Технология</th>
+<th>Поддержка</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Прикладной уровень (Application Layer)</strong></td>
-<td>Взаимодействует напрямую с приложениями пользователя (например, браузер, почтовый клиент). Протоколы: HTTP, FTP, SMTP, DNS.</td>
+<td>ASP.NET</td>
+<td>Полная поддержка (Core, Framework)</td>
 </tr>
 <tr>
-<td><strong>Транспортный уровень (Transport Layer)</strong></td>
-<td>Обеспечивает доставку данных между хостами. Протоколы: TCP, UDP.</td>
+<td>PHP</td>
+<td>Поддерживается через FastCGI</td>
 </tr>
 <tr>
-<td><strong>Сетевой уровень (Internet Layer или Network Layer)</strong></td>
-<td>Отвечает за маршрутизацию пакетов между устройствами в разных сетях. Протокол: IP.</td>
+<td>Python</td>
+<td>Поддерживается через WSGI и FastCGI</td>
 </tr>
 <tr>
-<td><strong>Интерфейсный уровень (Network Interface Layer)</strong></td>
-<td>Работает с физической передачей данных по сети. Протоколы: Ethernet, Wi-Fi, ARP.</td>
+<td>Node.js</td>
+<td>Поддерживается через iisnode (плагин)</td>
+</tr>
+<tr>
+<td>CGI / FastCGI</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>WebSocket</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>WebDAV</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>REST / SOAP</td>
+<td>Да</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>⚠️ <strong>Важно:</strong> Модель TCP/IP отличается от более общей семиуровневой модели OSI, но концептуально они схожи.</p>
-</blockquote>
 <hr />
-<h2 id="3-tcpip">3. Как работает TCP/IP?</h2>
-<p>Данные проходят через все уровни стека при отправке и обратно при получении:</p>
-<h3 id="examplecom">Пример: Вы заходите на сайт example.com</h3>
-<ol>
-<li><strong>Прикладной уровень</strong>: Браузер формирует запрос (HTTP GET).</li>
-<li><strong>Транспортный уровень</strong>: Запрос разбивается на порции и оборачивается в TCP-заголовок.</li>
-<li><strong>Сетевой уровень</strong>: Каждому пакету добавляется IP-адрес назначения.</li>
-<li><strong>Интерфейсный уровень</strong>: Пакеты преобразуются в электрические сигналы и отправляются по сети (через Ethernet или Wi-Fi).</li>
-</ol>
-<p>На сервере происходит обратный процесс:
-- Полученные данные поднимаются по уровням,
-- Извлекаются из заголовков,
-- И передаются веб-серверу для обработки.</p>
-<hr />
-<h2 id="4-tcpip">4. Основные протоколы TCP/IP</h2>
-<h3 id="tcp-transmission-control-protocol">🔹 TCP (Transmission Control Protocol)</h3>
+<h2 id="5-iis">5. Безопасность в IIS</h2>
+<h3 id="51">5.1. Аутентификация</h3>
 <ul>
-<li><strong>Надёжный</strong> протокол с установлением соединения.</li>
-<li>Гарантирует доставку данных в правильном порядке.</li>
-<li>Используется для: веб-страниц (HTTP), электронной почты (SMTP), файлов (FTP).</li>
+<li><strong>Анонимная</strong></li>
+<li><strong>Windows Authentication (NTLM, Kerberos)</strong></li>
+<li><strong>Basic Authentication</strong></li>
+<li><strong>Digest Authentication</strong></li>
+<li><strong>Forms Authentication (через ASP.NET)</strong></li>
+<li><strong>OAuth / JWT (через модули или middleware)</strong></li>
 </ul>
-<h3 id="udp-user-datagram-protocol">🔹 UDP (User Datagram Protocol)</h3>
+<h3 id="52">5.2. Шифрование</h3>
 <ul>
-<li><strong>Быстрый</strong>, но ненадёжный протокол без установления соединения.</li>
-<li>Не гарантирует доставку, но имеет меньшее время задержки.</li>
-<li>Используется для: видеозвонков, онлайн-игр, потокового видео.</li>
+<li>Поддержка SSL/TLS через HTTPS.</li>
+<li>Настройка сертификатов через IIS Manager.</li>
+<li>Поддержка SNI (Server Name Indication).</li>
 </ul>
-<h3 id="ip-internet-protocol">🔹 IP (Internet Protocol)</h3>
+<h3 id="53">5.3. Ограничение доступа</h3>
 <ul>
-<li>Отвечает за адресацию и маршрутизацию пакетов.</li>
-<li>IP-адрес уникально идентифицирует устройство в сети.</li>
-<li>Версии: IPv4 (например, <code>192.168.0.1</code>) и IPv6 (например, <code>2001:0db8::1</code>).</li>
-</ul>
-<h3 id="icmp-internet-control-message-protocol">🔹 ICMP (Internet Control Message Protocol)</h3>
-<ul>
-<li>Используется для диагностики и уведомления об ошибках.</li>
-<li>Пример: команда <code>ping</code>.</li>
-</ul>
-<h3 id="arp-address-resolution-protocol">🔹 ARP (Address Resolution Protocol)</h3>
-<ul>
-<li>Связывает IP-адреса с MAC-адресами устройств в локальной сети.</li>
+<li>IP-ограничения</li>
+<li>Ограничения по имени хоста</li>
+<li>URL Authorization</li>
+<li>Request Filtering (фильтрация методов, заголовков, строк запроса)</li>
 </ul>
 <hr />
-<h2 id="5-ip-">5. IP-адреса и подсети</h2>
-<h3 id="ipv4">IPv4</h3>
+<h2 id="6">6. Управление и мониторинг</h2>
+<h3 id="61">6.1. Инструменты управления</h3>
 <ul>
-<li>Формат: 4 группы чисел от 0 до 255, разделённых точками: <code>192.168.0.1</code>.</li>
-<li>Общее количество адресов: около 4 млрд.</li>
-<li>Поддерживает классы и маски подсетей (CIDR).</li>
+<li><strong>IIS Manager (inetmgr.msc)</strong></li>
+<li><strong>PowerShell (IISAdministration, WebAdministration)</strong></li>
+<li><strong>AppCmd.exe</strong></li>
+<li><strong>Configuration Editor</strong></li>
 </ul>
-<h3 id="ipv6">IPv6</h3>
+<h3 id="62">6.2. Логирование</h3>
 <ul>
-<li>Формат: 8 групп шестнадцатеричных чисел: <code>2001:0db8:85a3::8a2e:0370:7334</code>.</li>
-<li>Гораздо больше доступных адресов.</li>
-<li>Лучше подходит для современных сетей.</li>
+<li>W3C-логи (по умолчанию).</li>
+<li>Поддержка центрального логирования (Centralized Logging).</li>
+<li>Экспорт логов в файлы, базы данных, внешние системы.</li>
 </ul>
-<h3 id="cidr-classless-inter-domain-routing">CIDR (Classless Inter-Domain Routing)</h3>
-<p>Пример: <code>192.168.1.0/24</code>
-- <code>/24</code> означает, что первые 24 бита — это сетевая часть, остальные — хостовая.</p>
+<h3 id="63">6.3. Производительность</h3>
+<ul>
+<li>Динамическое и статическое сжатие.</li>
+<li>Кэширование вывода.</li>
+<li>Поддержка Output Caching Module.</li>
+<li>Load balancing через ARR + Application Request Routing.</li>
+</ul>
 <hr />
-<h2 id="6">6. Порты и их использование</h2>
+<h2 id="7">7. Развертывание и интеграция</h2>
+<h3 id="71-web-deploy-msdeploy">7.1. Web Deploy (MSDeploy)</h3>
 <ul>
-<li><strong>Порт</strong> — это виртуальный канал, через который приложение получает данные.</li>
-<li>Диапазоны портов:</li>
-<li><strong>0–1023</strong>: Известные порты (например, 80 — HTTP, 443 — HTTPS, 22 — SSH).</li>
-<li><strong>1024–49151</strong>: Зарегистрированные порты.</li>
-<li><strong>49152–65535</strong>: Динамические / частные порты.</li>
+<li>Инструмент для синхронизации, резервного копирования и развертывания сайтов.</li>
+<li>Поддерживает автоматизацию и CI/CD.</li>
 </ul>
-<h3 id="_1">Примеры портов:</h3>
+<h3 id="72-azure-integration">7.2. Azure Integration</h3>
+<ul>
+<li>Поддержка облачных веб-приложений Azure App Service.</li>
+<li>Возможность развертывания в Azure через ARM-шаблоны, DevOps.</li>
+</ul>
+<h3 id="73-docker">7.3. Docker</h3>
+<ul>
+<li>IIS может быть запущен внутри контейнера Windows.</li>
+<li>Подходит для микросервисной архитектуры.</li>
+</ul>
+<hr />
+<h2 id="8-iis">8. Версии IIS</h2>
 <table>
 <thead>
 <tr>
-<th>Порт</th>
-<th>Протокол</th>
-<th>Назначение</th>
+<th>Версия Windows</th>
+<th>Версия IIS</th>
+<th>Особенности</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>80</td>
-<td>TCP</td>
-<td>HTTP</td>
+<td>Windows XP / Server 2003</td>
+<td>IIS 5.1 / 6.0</td>
+<td>Базовая функциональность</td>
 </tr>
 <tr>
-<td>443</td>
-<td>TCP</td>
-<td>HTTPS</td>
+<td>Windows Vista / Server 2008</td>
+<td>IIS 7.0</td>
+<td>Новый модульный дизайн</td>
 </tr>
 <tr>
-<td>22</td>
-<td>TCP</td>
-<td>SSH</td>
+<td>Windows 7 / Server 2008 R2</td>
+<td>IIS 7.5</td>
+<td>Улучшения в управлении</td>
 </tr>
 <tr>
-<td>53</td>
-<td>TCP/UDP</td>
-<td>DNS</td>
+<td>Windows 8 / Server 2012</td>
+<td>IIS 8.0</td>
+<td>Поддержка множественных IP, SNI</td>
 </tr>
 <tr>
-<td>25</td>
-<td>TCP</td>
-<td>SMTP</td>
+<td>Windows 8.1 / Server 2012 R2</td>
+<td>IIS 8.5</td>
+<td>Поддержка Dynamic Hostable Web Core</td>
 </tr>
 <tr>
-<td>123</td>
-<td>UDP</td>
-<td>NTP</td>
+<td>Windows 10 / Server 2016–2022</td>
+<td>IIS 10.0</td>
+<td>Поддержка HTTP/2, улучшенная интеграция с .NET Core, контейнеры</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="7-tcpip">7. Полезные команды для работы с TCP/IP</h2>
-<pre><code class="language-bash"># Проверить IP-адрес и сетевые интерфейсы
-ipconfig          # Windows
-ifconfig / ip a   # Linux/macOS
+<h2 id="9">9. Конфигурационные файлы</h2>
+<h3 id="91-applicationhostconfig">9.1. <code>applicationHost.config</code></h3>
+<ul>
+<li>Главный файл конфигурации IIS.</li>
+<li>Расположен в <code>%windir%\system32\inetsrv\config\applicationHost.config</code>.</li>
+</ul>
+<h3 id="92-webconfig">9.2. <code>web.config</code></h3>
+<ul>
+<li>Файл конфигурации на уровне сайта или приложения.</li>
+<li>Может содержать настройки аутентификации, авторизации, обработчиков, модулей, подключений к БД и т.д.</li>
+</ul>
+<hr />
+<h2 id="10">10. Полезные ссылки</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/ru-ru/iis/">Официальная документация Microsoft</a></li>
+<li><a href="https://www.iis.net/">IIS.net (архив сообщества)</a></li>
+<li><a href="https://learn.microsoft.com/ru-ru/training/modules/introduction-to-iis/">Microsoft Learn модули по IIS</a></li>
+<li><a href="https://github.com/Azure/iisnode">GitHub проекты для IIS (например, iisnode)</a></li>
+</ul>
+<hr />
+<h2 id="11-powershell">11. Примеры команд PowerShell</h2>
+<pre><code class="language-powershell"># Установка IIS
+Install-WindowsFeature -Name Web-Server -IncludeManagementTools
 
-# Проверить соединение с сервером
-ping example.com
+# Перезапуск сайта
+Restart-IISSite -Name &quot;Default Web Site&quot;
 
-# Трассировка маршрута к серверу
-tracert example.com     # Windows
-traceroute example.com  # Linux/macOS
+# Получение списка пулов приложений
+Get-IISAppPool
 
-# Показать таблицу маршрутизации
-route print         # Windows
-ip route show       # Linux
+# Остановка пула приложений
+Stop-IISAppPool -Name &quot;MyAppPool&quot;
 
-# Посмотреть активные сетевые подключения
-netstat             # Windows/Linux
-ss                  # Linux
-
-# Отправка HTTP-запросов вручную
-telnet example.com 80
-nc example.com 80
-curl example.com
+# Создание нового сайта
+New-IISSite -Name &quot;MySite&quot; -Port 8080 -HostHeader mysite.local -PhysicalPath &quot;C:\inetpub\mysite&quot;
 </code></pre>
 <hr />
-<h2 id="8-faq">8. FAQ</h2>
-<h3 id="tcp-udp">❓ Чем отличается TCP от UDP?</h3>
+<h2 id="12">12. Рекомендации по производительности</h2>
 <ul>
-<li><strong>TCP</strong> — надёжный, с установлением соединения, используется для точной передачи данных.</li>
-<li><strong>UDP</strong> — быстрый, без подтверждения, используется там, где важна скорость, а не точность.</li>
+<li>Использовать статическое и динамическое сжатие.</li>
+<li>Настроить кэширование вывода (<code>&lt;caching&gt;</code> в web.config).</li>
+<li>Избегать частых перезапусков пулов приложений.</li>
+<li>Использовать Application Initialization для "прогрева" приложений.</li>
+<li>Отслеживать использование ресурсов через Performance Monitor.</li>
 </ul>
-<h3 id="ip-">❓ Что такое IP-адрес?</h3>
-<ul>
-<li>Это уникальный номер устройства в сети, необходимый для маршрутизации данных.</li>
-</ul>
-<h3 id="_2">❓ Что такое порт?</h3>
-<ul>
-<li>Это "виртуальный канал", позволяющий различным приложениям использовать одну и ту же сеть.</li>
-</ul>
-<h3 id="_3">❓ Как проверить, открыт ли порт?</h3>
-<pre><code class="language-bash">telnet example.com 80
-nc -zv example.com 80
-nmap -p 80 example.com
-</code></pre>
 <hr />
-<h2 id="9">9. Полезные ссылки</h2>
+<h2 id="13">13. Рекомендации по безопасности</h2>
 <ul>
-<li><a href="https://tools.ietf.org/html/rfc793">RFC 793 — спецификация TCP</a></li>
-<li><a href="https://tools.ietf.org/html/rfc791">RFC 791 — спецификация IP</a></li>
-<li><a href="https://www.netacad.com/">Cisco Networking Essentials</a></li>
-<li><a href="https://www.wireshark.org/">Wireshark — анализ сетевых пакетов</a></li>
+<li>Отключать ненужные модули и протоколы.</li>
+<li>Использовать HTTPS с современными шифрами.</li>
+<li>Регулярно обновлять Windows и IIS.</li>
+<li>Настроить строгие политики доступа и аутентификации.</li>
+<li>Использовать Web Application Firewall (например, Azure WAF или ModSecurity).</li>
 </ul>
 
 
