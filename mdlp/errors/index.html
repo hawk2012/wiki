@@ -1,0 +1,8085 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Это открытая документация по различным вещам в ИТ, начиная от самых простых заканчивая самыми сложными.">
+      
+      
+      
+      
+        <link rel="prev" href="../whatis/">
+      
+      
+        <link rel="next" href="../howtowork/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Коды ошибок МДЛП - Справочник Михаила Губина по системам и параметрам</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#10" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Справочник Михаила Губина по системам и параметрам" class="md-header__button md-logo" aria-label="Справочник Михаила Губина по системам и параметрам" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Справочник Михаила Губина по системам и параметрам
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Коды ошибок МДЛП
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Справочник Михаила Губина по системам и параметрам" class="md-nav__button md-logo" aria-label="Справочник Михаила Губина по системам и параметрам" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Справочник Михаила Губина по системам и параметрам
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Главная
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Законодательство
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Законодательство
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Хостинг
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Хостинг
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../law/hosting/fiz_hosting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Может ли физлицо быть хостинг провайдером
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../law/hosting/reg_hosting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Какие документы регулируют хостинг
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../law/hosting/reselling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Реселлинг
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Домены
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Домены
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../law/domains/hijack/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Угон домена
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../law/domains/trademarkn_use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Одинаковое с товарным знаком имя
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Сделки
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Сделки
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../law/basket/micro_sms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Микрозаймы и подпись по СМС
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../law/basket/internet_buy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Покупка через Интернет
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../law/basket/marketplace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Маркетплейсы
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Преступления
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Преступления
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../law/crime/ddos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DDoS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../law/crime/hack/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Взлом
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../law/crime/blackmail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Шантаж
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../law/crime/intercept/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Перехват
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../law/crime/bulling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Кибербуллинг
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../law/crime/fishing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Фишинг
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Интернет
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Интернет
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../all/osi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Модель OSI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/router/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Маршрутизатор
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/switch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Коммутатор
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/modem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Модем
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/hub/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Хаб
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/cross-cable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Кросс-кабель
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/website/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Веб-сайт
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Сервер
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/bgp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    BGP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/apn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    APN
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/poe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PoE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/tp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Витая пара
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/patchcord/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Патч-корд
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/rj11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RJ-11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/rj45/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    RJ-45
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/mesh/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mesh
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/xdsl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    xDSL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/ftth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FTTH
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/powerline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Powerline
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/ethernet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ethernet
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/atf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Airtime Fairness
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Мобильные сети
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Мобильные сети
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mobile/edge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EDGE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mobile/gprs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GPRS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mobile/2g/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2G
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mobile/3g/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3G
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mobile/4g/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4G
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mobile/dual-4g/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dual 4G
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mobile/5g/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5G
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mobile/mms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MMS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mobile/lte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LTE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mobile/volte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    VoLTE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mobile/roaming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Роуминг
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mobile/wi-fi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Wi-Fi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Программирование
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Программирование
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programming/languages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Языки программирования
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programming/algorithms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Алгоритмы и структуры данных
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programming/patterns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Паттерны программирования
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../programming/git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Версионный контроль (Git)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Операционные системы
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Операционные системы
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Linux
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Linux
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Описание
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/vipw/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    vipw
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/adduser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    adduser
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/addgroup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    addgroup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/mc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    mc
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/vim/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    vi(m)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/nano/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    nano
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/emacs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    emacs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/micro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    micro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/tee/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    tee
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/cat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    cat
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/grep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    grep
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/awk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    awk
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/sed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    sed
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/sort/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    sort
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/less/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    less
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/head/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    head
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/tail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    tail
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/find/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    find
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/cut/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    cut
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/xargs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    xargs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/package-groups/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Группы пакетов в Linux
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/gui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Установка и настройка графической оболочки
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/networking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Настройка сети в Linux
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/bash-scripts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Скрипты на Bash
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/linux/permissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Права и chmod
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/freebsd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FreeBSD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/selectos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SelectOS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Сети и безопасность
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Сети и безопасность
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../net/tcp-ip/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TCP/IP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../net/4-tcp-ip/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4-уровневая модель TCP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../net/dns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DNS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../net/http-https/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HTTP(S)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../net/http-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HTTP/2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../net/firewall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Брандмауэры
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../net/routing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Маршрутизация
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../net/bgp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    BGP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../net/vlan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    VLAN
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../net/cybersecurity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Основы кибербезопасности
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../net/encryption/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Шифрование и защита данных
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Документация и трекинг
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Документация и трекинг
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../process/confluence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Confluence
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../process/jira/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Jira
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ci-cd/skuf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    СКУФ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    DevOps & CI/CD
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            DevOps & CI/CD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../devops/principes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Принципы DevOps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_2">
+            <span class="md-nav__icon md-icon"></span>
+            API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ci-cd/swagger/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Swagger
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_3" id="__nav_9_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Тестирование
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_3">
+            <span class="md-nav__icon md-icon"></span>
+            Тестирование
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ci-cd/postman/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Postman
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_4" id="__nav_9_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Инструменты CI/CD
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_4">
+            <span class="md-nav__icon md-icon"></span>
+            Инструменты CI/CD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ci-cd/teamcity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TeamCity
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ci-cd/jenkins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Jenkins
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ci-cd/travis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Travis CI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ci-cd/circle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Circle CI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ci-cd/kafka/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kafka
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_5" id="__nav_9_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Контейнеризация
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_5">
+            <span class="md-nav__icon md-icon"></span>
+            Контейнеризация
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ci-cd/docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Docker
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ci-cd/kubernetes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kubernetes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ci-cd/podman/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Podman
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_6" id="__nav_9_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Другое
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_6">
+            <span class="md-nav__icon md-icon"></span>
+            Другое
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ci-cd/github-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GitHub Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ci-cd/gitlab-ci/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GitLab CI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ci-cd/terraform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Terraform
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_7" id="__nav_9_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Управление конфигурацией
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_7">
+            <span class="md-nav__icon md-icon"></span>
+            Управление конфигурацией
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ci-cd/ansible/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ansible
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ci-cd/puppet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Puppet
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ci-cd/chef/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chef
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ci-cd/drone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Drone
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_8" id="__nav_9_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Управление логами
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_8">
+            <span class="md-nav__icon md-icon"></span>
+            Управление логами
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../logtrace/papertrail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Papertrail
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../logtrace/splunk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Splunk
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../logtrace/loki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Loki
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../logtrace/elk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Elastic Stack
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../logtrace/graylog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Graylog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    ITIL/ITSM
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            ITIL/ITSM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../itil-itsm/hpsm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HPSM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Базы данных
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Базы данных
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sql/greenplum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GreenPlum
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sql/mysql/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MySQL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sql/mariadb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MariaDB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sql/perconadb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PerconaDB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_5" id="__nav_11_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    PostgreSQL
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_5">
+            <span class="md-nav__icon md-icon"></span>
+            PostgreSQL
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sql/postgresql/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Описание СУБД
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sql/queries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Запросы PostgreSQL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sql/redis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Redis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sql/mongodb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MongoDB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sql/oracledb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Oracle DB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Электронная подпись
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Электронная подпись
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecp/private-key/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Закрытый ключ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecp/certificate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Сертификат
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecp/whatis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ЭЦП
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecp/types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Типы ЭЦП
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecp/cryptopro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    КриптоПро
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecp/cryptopro-plugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    КриптоПро Плагин
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecp/plugin-gosuslugi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Плагин Госуслуги
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecp/cspclean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    cspclean.exe
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecp/blitzscplugin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    BlitzScPlugin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecp/reg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Настройка зон безопасности для торговых площадок
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecp/ibank2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Драйвер MSKEY
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecp/rutoken/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Рутокен
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecp/jacarta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    JaCarta
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ecp/etoken/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EToken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Электронный документооборот
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            Электронный документооборот
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edo/etp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ЭТП
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edo/torgi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Электронные торги
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edo/podpis-torgov/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Подпись торгов на ЭТП
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edo/edo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Подпись документов (ЭДО)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edo/edo-complex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Комплексы ЭДО
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../edo/cryptoarm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    КриптоАРМ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Мониторинг Действия Лекарственных Препаратов (МДЛП)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_14">
+            <span class="md-nav__icon md-icon"></span>
+            Мониторинг Действия Лекарственных Препаратов (МДЛП)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../whatis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Что такое МДЛП
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Коды ошибок МДЛП
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Коды ошибок МДЛП
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10 — Нарушение уникальности
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      11 — Некорректное состояние
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      12 — Нарушение правил агрегирования
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      13 — Ошибка акцепта или возврата приостановленных КИЗ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-sscc" class="md-nav__link">
+    <span class="md-ellipsis">
+      14 — SSCC содержит приостановленные КИЗ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      15 — Попытка изменить состояние вложенного КИЗ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      16 — Операция возврата невозможна. Отсутствует предыдущий владелец КИЗ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17" class="md-nav__link">
+    <span class="md-ellipsis">
+      17 — Операция возврата запрещена
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18" class="md-nav__link">
+    <span class="md-ellipsis">
+      18 — Не заполнены данные по документам, подтверждающим соответствие при выпуске для внутреннего потребления
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19" class="md-nav__link">
+    <span class="md-ellipsis">
+      19 — Нарушена хронология операций для КИЗ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20" class="md-nav__link">
+    <span class="md-ellipsis">
+      20 — Истек срок годности КИЗ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      22 — Идентификатор текущего владельца и субъекта операции не совпадают
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      23 — КИЗ не оплачен
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      24 — Попытка выпустить КИЗ из списка ВЗН без заказа
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      25 — КИЗ находится в процессе оплаты
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-12110" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 2. Ошибки уровня документа (Коды 1–2110)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 2. Ошибки уровня документа (Коды 1–2110)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 — Указанная сущность уже зарегистрирована
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 — Указанные сведения не могут быть идентифицированы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 — Ошибка отмены операции
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 — Операция не может быть проведена
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 — Проверка в процессе выполнения
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 — Неверные атрибуты
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7 — Множественный выбор ЛП
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8 — Отсутствует необходимая лицензия для осуществления операции
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      10 — ИНН не найден в налоговых реестрах
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      15 — ФИО из документа не совпадает с данными в налоговых реестрах
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      20 — Лицензия не найдена
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#30" class="md-nav__link">
+    <span class="md-ellipsis">
+      30 — РУ не найдено в ЕСКЛП
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#60-gs1" class="md-nav__link">
+    <span class="md-ellipsis">
+      60 — Нет данных в GS1 или они не соответствуют данным из ЕСКЛП
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#70" class="md-nav__link">
+    <span class="md-ellipsis">
+      70 — Попытка зарегистрировать иностранного участника с ИНН или его аналогом, имеющимся в налоговых реестрах РФ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#80" class="md-nav__link">
+    <span class="md-ellipsis">
+      80 — Ошибка биллинга
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#100" class="md-nav__link">
+    <span class="md-ellipsis">
+      100 — Не все КИЗ успешно сменили состояние
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#200" class="md-nav__link">
+    <span class="md-ellipsis">
+      200 — Идентичный документ был отправлен ранее
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#300" class="md-nav__link">
+    <span class="md-ellipsis">
+      300 — ЛП не найден в реестре
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-4002110" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 3. Ошибки уровня документа (Коды 400–2110)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 3. Ошибки уровня документа (Коды 400–2110)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#400" class="md-nav__link">
+    <span class="md-ellipsis">
+      400 — Невозможно приостановить количество КИЗ больше установленного лимита
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1000-gs1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1000 — Не совпадают торговые наименования в ЕСКЛП и GS1 для ЛП
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1001-gs1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1001 — Не совпадают регистрационные номера в ЕСКЛП и GS1 для ЛП
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1002-gs1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1002 — Не совпадают даты регистрации в ЕСКЛП и GS1 для ЛП
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2000" class="md-nav__link">
+    <span class="md-ellipsis">
+      2000 — Данная операция недоступна для иностранных участников
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2001" class="md-nav__link">
+    <span class="md-ellipsis">
+      2001 — Попытка выполнить операцию от имени заблокированного МД
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2002" class="md-nav__link">
+    <span class="md-ellipsis">
+      2002 — Указанный участник не является иностранным контрагентом
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2010" class="md-nav__link">
+    <span class="md-ellipsis">
+      2010 — Указанный продавец не зарегистрирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2011" class="md-nav__link">
+    <span class="md-ellipsis">
+      2011 — Указанный продавец отсутствует в списке иностранных контрагентов
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2012-" class="md-nav__link">
+    <span class="md-ellipsis">
+      2012 — Страна регистрации продавца отсутствует в списке государств-членов ЕАЭС
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2013" class="md-nav__link">
+    <span class="md-ellipsis">
+      2013 — Продавец заблокирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2020" class="md-nav__link">
+    <span class="md-ellipsis">
+      2020 — Указанный получатель не зарегистрирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2021" class="md-nav__link">
+    <span class="md-ellipsis">
+      2021 — Указанный покупатель не является резидентом РФ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2022-" class="md-nav__link">
+    <span class="md-ellipsis">
+      2022 — Страна регистрации получателя отсутствует в списке государств-членов ЕАЭС
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2023" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023 — Указанный покупатель заблокирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2030" class="md-nav__link">
+    <span class="md-ellipsis">
+      2030 — Указанный получатель не зарегистрирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2031" class="md-nav__link">
+    <span class="md-ellipsis">
+      2031 — Указанный получатель заблокирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2040" class="md-nav__link">
+    <span class="md-ellipsis">
+      2040 — Указанный собственник не зарегистрирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2041" class="md-nav__link">
+    <span class="md-ellipsis">
+      2041 — Указанный собственник заблокирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2050" class="md-nav__link">
+    <span class="md-ellipsis">
+      2050 — Указанный производитель, осуществивший упаковку/фасовку во вторичную (третичную) упаковку, не зарегистрирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2060" class="md-nav__link">
+    <span class="md-ellipsis">
+      2060 — Указанный производитель, осуществляющий выпускающий контроль качества, не зарегистрирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2070" class="md-nav__link">
+    <span class="md-ellipsis">
+      2070 — Указанное для возврата место деятельности / место ответственного хранения не зарегистрировано в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2071" class="md-nav__link">
+    <span class="md-ellipsis">
+      2071 — Указанное для возврата место деятельности / место ответственного хранения заблокировано в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2090" class="md-nav__link">
+    <span class="md-ellipsis">
+      2090 — Указанный контрагент не зарегистрирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2091" class="md-nav__link">
+    <span class="md-ellipsis">
+      2091 — Указанный контрагент заблокирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2100" class="md-nav__link">
+    <span class="md-ellipsis">
+      2100 — Указанный идентификатор места приемки в зоне таможенного контроля не зарегистрирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2110" class="md-nav__link">
+    <span class="md-ellipsis">
+      2110 — Указанное место отгрузки в зоне таможенного контроля не зарегистрировано в системе
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howtowork/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Как работает МДЛП
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API МДЛП
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Примеры программ и сервисов для работы с МДЛП
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Хостинг
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15">
+            <span class="md-nav__icon md-icon"></span>
+            Хостинг
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_15_1" id="__nav_15_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Веб-серверы
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_15_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15_1">
+            <span class="md-nav__icon md-icon"></span>
+            Веб-серверы
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/apache2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apache2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/apache-tomcat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Apache Tomcat
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/caddy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Caddy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/gubinnet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GubinNET
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/nginx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Nginx
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/iis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IIS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_15_2" id="__nav_15_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Панели управления
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_15_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15_2">
+            <span class="md-nav__icon md-icon"></span>
+            Панели управления
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/panels/ajenti/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ajenti
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/panels/cpanel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    cPanel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/panels/ispmanager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ispmanager
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/panels/kloxo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kloxo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/panels/directadmin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DirectAdmin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_15_3" id="__nav_15_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Технологии
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_15_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15_3">
+            <span class="md-nav__icon md-icon"></span>
+            Технологии
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/technologies/php/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PHP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/technologies/python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/technologies/nodejs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NodeJS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/technologies/dotnet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    .NET
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/technologies/perl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Perl
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/technologies/ror/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ruby On Rails
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/technologies/zend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Zend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/technologies/phpmyadmin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    phpMyAdmin
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/technologies/zendopt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Zend Optimizer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/technologies/ioncube/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IonCube Loader
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_15_4" id="__nav_15_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Типы хостинга
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_15_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15_4">
+            <span class="md-nav__icon md-icon"></span>
+            Типы хостинга
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/types/vhost/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Виртуальный хостинг
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/types/clusterhost/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Кластерный хостинг
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/types/cloudhost/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Облачный хостинг
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/types/vps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Виртуальный выделенный сервер
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/types/mvps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Управляемый виртуальный выделенный сервер
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/types/dedic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Выделенный сервер
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/types/152fz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    152-ФЗ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_15_5" id="__nav_15_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Резервные копии
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_15_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15_5">
+            <span class="md-nav__icon md-icon"></span>
+            Резервные копии
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/backup/local/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Локальное копирование
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/backup/rsync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rsync-копирование
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/backup/codeguard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CodeGuard
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/backup/veeam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Veeam
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Доменные имена
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
+            <span class="md-nav__icon md-icon"></span>
+            Доменные имена
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_16_1" id="__nav_16_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Интернет-имена
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16_1">
+            <span class="md-nav__icon md-icon"></span>
+            Интернет-имена
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../domains/registrar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Регистратор
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../domains/domain_types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Типы доменных имен
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../domains/root_zone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Корневые записи
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../domains/domain_changing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Преобразование домена
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_16_2" id="__nav_16_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Active Directory (AD)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_16_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16_2">
+            <span class="md-nav__icon md-icon"></span>
+            Active Directory (AD)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../active_directory/why_ad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Зачем нужен AD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../active_directory/dns_ad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DNS AD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../active_directory/controller_ad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Контроллер домена AD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../active_directory/ad_forest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Лес AD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../active_directory/ad_site/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Сайт AD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../active_directory/ad_ou/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Организационная единица AD (OU)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../active_directory/kerberos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kerberos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../active_directory/ad_linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AD в Linux
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../active_directory/ad_windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AD в Windows
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../active_directory/winbind/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Winbind
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10 — Нарушение уникальности
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      11 — Некорректное состояние
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      12 — Нарушение правил агрегирования
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      13 — Ошибка акцепта или возврата приостановленных КИЗ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-sscc" class="md-nav__link">
+    <span class="md-ellipsis">
+      14 — SSCC содержит приостановленные КИЗ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      15 — Попытка изменить состояние вложенного КИЗ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      16 — Операция возврата невозможна. Отсутствует предыдущий владелец КИЗ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17" class="md-nav__link">
+    <span class="md-ellipsis">
+      17 — Операция возврата запрещена
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18" class="md-nav__link">
+    <span class="md-ellipsis">
+      18 — Не заполнены данные по документам, подтверждающим соответствие при выпуске для внутреннего потребления
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19" class="md-nav__link">
+    <span class="md-ellipsis">
+      19 — Нарушена хронология операций для КИЗ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20" class="md-nav__link">
+    <span class="md-ellipsis">
+      20 — Истек срок годности КИЗ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      22 — Идентификатор текущего владельца и субъекта операции не совпадают
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      23 — КИЗ не оплачен
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      24 — Попытка выпустить КИЗ из списка ВЗН без заказа
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      25 — КИЗ находится в процессе оплаты
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-12110" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 2. Ошибки уровня документа (Коды 1–2110)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 2. Ошибки уровня документа (Коды 1–2110)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 — Указанная сущность уже зарегистрирована
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 — Указанные сведения не могут быть идентифицированы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 — Ошибка отмены операции
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 — Операция не может быть проведена
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 — Проверка в процессе выполнения
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 — Неверные атрибуты
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7 — Множественный выбор ЛП
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8 — Отсутствует необходимая лицензия для осуществления операции
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      10 — ИНН не найден в налоговых реестрах
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      15 — ФИО из документа не совпадает с данными в налоговых реестрах
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      20 — Лицензия не найдена
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#30" class="md-nav__link">
+    <span class="md-ellipsis">
+      30 — РУ не найдено в ЕСКЛП
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#60-gs1" class="md-nav__link">
+    <span class="md-ellipsis">
+      60 — Нет данных в GS1 или они не соответствуют данным из ЕСКЛП
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#70" class="md-nav__link">
+    <span class="md-ellipsis">
+      70 — Попытка зарегистрировать иностранного участника с ИНН или его аналогом, имеющимся в налоговых реестрах РФ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#80" class="md-nav__link">
+    <span class="md-ellipsis">
+      80 — Ошибка биллинга
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#100" class="md-nav__link">
+    <span class="md-ellipsis">
+      100 — Не все КИЗ успешно сменили состояние
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#200" class="md-nav__link">
+    <span class="md-ellipsis">
+      200 — Идентичный документ был отправлен ранее
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#300" class="md-nav__link">
+    <span class="md-ellipsis">
+      300 — ЛП не найден в реестре
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-4002110" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 3. Ошибки уровня документа (Коды 400–2110)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 3. Ошибки уровня документа (Коды 400–2110)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#400" class="md-nav__link">
+    <span class="md-ellipsis">
+      400 — Невозможно приостановить количество КИЗ больше установленного лимита
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1000-gs1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1000 — Не совпадают торговые наименования в ЕСКЛП и GS1 для ЛП
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1001-gs1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1001 — Не совпадают регистрационные номера в ЕСКЛП и GS1 для ЛП
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1002-gs1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1002 — Не совпадают даты регистрации в ЕСКЛП и GS1 для ЛП
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2000" class="md-nav__link">
+    <span class="md-ellipsis">
+      2000 — Данная операция недоступна для иностранных участников
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2001" class="md-nav__link">
+    <span class="md-ellipsis">
+      2001 — Попытка выполнить операцию от имени заблокированного МД
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2002" class="md-nav__link">
+    <span class="md-ellipsis">
+      2002 — Указанный участник не является иностранным контрагентом
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2010" class="md-nav__link">
+    <span class="md-ellipsis">
+      2010 — Указанный продавец не зарегистрирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2011" class="md-nav__link">
+    <span class="md-ellipsis">
+      2011 — Указанный продавец отсутствует в списке иностранных контрагентов
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2012-" class="md-nav__link">
+    <span class="md-ellipsis">
+      2012 — Страна регистрации продавца отсутствует в списке государств-членов ЕАЭС
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2013" class="md-nav__link">
+    <span class="md-ellipsis">
+      2013 — Продавец заблокирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2020" class="md-nav__link">
+    <span class="md-ellipsis">
+      2020 — Указанный получатель не зарегистрирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2021" class="md-nav__link">
+    <span class="md-ellipsis">
+      2021 — Указанный покупатель не является резидентом РФ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2022-" class="md-nav__link">
+    <span class="md-ellipsis">
+      2022 — Страна регистрации получателя отсутствует в списке государств-членов ЕАЭС
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2023" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023 — Указанный покупатель заблокирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2030" class="md-nav__link">
+    <span class="md-ellipsis">
+      2030 — Указанный получатель не зарегистрирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2031" class="md-nav__link">
+    <span class="md-ellipsis">
+      2031 — Указанный получатель заблокирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2040" class="md-nav__link">
+    <span class="md-ellipsis">
+      2040 — Указанный собственник не зарегистрирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2041" class="md-nav__link">
+    <span class="md-ellipsis">
+      2041 — Указанный собственник заблокирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2050" class="md-nav__link">
+    <span class="md-ellipsis">
+      2050 — Указанный производитель, осуществивший упаковку/фасовку во вторичную (третичную) упаковку, не зарегистрирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2060" class="md-nav__link">
+    <span class="md-ellipsis">
+      2060 — Указанный производитель, осуществляющий выпускающий контроль качества, не зарегистрирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2070" class="md-nav__link">
+    <span class="md-ellipsis">
+      2070 — Указанное для возврата место деятельности / место ответственного хранения не зарегистрировано в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2071" class="md-nav__link">
+    <span class="md-ellipsis">
+      2071 — Указанное для возврата место деятельности / место ответственного хранения заблокировано в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2090" class="md-nav__link">
+    <span class="md-ellipsis">
+      2090 — Указанный контрагент не зарегистрирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2091" class="md-nav__link">
+    <span class="md-ellipsis">
+      2091 — Указанный контрагент заблокирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2100" class="md-nav__link">
+    <span class="md-ellipsis">
+      2100 — Указанный идентификатор места приемки в зоне таможенного контроля не зарегистрирован в системе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2110" class="md-nav__link">
+    <span class="md-ellipsis">
+      2110 — Указанное место отгрузки в зоне таможенного контроля не зарегистрировано в системе
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Коды ошибок МДЛП</h1>
+
+<p>Вот расширенные документы по <strong>кодам ошибок системы МДЛП (Маркировка Движения Лекарственных Препаратов)</strong>, основанные на предоставленном вами PDF-файле. Здесь описаны все известные коды ошибок как <strong>уровня КИЗ (Код ## 📌 </strong>1. Ошибки уровня КИЗ (Коды 10–25)**</p>
+<h3 id="10"><strong>10 — Нарушение уникальности</strong></h3>
+<p><strong>Описание:</strong><br />
+Ошибка возникает при попытке выпустить уже существующий КИЗ (SGTIN или SSCC).</p>
+<p><strong>Причины:</strong>
+- Попытка повторной регистрации уже существующего SGTIN/SSCC.
+- Сбой в системе может привести к дублированию выпускаемых кодов.</p>
+<p><strong>Решение:</strong>
+- Убедиться, что вы используете новые, ранее не использованные коды.
+- Проверить логи системы на наличие предыдущих операций с этим КИЗ.</p>
+<hr />
+<h3 id="11"><strong>11 — Некорректное состояние</strong></h3>
+<p><strong>Описание:</strong><br />
+Невозможно выполнить операцию из-за текущего состояния SGTIN/SSCC.</p>
+<p><strong>Причины:</strong>
+- Переход между статусами запрещен.
+- Отсутствуют данные о предшествующей операции (например, отсутствие регистрации 911/912/913/914).
+- Попытка использовать SGTIN, который уже был агрегирован в другой SSCC.</p>
+<p><strong>Решение:</strong>
+- Проверить историю операций по данному КИЗ.
+- Убедиться, что последовательность действий соответствует правилам системы.
+- При необходимости зарегистрировать недостающие операции.</p>
+<hr />
+<h3 id="12"><strong>12 — Нарушение правил агрегирования</strong></h3>
+<p><strong>Описание:</strong><br />
+Ошибка, связанная с неправильным управлением структурой упаковки (агрегированием/деагрегированием).</p>
+<p><strong>Операции, при которых может возникнуть:</strong>
+- 911 (начало агрегирования)
+- 915 (завершение агрегирования)
+- 912/913/914 (различные этапы)</p>
+<p><strong>Причины:</strong>
+- Неверно указан SGTIN или SSCC (не найден или не вложен правильно).
+- SSCC отсутствует в системе.
+- Попытка деагрегировать вложенный объект (например, короб внутри паллеты).
+- Нарушена структура вложенности.</p>
+<p><strong>Решение:</strong>
+- Проверить корректность указания SGTIN/SSCC.
+- Убедиться, что родительская упаковка существует.
+- Избегать попыток изменения структуры упаковки, если она уже используется в других операциях.</p>
+<hr />
+<h3 id="13"><strong>13 — Ошибка акцепта или возврата приостановленных КИЗ</strong></h3>
+<p><strong>Описание:</strong><br />
+Ошибка при работе с приостановленными товарными единицами.</p>
+<p><strong>Операции, при которых может возникнуть:</strong>
+- 701 (акцепт)
+- 251 (отзыв)
+- 252 (отказ)
+- 417 (возврат приостановленного ЛП)</p>
+<p><strong>Причины:</strong>
+- В операциях 701/251/252 отсутствует элемент <code>confirm_paused</code>.
+- Попытка вернуть ЛП, для которого нет данных о приостановке.</p>
+<p><strong>Решение:</strong>
+- Убедиться, что приостановленный КИЗ действительно зарегистрирован в системе.
+- Добавить параметр <code>confirm_paused</code> в запрос, если это требуется.</p>
+<hr />
+<h3 id="14-sscc"><strong>14 — SSCC содержит приостановленные КИЗ</strong></h3>
+<p><strong>Описание:</strong><br />
+Попытка отгрузки групповой упаковки, содержащей приостановленные SGTIN.</p>
+<p><strong>Причина:</strong>
+- В составе указанного SSCC есть один или несколько приостановленных товаров.</p>
+<p><strong>Решение:</strong>
+- Проверить содержимое SSCC перед отправкой.
+- При необходимости снять приостановку или исключить проблемные КИЗ.</p>
+<hr />
+<h3 id="15"><strong>15 — Попытка изменить состояние вложенного КИЗ</strong></h3>
+<p><strong>Описание:</strong><br />
+Попытка изменить состояние SGTIN, находящегося внутри SSCC.</p>
+<p><strong>Причина:</strong>
+- КИЗ находится в составе другой упаковки, и его нельзя напрямую изменять.</p>
+<p><strong>Решение:</strong>
+- Расформировать родительский SSCC перед выполнением операции над вложенным КИЗ.
+- Либо провести операцию на уровне всей групповой упаковки.</p>
+<hr />
+<h3 id="16"><strong>16 — Операция возврата невозможна. Отсутствует предыдущий владелец КИЗ</strong></h3>
+<p><strong>Описание:</strong><br />
+Ошибка возникает при попытке вернуть товар, у которого нет истории приема.</p>
+<p><strong>Причина:</strong>
+- Для возврата необходимо наличие информации о предыдущем владельце.</p>
+<p><strong>Решение:</strong>
+- Проверить, была ли зарегистрирована операция приема данного КИЗ.
+- Если нет, то возврат невозможен.</p>
+<hr />
+<h3 id="17"><strong>17 — Операция возврата запрещена</strong></h3>
+<p><strong>Описание:</strong><br />
+Текущее состояние КИЗ не позволяет выполнить возврат.</p>
+<p><strong>Причина:</strong>
+- Например, КИЗ уже списан, уничтожен или находится в финальном состоянии.</p>
+<p><strong>Решение:</strong>
+- Проверить текущий статус КИЗ.
+- Если требуется возврат, изменить состояние на допускающее возврат.</p>
+<hr />
+<h3 id="18"><strong>18 — Не заполнены данные по документам, подтверждающим соответствие при выпуске для внутреннего потребления</strong></h3>
+<p><strong>Описание:</strong><br />
+Отсутствуют обязательные данные при таможенной процедуре "выпуск для внутреннего потребления".</p>
+<p><strong>Причина:</strong>
+- Отсутствует элемент <code>confnum_info</code>.</p>
+<p><strong>Решение:</strong>
+- Добавить информацию о документах, подтверждающих соответствие.</p>
+<hr />
+<h3 id="19"><strong>19 — Нарушена хронология операций для КИЗ</strong></h3>
+<p><strong>Описание:</strong><br />
+Операции над КИЗ должны быть строго последовательными по времени.</p>
+<p><strong>Причины:</strong>
+- Указанная дата (<code>operation_date</code>) предшествует предыдущей операции.
+- Ошибка регистрации предыдущих операций.</p>
+<p><strong>Решение:</strong>
+- Проверить точность дат операций.
+- Убедиться, что история операций не содержит временных нарушений.</p>
+<hr />
+<h3 id="20"><strong>20 — Истек срок годности КИЗ</strong></h3>
+<p><strong>Описание:</strong><br />
+Попытка выполнить любую операцию с КИЗ, у которого истек срок годности.</p>
+<p><strong>Решение:</strong>
+- Такие КИЗ подлежат списанию или утилизации.
+- Любые другие операции невозможны.</p>
+<hr />
+<h3 id="22"><strong>22 — Идентификатор текущего владельца и субъекта операции не совпадают</strong></h3>
+<p><strong>Описание:</strong><br />
+Совершается операция от имени участника, не являющегося владельцем КИЗ.</p>
+<p><strong>Решение:</strong>
+- Проверить текущего владельца КИЗ через систему.
+- Убедиться, что операция выполняется от лица актуального владельца.</p>
+<hr />
+<h3 id="23"><strong>23 — КИЗ не оплачен</strong></h3>
+<p><strong>Описание:</strong><br />
+Попытка эмитировать КИЗ, который не указан в заказе.</p>
+<p><strong>Решение:</strong>
+- Убедиться, что КИЗ включен в заказ.
+- Произвести оплату перед выпуском.</p>
+<hr />
+<h3 id="24"><strong>24 — Попытка выпустить КИЗ из списка ВЗН без заказа</strong></h3>
+<p><strong>Описание:</strong><br />
+Выпуск КИЗ из перечня ВЗН (важнейшие жизненно необходимные) без предварительного заказа.</p>
+<p><strong>Решение:</strong>
+- Оформить заказ до выпуска.
+- Следовать установленным процедурам для ВЗН.</p>
+<hr />
+<h3 id="25"><strong>25 — КИЗ находится в процессе оплаты</strong></h3>
+<p><strong>Описание:</strong><br />
+Попытка изменить состояние КИЗ, который находится в очереди на оплату.</p>
+<p><strong>Решение:</strong>
+- Дождаться завершения оплаты.
+- После этого можно будет выполнять дальнейшие действия.</p>
+<hr />
+<h2 id="2-12110">📌 <strong>2. Ошибки уровня документа (Коды 1–2110)</strong></h2>
+<h3 id="1"><strong>1 — Указанная сущность уже зарегистрирована</strong></h3>
+<p><strong>Описание:</strong><br />
+Попытка повторной регистрации той же сущности.</p>
+<p><strong>Решение:</strong>
+- Проверить, была ли уже зарегистрирована эта сущность.
+- Избежать повторной отправки идентичного документа.</p>
+<hr />
+<h3 id="2"><strong>2 — Указанные сведения не могут быть идентифицированы</strong></h3>
+<p><strong>Описание:</strong><br />
+Система не смогла связать полученные данные с имеющимися в базе.</p>
+<p><strong>Решение:</strong>
+- Проверить корректность введенных данных.
+- Уточнить ИНН, номер лицензии, РУ и т. д.</p>
+<hr />
+<h3 id="3"><strong>3 — Ошибка отмены операции</strong></h3>
+<p><strong>Описание:</strong><br />
+Ошибка при попытке отменить операцию (обычно операция 250).</p>
+<p><strong>Причина:</strong>
+- Некорректно указаны данные в запросе отмены.</p>
+<p><strong>Решение:</strong>
+- Перепроверить параметры запроса.
+- Убедиться, что отменяемая операция существует и доступна для отмены.</p>
+<hr />
+<h3 id="4"><strong>4 — Операция не может быть проведена</strong></h3>
+<p><strong>Описание:</strong><br />
+Общая ошибка, указывающая на невозможность проведения операции.</p>
+<p><strong>Решение:</strong>
+- Проверить все параметры документа.
+- Обратиться к технической поддержке, если проблема не ясна.</p>
+<hr />
+<h3 id="5"><strong>5 — Проверка в процессе выполнения</strong></h3>
+<p><strong>Описание:</strong><br />
+Операция вызывает обращение к внешним реестрам, результат еще не готов.</p>
+<p><strong>Решение:</strong>
+- Подождать некоторое время.
+- Повторно проверить статус операции.</p>
+<hr />
+<h3 id="6"><strong>6 — Неверные атрибуты</strong></h3>
+<p><strong>Описание:</strong><br />
+Указаны некорректные значения полей в документе.</p>
+<p><strong>Решение:</strong>
+- Проверить формат и допустимые значения всех атрибутов.
+- Использовать только те значения, которые разрешены спецификацией.</p>
+<hr />
+<h3 id="7"><strong>7 — Множественный выбор ЛП</strong></h3>
+<p><strong>Описание:</strong><br />
+Для указанного регистрационного удостоверения (РУ) найдено несколько записей в ЕСКЛП.</p>
+<p><strong>Решение:</strong>
+- Уточнить дополнительные данные (например, производителя, дату регистрации).
+- Выбрать нужную запись вручную.</p>
+<hr />
+<h3 id="8"><strong>8 — Отсутствует необходимая лицензия для осуществления операции</strong></h3>
+<p><strong>Описание:</strong><br />
+Необходимая лицензия отсутствует при регистрации операций (например, 311, 313, 511 и др.).</p>
+<p><strong>Решение:</strong>
+- Убедиться, что у организации есть требуемая лицензия.
+- Зарегистрировать лицензию в системе.</p>
+<hr />
+<h3 id="10_1"><strong>10 — ИНН не найден в налоговых реестрах</strong></h3>
+<p><strong>Описание:</strong><br />
+ИНН отсутствует в ЕГРИП/ЕГРЮЛ/РАФП.</p>
+<p><strong>Решение:</strong>
+- Проверить корректность ИНН.
+- Убедиться, что контрагент зарегистрирован в налоговых органах РФ.</p>
+<hr />
+<h3 id="15_1"><strong>15 — ФИО из документа не совпадает с данными в налоговых реестрах</strong></h3>
+<p><strong>Описание:</strong><br />
+ФИО отличаются от указанных в ЕГРИП/ЕГРЮЛ/РАФП.</p>
+<p><strong>Решение:</strong>
+- Уточнить ФИО в документе.
+- Обновить данные в налоговых реестрах при необходимости.</p>
+<hr />
+<h3 id="20_1"><strong>20 — Лицензия не найдена</strong></h3>
+<p><strong>Описание:</strong><br />
+Лицензия, указанная в документе, не найдена в системе.</p>
+<p><strong>Решение:</strong>
+- Проверить номер и дату лицензии.
+- Убедиться, что лицензия загружена в систему.</p>
+<hr />
+<h3 id="30"><strong>30 — РУ не найдено в ЕСКЛП</strong></h3>
+<p><strong>Описание:</strong><br />
+В реестре ЕСКЛП отсутствуют данные о данном РУ.</p>
+<p><strong>Решение:</strong>
+- Проверить РУ в государственных реестрах.
+- Сообщить об этом в Росздравнадзор, если РУ действительно должно существовать.</p>
+<hr />
+<h3 id="60-gs1"><strong>60 — Нет данных в GS1 или они не соответствуют данным из ЕСКЛП</strong></h3>
+<p><strong>Описание:</strong><br />
+Данные GS1 не совпадают с данными ЕСКЛП.</p>
+<p><strong>Уточняющие коды:</strong>
+- <strong>1000</strong>: Различаются торговые наименования
+- <strong>1001</strong>: Различаются регистрационные номера
+- <strong>1002</strong>: Различаются даты регистрации</p>
+<p><strong>Решение:</strong>
+- Проверить данные в обеих системах.
+- Синхронизировать информацию.</p>
+<hr />
+<h3 id="70"><strong>70 — Попытка зарегистрировать иностранного участника с ИНН или его аналогом, имеющимся в налоговых реестрах РФ</strong></h3>
+<p><strong>Описание:</strong><br />
+Аналог ИНН иностранного участника совпадает с российским ИНН.</p>
+<p><strong>Решение:</strong>
+- Использовать уникальный идентификатор, не совпадающий с российскими ИНН.</p>
+<hr />
+<h3 id="80"><strong>80 — Ошибка биллинга</strong></h3>
+<p><strong>Описание:</strong><br />
+Ошибка при оплате КИЗ.</p>
+<p><strong>Решение:</strong>
+- Проверить платежные данные.
+- Обратиться в службу поддержки биллинга.</p>
+<hr />
+<h3 id="100"><strong>100 — Не все КИЗ успешно сменили состояние</strong></h3>
+<p><strong>Описание:</strong><br />
+Часть КИЗ в документе не прошла операцию.</p>
+<p><strong>Решение:</strong>
+- Проверить ошибки по каждому КИЗ (см. ошибки уровня КИЗ).
+- Исправить индивидуальные ошибки и повторить операцию.</p>
+<hr />
+<h3 id="200"><strong>200 — Идентичный документ был отправлен ранее</strong></h3>
+<p><strong>Описание:</strong><br />
+Попытка загрузки дублирующего документа.</p>
+<p><strong>Решение:</strong>
+- Убедиться, что документ уникален.
+- Проверить идентификаторы документов и даты.</p>
+<hr />
+<h3 id="300"><strong>300 — ЛП не найден в реестре</strong></h3>
+<p><strong>Описание:</strong><br />
+Указанный лекарственный препарат не зарегистрирован в системе.</p>
+<p><strong>Решение:</strong>
+- Проверить регистрационные данные.
+- Зарегистрировать препарат в ЕСКЛП.</p>
+<hr />
+<h2 id="3-4002110">📌 <strong>3. Ошибки уровня документа (Коды 400–2110)</strong></h2>
+<h3 id="400"><strong>400 — Невозможно приостановить количество КИЗ больше установленного лимита</strong></h3>
+<p><strong>Описание:</strong><br />
+Превышено допустимое число КИЗ, которые можно приостановить за один раз или в целом.</p>
+<p><strong>Решение:</strong>
+- Уменьшить объем операции.
+- Проверить текущие лимиты на приостановку.
+- Обратиться к администратору системы для увеличения лимита (если требуется).</p>
+<hr />
+<h3 id="1000-gs1"><strong>1000 — Не совпадают торговые наименования в ЕСКЛП и GS1 для ЛП</strong></h3>
+<p><strong>Описание:</strong><br />
+Торговое наименование препарата отличается между реестрами ЕСКЛП и GS1.</p>
+<p><strong>Решение:</strong>
+- Проверить данные в обеих системах.
+- При необходимости подать запрос на коррекцию данных в одну из систем.</p>
+<hr />
+<h3 id="1001-gs1"><strong>1001 — Не совпадают регистрационные номера в ЕСКЛП и GS1 для ЛП</strong></h3>
+<p><strong>Описание:</strong><br />
+Регистрационный номер ЛП различается в ЕСКЛП и GS1.</p>
+<p><strong>Решение:</strong>
+- Сверить данные в обеих системах.
+- Обновить информацию в одной из систем при выявлении ошибки.</p>
+<hr />
+<h3 id="1002-gs1"><strong>1002 — Не совпадают даты регистрации в ЕСКЛП и GS1 для ЛП</strong></h3>
+<p><strong>Описание:</strong><br />
+Дата регистрации ЛП не совпадает между ЕСКЛП и GS1.</p>
+<p><strong>Решение:</strong>
+- Проверить точность дат.
+- Если есть расхождения — обратиться в техподдержку для исправления.</p>
+<hr />
+<h3 id="2000"><strong>2000 — Данная операция недоступна для иностранных участников</strong></h3>
+<p><strong>Описание:</strong><br />
+Попытка выполнить операцию, доступную только для резидентов РФ.</p>
+<p><strong>Решение:</strong>
+- Убедиться, что участник указан как иностранный.
+- Использовать только те операции, которые доступны иностранным контрагентам.</p>
+<hr />
+<h3 id="2001"><strong>2001 — Попытка выполнить операцию от имени заблокированного МД</strong></h3>
+<p><strong>Описание:</strong><br />
+Участник, от имени которого совершается операция, заблокирован в системе.</p>
+<p><strong>Решение:</strong>
+- Проверить статус участника в системе.
+- Восстановить доступ через службу поддержки или дождаться разблокировки.</p>
+<hr />
+<h3 id="2002"><strong>2002 — Указанный участник не является иностранным контрагентом</strong></h3>
+<p><strong>Описание:</strong><br />
+Идентификатор отправителя или получателя принадлежит зарегистрированному участнику системы вместо иностранного.</p>
+<p><strong>Решение:</strong>
+- Убедиться, что используется правильный идентификатор иностранного контрагента.
+- Проверить справочник иностранных участников.</p>
+<hr />
+<h3 id="2010"><strong>2010 — Указанный продавец не зарегистрирован в системе</strong></h3>
+<p><strong>Описание:</strong><br />
+В операциях 362/332 указан идентификатор продавца, который не найден в системе.</p>
+<p><strong>Решение:</strong>
+- Проверить идентификатор (<code>seller_id</code>).
+- Убедиться, что продавец зарегистрирован.</p>
+<hr />
+<h3 id="2011"><strong>2011 — Указанный продавец отсутствует в списке иностранных контрагентов</strong></h3>
+<p><strong>Описание:</strong><br />
+Продавец, указанный в операциях 331/332/361/362, не числится среди зарегистрированных иностранных контрагентов.</p>
+<p><strong>Решение:</strong>
+- Проверить список иностранных контрагентов.
+- Зарегистрировать нового контрагента, если это необходимо.</p>
+<hr />
+<h3 id="2012-"><strong>2012 — Страна регистрации продавца отсутствует в списке государств-членов ЕАЭС</strong></h3>
+<p><strong>Описание:</strong><br />
+Идентификатор продавца (<code>seller_id</code>) относится к стране, не входящей в ЕАЭС.</p>
+<p><strong>Решение:</strong>
+- Убедиться, что страна-участник входит в состав ЕАЭС.
+- При необходимости изменить идентификатор или проверить регион регистрации.</p>
+<hr />
+<h3 id="2013"><strong>2013 — Продавец заблокирован в системе</strong></h3>
+<p><strong>Описание:</strong><br />
+Продавец, указанный в операции, находится в заблокированном состоянии.</p>
+<p><strong>Решение:</strong>
+- Проверить статус продавца.
+- Обратиться в поддержку для разблокировки.</p>
+<hr />
+<h3 id="2020"><strong>2020 — Указанный получатель не зарегистрирован в системе</strong></h3>
+<p><strong>Описание:</strong><br />
+Идентификатор получателя (<code>receiver_id</code>) не найден в системе.</p>
+<p><strong>Решение:</strong>
+- Проверить корректность <code>receiver_id</code>.
+- Зарегистрировать получателя, если он еще не добавлен.</p>
+<hr />
+<h3 id="2021"><strong>2021 — Указанный покупатель не является резидентом РФ</strong></h3>
+<p><strong>Описание:</strong><br />
+Ошибка возникает при попытке приемки товара на склад в зоне таможенного контроля (операции 331/332), если получатель не является резидентом РФ.</p>
+<p><strong>Решение:</strong>
+- Убедиться, что получатель указан как резидент РФ.
+- Для иностранных получателей использовать другие операции.</p>
+<hr />
+<h3 id="2022-"><strong>2022 — Страна регистрации получателя отсутствует в списке государств-членов ЕАЭС</strong></h3>
+<p><strong>Описание:</strong><br />
+Идентификатор получателя (<code>receiver_id</code>) связан со страной вне ЕАЭС.</p>
+<p><strong>Решение:</strong>
+- Проверить страну регистрации получателя.
+- Убедиться, что она входит в состав ЕАЭС.</p>
+<hr />
+<h3 id="2023"><strong>2023 — Указанный покупатель заблокирован в системе</strong></h3>
+<p><strong>Описание:</strong><br />
+Получатель, указанный в операции, находится в заблокированном состоянии.</p>
+<p><strong>Решение:</strong>
+- Проверить статус участника.
+- Дождаться разблокировки или связаться с поддержкой.</p>
+<hr />
+<h3 id="2030"><strong>2030 — Указанный получатель не зарегистрирован в системе</strong></h3>
+<p><strong>Описание:</strong><br />
+Ошибка аналогична 2020 — идентификатор получателя не найден.</p>
+<p><strong>Решение:</strong>
+- То же, что и для ошибки 2020.</p>
+<hr />
+<h3 id="2031"><strong>2031 — Указанный получатель заблокирован в системе</strong></h3>
+<p><strong>Описание:</strong><br />
+Получатель, указанный в операции, заблокирован.</p>
+<p><strong>Решение:</strong>
+- То же, что и для ошибки 2023.</p>
+<hr />
+<h3 id="2040"><strong>2040 — Указанный собственник не зарегистрирован в системе</strong></h3>
+<p><strong>Описание:</strong><br />
+Собственник, указанный в операции, не найден в системе.</p>
+<p><strong>Решение:</strong>
+- Проверить идентификатор собственника.
+- Зарегистрировать его, если он еще не добавлен.</p>
+<hr />
+<h3 id="2041"><strong>2041 — Указанный собственник заблокирован в системе</strong></h3>
+<p><strong>Описание:</strong><br />
+Собственник, указанный в операции, находится в заблокированном состоянии.</p>
+<p><strong>Решение:</strong>
+- Проверить статус собственника.
+- Дождаться разблокировки или обратиться в поддержку.</p>
+<hr />
+<h3 id="2050"><strong>2050 — Указанный производитель, осуществивший упаковку/фасовку во вторичную (третичную) упаковку, не зарегистрирован в системе</strong></h3>
+<p><strong>Описание:</strong><br />
+Производитель, ответственный за фасовку, не зарегистрирован.</p>
+<p><strong>Решение:</strong>
+- Проверить идентификатор производителя.
+- Зарегистрировать его в системе.</p>
+<hr />
+<h3 id="2060"><strong>2060 — Указанный производитель, осуществляющий выпускающий контроль качества, не зарегистрирован в системе</strong></h3>
+<p><strong>Описание:</strong><br />
+Производитель, ответственный за контроль качества, не найден.</p>
+<p><strong>Решение:</strong>
+- Проверить идентификатор производителя.
+- Зарегистрировать его в системе.</p>
+<hr />
+<h3 id="2070"><strong>2070 — Указанное для возврата место деятельности / место ответственного хранения не зарегистрировано в системе</strong></h3>
+<p><strong>Описание:</strong><br />
+Попытка вернуть товар на незарегистрированное место.</p>
+<p><strong>Решение:</strong>
+- Проверить адрес возврата.
+- Зарегистрировать новое место или выбрать уже существующее.</p>
+<hr />
+<h3 id="2071"><strong>2071 — Указанное для возврата место деятельности / место ответственного хранения заблокировано в системе</strong></h3>
+<p><strong>Описание:</strong><br />
+Место, указанное для возврата, находится в заблокированном состоянии.</p>
+<p><strong>Решение:</strong>
+- Проверить статус места.
+- Дождаться разблокировки или выбрать другое место.</p>
+<hr />
+<h3 id="2090"><strong>2090 — Указанный контрагент не зарегистрирован в системе</strong></h3>
+<p><strong>Описание:</strong><br />
+Контрагент, указанный в операции, не найден.</p>
+<p><strong>Решение:</strong>
+- Проверить идентификатор контрагента.
+- Зарегистрировать его в системе.</p>
+<hr />
+<h3 id="2091"><strong>2091 — Указанный контрагент заблокирован в системе</strong></h3>
+<p><strong>Описание:</strong><br />
+Контрагент, указанный в операции, находится в заблокированном состоянии.</p>
+<p><strong>Решение:</strong>
+- Проверить статус контрагента.
+- Дождаться разблокировки или выбрать другого контрагента.</p>
+<hr />
+<h3 id="2100"><strong>2100 — Указанный идентификатор места приемки в зоне таможенного контроля не зарегистрирован в системе</strong></h3>
+<p><strong>Описание:</strong><br />
+Неверно указано место приемки в зоне таможенного контроля.</p>
+<p><strong>Решение:</strong>
+- Проверить идентификатор места.
+- Зарегистрировать или выбрать корректное место.</p>
+<hr />
+<h3 id="2110"><strong>2110 — Указанное место отгрузки в зоне таможенного контроля не зарегистрировано в системе</strong></h3>
+<p><strong>Описание:</strong><br />
+Неверно указано место отгрузки в зоне таможенного контроля.</p>
+<p><strong>Решение:</strong>
+- Проверить идентификатор места.
+- Зарегистрировать или выбрать корректное место.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2025 <a href="https://vk.com/mgubin">Михаил Губин</a>. Разработано для системных администраторов, DevOps и обычных пользователей.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
