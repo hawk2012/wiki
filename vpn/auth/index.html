@@ -11,6 +11,8 @@
       
       
       
+        <link rel="prev" href="../whatis/">
+      
       
       
         <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../feed_rss_created.xml">
@@ -21,7 +23,7 @@
     
     
       
-        <title>Auth - Справочник Михаила Губина по системам и параметрам</title>
+        <title>Способы авторизации VPN - Справочник Михаила Губина по системам и параметрам</title>
       
     
     
@@ -99,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Auth
+              Способы авторизации VPN
             
           </span>
         </div>
@@ -6432,18 +6434,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_17" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_17" checked>
         
           
           <label class="md-nav__link" for="__nav_17" id="__nav_17_label" tabindex="0">
@@ -6459,7 +6463,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_17_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_17_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_17">
             <span class="md-nav__icon md-icon"></span>
             VPN
@@ -6516,10 +6520,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../vps/auth.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Способы авторизации VPN
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -6530,6 +6554,105 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-username-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Логин и пароль (Username + Password)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ssltls-pki-public-key-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Сертификаты SSL/TLS (PKI — Public Key Infrastructure)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-2fa-mfa" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Двухфакторная аутентификация (2FA / MFA)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-ldapactive-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Аутентификация через LDAP/Active Directory
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-radius-remote-authentication-dial-in-user-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. RADIUS (Remote Authentication Dial-In User Service)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-pre-shared-key-psk" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Ключевые файлы или предварительно общий секрет (Pre-Shared Key - PSK)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-smart-card-usb-" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Smart Card / USB-токены
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Биометрия (в специализированных системах)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сравнение способов авторизации в таблице:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -6663,7 +6786,7 @@
 
 
 
-  <h1>Auth</h1>
+  <h1>Способы авторизации VPN</h1>
 
 <p>Авторизация — это важный этап установления соединения по VPN. Она позволяет убедиться, что пользователь или устройство действительно имеют право на доступ к защищённой сети. Существует множество способов аутентификации в VPN, которые различаются по уровню безопасности и сложности реализации.</p>
 <hr />
